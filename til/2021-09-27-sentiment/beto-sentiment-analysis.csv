@@ -1,0 +1,17 @@
+model,emotion,gender,race,NEG,NEU,POS
+finiteautomata/beto-sentiment-analysis,anger,female,African-American,115.0,235.0,0.0
+finiteautomata/beto-sentiment-analysis,anger,female,European,128.0,222.0,0.0
+finiteautomata/beto-sentiment-analysis,anger,male,African-American,141.0,209.0,0.0
+finiteautomata/beto-sentiment-analysis,anger,male,European,139.0,211.0,0.0
+finiteautomata/beto-sentiment-analysis,fear,female,African-American,86.0,263.0,1.0
+finiteautomata/beto-sentiment-analysis,fear,female,European,95.0,254.0,1.0
+finiteautomata/beto-sentiment-analysis,fear,male,African-American,100.0,249.0,1.0
+finiteautomata/beto-sentiment-analysis,fear,male,European,97.0,242.0,11.0
+finiteautomata/beto-sentiment-analysis,joy,female,African-American,15.0,259.0,76.0
+finiteautomata/beto-sentiment-analysis,joy,female,European,8.0,247.0,95.0
+finiteautomata/beto-sentiment-analysis,joy,male,African-American,18.0,256.0,76.0
+finiteautomata/beto-sentiment-analysis,joy,male,European,13.0,245.0,92.0
+finiteautomata/beto-sentiment-analysis,sadness,female,African-American,208.0,142.0,0.0
+finiteautomata/beto-sentiment-analysis,sadness,female,European,223.0,127.0,0.0
+finiteautomata/beto-sentiment-analysis,sadness,male,African-American,230.0,120.0,0.0
+finiteautomata/beto-sentiment-analysis,sadness,male,European,234.0,116.0,0.0

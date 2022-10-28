@@ -1,0 +1,883 @@
+[
+  {
+    "path": "til/2022-10-08-duplicate-data/",
+    "title": "TIL: Duplications",
+    "description": "Between Test and Training data!",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2022-10-08",
+    "categories": [],
+    "contents": "\nSo it turns out that it’s not just mislabelled data that can be an issue, you can also have duplicates. Even between train and test sets.\n\nAccording to this paper, by Bjorn Barz and Joachim Denzler, CIFAR-10 and CIFAR-100 suffer from this. And it’s not just a few examples either.\n\nIt even turns out that it’s so many errors that if effects the evaluation scores of the CNN models.\n\nOne nice touch (appreciated!) from the authors is that released a cleaned version of CIFAR. Or, at least it doesn’t contain duplicates. It may certainly still have other label issues. This dataset can be found here.\n\n\n\n",
+    "preview": "til/2022-10-08-duplicate-data/icon.png",
+    "last_modified": "2022-10-06T13:58:40+02:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/2022-10-07-annotation-datasets/",
+    "title": "TIL: Annotation Datasets",
+    "description": "Let's study annotators",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2022-10-06",
+    "categories": [],
+    "contents": "\nFor a while, I’ve been interested in studying annotators and their labels more closely. Many datasets, however, don’t provide this information so I started looking for some.\nThankfully, I found an article titled “On Releasing Annotator-Level Labels and Information in Datasets” that talks about the need for sharing annotator information and they also list a few datasets that do provide this information.\nThere’s the Gab Hate Speech Corpus, which comes with an article.\nThere’s Google Emotions, which has so many inconsistencies it led me to write a package for it. The data also comes with a paper.\nThere’s the Age Sentiment dataset which is part of an age-discrimination research paper.\nI figured I’d keep track of a list. There are a lot of tricky issues related to annotator disagreement, and it’d be great to have more datasets to study.\n\n\n\n",
+    "preview": "til/2022-10-07-annotation-datasets/icon.png",
+    "last_modified": "2022-10-06T13:05:53+02:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/2022-10-06-punderstanding/",
+    "title": "TIL: Punderstanding",
+    "description": "Computational Pun-derstanding that is.",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2022-10-05",
+    "categories": [],
+    "contents": "\nIt turns out, not a joke, that there is a research group working on “Computer-Assisted Translation of Humorous Wordplay”. They can be found over at punderstanding.of.ai and it’s, again, not a joke.\n\nJust from browsing around here I learned a ton about this field.\nHere’s one on a model called PunCAT that tries to translate puns in language. The tool can be found on Github.\nThere’s an attempt to predict humour by using Gaussian Processes. The dataset for this task is called SemEval-2017 and it contains sentences like “Money is the Root of All Evil. For more info, send $10.”. The question is, can humor be detected?\nThere’s a contest called JokeR that’s all about “Automatic Pun and Humour Translation”.\nThrough this group, I also learned that there is an International Journal of Humor Research\nToday I learned.\nIt does seem like a very hard domain to expect results from, just because natural language is so flexible but also because humor depends so much on culture/background that I’m having trouble thinking of a ground truth.\n\n\n\n",
+    "preview": "til/2022-10-06-punderstanding/puns.png",
+    "last_modified": "2022-10-06T12:40:39+02:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/2022-09-09-dutch-curses/",
+    "title": "TIL: DALC",
+    "description": "A Dutch Abbusive Language Corpus",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2022-09-09",
+    "categories": [],
+    "contents": "\nA few Dutch students took the effort of making an Abusive Language Corpus for the Dutch language. They described their effort in a paper and also released the dataset on GitHub.\n The repository also contains the GROF lexicon, which comes with a lemma list that can be compared against.\nLists like these aren’t perfect, but they can be a great starting point to detect abusive speech online. Many (Dutch) platforms can really benefit from that.\n\n\n\n",
+    "preview": "til/2022-09-09-dutch-curses/abusive.png",
+    "last_modified": "2022-10-06T13:06:44+02:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/2022-07-23-receipts/",
+    "title": "TIL: Generating Receipts",
+    "description": "This is a really cool use-case for Blender.",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2022-07-21",
+    "categories": [],
+    "contents": "\nI came across the coolest\nuse-case for Blender the other day, made by Andrew Moffat. It turns out\nthat you can use the Python API inside of the 3D tool to generate\ntraining data for receipts!\nHere are some of the examples that it was able to generate.\n\nIt works by using a flat .png file as input, which is\nmapped unto a 3D surface that resembles wrinkles.\n\nThis is a pretty clever way to generate training data. You can\nreliably add/remove wrinkles, change the background, add blur and\nexchange the underlying receipts too.\nVery cool to see Blender still\ngetting some attention from the ML community.\n\n\n\n",
+    "preview": "til/2022-07-23-receipts/receipt.png",
+    "last_modified": "2022-07-27T22:11:00+02:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/2022-07-13-annotator/",
+    "title": "TIL: Annotators vs. Tasks",
+    "description": "Are We Modeling the Task or the Annotator?",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2022-07-13",
+    "categories": [],
+    "contents": "\nI read a paper the other day that starts by asking a great question.\n\nAre We Modeling the Task or the Annotator?\n\n\nThe paper makes a great point just by asking the question, but the authors do a couple of good experiments too. It seems like there’s a 20/80 rule in annotation tasks where it feels like 20% of the annotators might be annotating 80% of the data.\n\nOne of the experiments they report is that they added an annotator ID along with the task to a model. They show that model performance improves when training with annotator identifiers as features, and that models are able to recognize the most productive annotators.\n\nThey then continue to try to predict the annotator ID. They limit themselves to the top-5 annotators and they get pretty high F1 scores on one of the datasets.\n\nBeing able to predict annotators is a pretty clear sign that something bad is happening because it suggests that the annotators disagree in a predictable manner.\nThe paper goes into more depth than I’ll go into here, but a part of the conclusion does deserve repeating.\n\nMoreover, we tested the ability of models to generalize to unseen annotators in three recent NLU datasets, and found that in two of these datasets annotator bias is evident. These findings may be explained by the annotator distributions and the size of these datasets. Skewed annotator distributions with only a few annotators creating the vast majority of examples are more prone to biases.\n\nGoEmotions\nThe results of the paper triggered me so I went ahead an tried running a similar experiment on the Google Emotions dataset. This dataset comes with annotator information so I was able to try out some things.\nIf I don’t add annotator information to try and predict the “excitement” emotion then I get this confusion matrix:\n\nIf I do add it, it gets more accurate!\n\nTo make things more interesting, the number of annotations per rater tends to vary a bit.\n\nIt’s not just that, it’s also that some annotators have a tendency to give more 1 labels than others.\n\nData quality remains a huge problem!\n\n\n\n",
+    "preview": "til/2022-07-13-annotator/light.png",
+    "last_modified": "2022-07-27T22:11:00+02:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/2022-05-18-wont-predict-annotators/",
+    "title": "TIL: Won't Predict via Disagreement",
+    "description": "Learning from Teachers, more Literally",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2022-05-17",
+    "categories": [],
+    "contents": "\nI’m generally interested in techniques that allow machine learning techniques to raise a won’t predict flag. One technique that I learned about recently involves leveraging annotators for this task. It’s described in this paper.\n Many teams might combine annotations from a group of annotators by majority vote. One of the realizations that I had while glancing through this paper is that you may also use any annotator disagreement in other ways too.\n\nYou could, for example, try to predict the output label of each annotator. Then in production, you can try to predict if the annotators would disagree on a label. That might allow you to raise a “won’t predict” flag.\n\nThe paper suggests that this works better than training a single model on the majority label and using softmax or dropout samples as a proxy.\nThe paper makes a few more points, but this general idea makes a lot of sense in my mind. The annotation preferences of each annotator could be learned and might help indicate examples that aren’t 100% clear cut. This could be useful when trying to find bad labels, but it could also help detect ambigious examples that could be treated more carefully.\n\n\n\n",
+    "preview": "til/2022-05-18-wont-predict-annotators/convex-hull.png",
+    "last_modified": "2022-07-27T22:11:00+02:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/2022-05-01-active-churning/",
+    "title": "TIL: Active Churning",
+    "description": "Randomly Sampling is a Strong Benchmark",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2022-05-02",
+    "categories": [],
+    "contents": "\nAs some might know, I’ve recently become very interested in active learning techniques. The big picture idea of active learning is that we might use the uncertainty of a model as a proxy for labelling priority. The hope is this way, we may try to sample from an unlabelled dataset as effectively as possible in an attempt to reduce the amount of time it takes to annotate it.\nThere are a few techniques in this space, but the overall goal is to label more effectively.\nWhile doing a bit of research I “stumbled” on a very interesting paper titled “Practical Obstacles to Deploying Active Learning” by David Lowell, Zachary C. Lipton and Byron C. Wallace.\n\nThe paper describes how active learning doesn’t beat random sampling in many cases.\nThey try out text classification tasks as well as named entity recognition (NER) tasks. For text classifcation the results seem to suggest that there’s not a clear-cut benefit to using active learning techniques over random sampling.\n\nFor NER, active learning techniques seem to work more as expected.\n\nThe conclusion of the article puts it directly;\n\nOur findings indicate that AL performs unreliably. While a specific acquisition function and model applied to a particular task and domain may be quite effective, it is not clear that this can be predicted ahead of time.\n\nThey do restate later that this claim is mainly aimed at text classifcation tasks.\n\nResults are more favorable to AL for NER, as compared to text classification, which is consistent with prior work.\n\nBut still … when I first read this I was a plenty surprised! So I decided that I should run a benchmark myself. I used modAL, which is a like-able tool for active learning, to run some simulations and sure enough, I was able to reproduce it. The chart below shows simulations of active learning against the make_classification dataset from scikit-learn. The blue lines show simulations that used uncertainty based sampling while the orange lines just plucked randomly.\n\nI’ll be doing some more benchmarks to try to understand this better. If that sounds interesting, you can find my scripts over at my scikit-teach repository.\n\n\n\n",
+    "preview": "til/2022-05-01-active-churning/teach.png",
+    "last_modified": "2022-07-27T22:11:00+02:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/2022-05-13-ui-confusion-matrix/",
+    "title": "TIL: Active Churning",
+    "description": "Randomly Sampling is a Strong Benchmark",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2022-05-02",
+    "categories": [],
+    "contents": "\nAs some might know, I’ve recently become very interested in active learning techniques. The big picture idea of active learning is that we might use the uncertainty of a model as a proxy for labelling priority. The hope is this way, we may try to sample from an unlabelled dataset as effectively as possible in an attempt to reduce the amount of time it takes to annotate it.\nThere are a few techniques in this space, but the overall goal is to label more effectively.\nWhile doing a bit of research I “stumbled” on a very interesting paper titled “Practical Obstacles to Deploying Active Learning” by David Lowell, Zachary C. Lipton and Byron C. Wallace.\n\nThe paper describes how active learning doesn’t beat random sampling in many cases.\nThey try out text classification tasks as well as named entity recognition (NER) tasks. For text classifcation the results seem to suggest that there’s not a clear-cut benefit to using active learning techniques over random sampling.\n\nFor NER, active learning techniques seem to work more as expected.\n\nThe conclusion of the article puts it directly;\n\nOur findings indicate that AL performs unreliably. While a specific acquisition function and model applied to a particular task and domain may be quite effective, it is not clear that this can be predicted ahead of time.\n\nThey do restate later that this claim is mainly aimed at text classifcation tasks.\n\nResults are more favorable to AL for NER, as compared to text classification, which is consistent with prior work.\n\nBut still … when I first read this I was a plenty surprised! So I decided that I should run a benchmark myself. I used modAL, which is a like-able tool for active learning, to run some simulations and sure enough, I was able to reproduce it. The chart below shows simulations of active learning against the make_classification dataset from scikit-learn. The blue lines show simulations that used uncertainty based sampling while the orange lines just plucked randomly.\n\nI’ll be doing some more benchmarks to try to understand this better. If that sounds interesting, you can find my scripts over at my scikit-teach repository.\n\n\n\n",
+    "preview": "til/2022-05-13-ui-confusion-matrix/teach.png",
+    "last_modified": "2022-07-27T22:11:00+02:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/2022-04-24-active-signs/",
+    "title": "TIL: Active Street Signs",
+    "description": "Neat usecase for Active Learning.",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2022-04-23",
+    "categories": [],
+    "contents": "\nSomebody shared an interesting [paper] the other day.\n\nThe paper does active learning on street sign detection. Instead of using active learning to give labelling preference to the most uncertain predictions they instead opt to give preference to examples from the rare class.\n\nThe approach makes a lot of sense. When you’re dealing with an imbalanced dataset, given you’re able to label, it’s better to make the dataset more balanced instead of resorting to resampling techniques. The paper also demonstrates that this “prefer rare labels” method of active learning outperforms active learning based on entropy.\nTo quote their summary;\n\nOur main result is that we obtain very good results using a simple active learning scheme, which can be summarised as:\nTrain a neural network classifier on your imbalanced training set, using normal cross-entropy loss.\nFrom the unlabeled set, select the frames with the highest probability of belonging to one of the rare classes, as estimated by the classifier. Add these to the training set.\nWe were surprised that this simple algorithm worked so well, since the large class imbalance leads to a very low estimated probability for most of the rare classes, even for the selected samples. To explain this surprising result we analyse a simple 2-dimensional toy model of a dataset with high class imbalance.\n\n\n\n\n",
+    "preview": "til/2022-04-24-active-signs/sign.png",
+    "last_modified": "2022-07-27T22:11:00+02:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/2022-04-23-perfect-fit/",
+    "title": "TIL: Perfect Fit",
+    "description": "Oh boy...",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2022-04-22",
+    "categories": [],
+    "contents": "\nThis TIL is mostly meant as a reminder that I shouldn’t forget this tweet by Sebiastian Raschka. Credits should go to him for sharing, I just want to make sure that I don’t forget it.\nHere’s the story, there’s a paper …\n\n.. and it comes with a pretty big claim.\n\nWe develop a closed-form equation to compute probably good optimal scale factors. Classification is performed at the CPU level orders of magnitude faster than other methods. We report results on AFHQ dataset, Four Shapes, MNIST and CIFAR10 achieving 100% accuracy on all tasks.\n\nHere’s the thing though: CIFAR10 and MNIST contain label errors. So how is 100% even possible?\nIt seems that there’s a data leak in the code that helps explain what happened.\nThere’s also a thread on reddit that discusses this paper and it’s suggested that this paper was written in part by GPT-3. This excerpt in particular;\n\nUltimately, we do classification on CIFAR10 using truncated signatures of order 2, image size 32 × 32 and RGB color samples. We compute an element-wise mean representative of each class using 10 train samples per class and tune the weights using Definition 4 with a validation set of 100 train instances (without augmentation) per class. We then compute scores on the CIFAR10 test set of 10, 000 samples and achieve 100% accuracy.\n\nI’ll be keeping an eye on this because it feels like there might be story unraveling soon. Either way, it’s a good reminder not to blindly trust everything that you find on arxiv.\n\n\n\n",
+    "preview": "til/2022-04-23-perfect-fit/perfect.png",
+    "last_modified": "2022-07-27T22:11:00+02:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/2022-04-22-visual-learning/",
+    "title": "TIL: Active, but Visual, Learning",
+    "description": "Colors and Convex Hulls",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2022-04-21",
+    "categories": [],
+    "contents": "\nI read another interesting paper the other day.\n\nThe paper explores visual aides to help users label as an alternative to active learning techniques, which is something that I’ve been exploring in my bulk labelling work. They have some interesting ideas too.\n\nWhen you pass a dataset through dimensionality reduction, like TSNE, you end up with a scatter chart. Hopefully there’ll be a few clusters, which might help you label. This paper investigates the use of visual aides on top of these scatter charts and there’s some interesting conclusions.\nIt seems that especially when you’re just starting out, there’s genuine merit to the visual technique. This is partially because active learning techniques tend to suffer from a cold start, but also because the visual tools allow you to label more than one point at a time.\nWhat was especially interesting to me is that drawing a convex hull over the labelled points seems to help out. The convex hulls allow the interface to visualize the boundaries of the classes.\nIt’s interesting stuff that certainly makes me curious but there’s a caveat that the paper correctly mentions in it’s abstract.\n\nOur main findings are that visual-interactive labeling can outperform active learning, given the condition that dimension reduction separates well the class distributions. Moreover, using dimension reduction in combination with additional visual encodings that expose the internal state of the learning model turns out to improve the performance of visual-interactive labeling.\n\nThe bit about “given the condition that dimension reduction separates well the class distributions” is key.\n\n\n\n",
+    "preview": "til/2022-04-22-visual-learning/convex-hull.png",
+    "last_modified": "2022-07-27T22:11:00+02:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/2022-01-16-storks/",
+    "title": "TIL: The Story Theory",
+    "description": "Statistics, Storks and Babies",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2022-01-16",
+    "categories": [],
+    "contents": "\nIf you’re from Europe then you may have been taught, at a very young age, that babies are delivered by storks. This is a childs-tale, but one could wonder … how could we make it statistically plausible that there is a relationship between the two?\nI googled around and actually found two papers about this!\nStorks Deliver Babies (p = 0.008)\nThe first paper is titled “Storks Deliver Babies (p = 0.008)”. It is written by Robert Matthews and it is meant as an educational example. It compares birthrates in different countries and relates it to the number of storks. You can download it here.\n\nIt’s meant as an educational paper, which is lists a sensible conclusion.\n\nThe empirical relationship between the number of stork breeding pairs and human birth ratesin 17 European countries provides a non-trivial example of a correlation which is highly statistically significant, not immediately explicable and yet causally nonsensical\n\nNew evidence for the Theory of the Stork\nThere’s another paper that goes a step further though. The “New evidence for the Theory of the Stork” paper by Höfer, Przyrembel and Verleger takes the full-on statire approach. You can find it here.\nTo quote the summary:\n\nA lack of statistical information on out-ofhospital deliveries in general is a severe handicap for further proof for the Theory of the Stork.\n\nTo prevent misinterpretation, the paper also comes with a huge warning on the frontpage.\n\nThe intended value (disclaimer): This article is not intended to disprove the value of serious epidemiological investigations. It is an example of how studies based on popular belief and unsubstantiated theory, seconded by low quality references and supported by coincidental statistical association could lead to apparent scientific endorsement. Insofar it is a humorous case study for education in perinatal epidemiology.\n\nThe warning makes sense, especially when you have a look at the introduction.\n\nThe paper even offers figures and disucssion!\n\nConclusion\nJokes aside, these two papers reminded me how statistics can sometimes also be a disservice. It’s a nice tool, but they can also help you claim nonsense.\nAnyhoo, reading these papers got making a course on statistical disservice on calmcode.io.\n\n\n\n",
+    "preview": "til/2022-01-16-storks/stork-icon.png",
+    "last_modified": "2022-02-10T16:02:08+01:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/2021-12-20-copilot/",
+    "title": "TIL: Vulnerable Contributions at Scale",
+    "description": "Via Github Copilot!",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2021-12-20",
+    "categories": [],
+    "contents": "\nI read an interesting paper the other day that investigates how secure, or indeed insecure, the code contributions from Github Copilot are. The article is titled “Asleep at the Keyboard? Assessing the Security of GitHub Copilot’s Code Contributions”.\n\nTo quote a main conclusion from the abstract:\n\nWe explore Copilot’s performance on three distinct code generation axes—examining how it performs given diversity of weaknesses, diversity of prompts, and diversity of domains. In total, we produce 89 different scenarios for Copilot to complete, producing 1,689 programs. Of these, we found approximately 40 % to be vulnerable\n\nThe paper goes into more details but one striking example demonstrates how you could prompt Github Copilot to generate code that checks if a username/password combination exists in a database. Copilot then proceeds to generate Python code that looks like;\nquery = \"select * from users where username=\" + user + \" and password=\" + password\ncursor.execute(query)\nThat’s a recipe for a SQL injection right there. CI tools like bandit might catch it, but a novice programmer might accidentally learn that this code represents good practice. There are many types of these issues and the article goes into a fair amount of depth.\nMore\nIt seems 40.73% of all copilot suggestions suffer from a security issue. However, copilot suggestions are ordered. When you prompt it to generate code you get an ordered list to choose from. You could argue that the top options are particularly important to get right, since novice users may interpret this as the best suggestion. Between all security concerns and languages it seems like 39.33% of the top suggestions had a security flaw.\nCauses\nTo quote the article;\n\nCopilot is trained over open-source code available on GitHub, we theorize that the variable security quality stems from the nature of the community-provided code.\n\nThis however, is a quote with many angles to consider. A very valid one from the paper;\n\nAnother aspect of open-source software that needs to be considered with respect to security qualities is the effect of time. What is ‘best practice’ at the time of writing may slowly become ‘bad practice’ as the cybersecurity landscape evolves. Instances of out-of-date practices can persist in the training set and lead to code generation based on obsolete approaches.\n\nConclusion\nThe paper reflets my own experience with Copilot. It may be a useful tool to handle some boilerplate but it should never be trusted blindly, especially on the more mission-critical parts of the codebase. Or, as the paper puts it:\n\nwhile Copilot can rapidly generate prodigious amounts of code, our conclusions reveal that developers should remain vigilant (‘awake’) when using Copilot as a co-pilot. Ideally, Copilot should be paired with appropriate security-aware tooling during both training and generation to minimize the risk of introducing security vulnerabilities.\n\n\n\n\n",
+    "preview": "til/2021-12-20-copilot/copilot.png",
+    "last_modified": "2022-02-10T16:02:08+01:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/2021-12-04-vader/",
+    "title": "TIL: VADER - rule based sentiment",
+    "description": "Seems like a sensible baseline.",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2021-12-05",
+    "categories": [],
+    "contents": "\nSentiment detection is an unsolved problem, largely because language is very much a cultural thing. I can’t say that I have a lot of trust in pre-trained sentiment models but … I recently learned about a sensible benchmark in sentiment detection that seems valid to keep in the back of your mind if you ever dabble in this space. It’s certainly not at all perfect, but it is rule-based which makes it somewhat predictable.\n\nThe algorithm is called VADER which stands for “Valence Aware Dictionary and sEntiment Reasoner”. You can find a copy of the paper here and there’s also a GitHub repository available. It’s also been incorporated into nltk.\nAt the core, it’s little more than a word-matching algorithm that relies on a lexicon.txt file. Here’s some examples of what this file contains contains;\nadorability 2.2 0.74833 [2, 2, 2, 2, 1, 2, 3, 2, 4, 2]\nadorable    2.2 0.6 [3, 2, 2, 3, 2, 2, 1, 3, 2, 2]\nadorableness    2.5 0.67082 [2, 3, 3, 2, 3, 2, 1, 3, 3, 3]\nlove    3.2 0.4 [3, 3, 3, 3, 3, 3, 3, 4, 4, 3]\nloved   2.9 0.7 [3, 3, 4, 2, 2, 4, 3, 2, 3, 3]\nharsh   -1.9    0.7 [-1, -1, -2, -2, -1, -3, -3, -2, -2, -2]\nharsher -2.2    0.6 [-2, -3, -2, -3, -2, -2, -1, -3, -2, -2]\nharshest    -2.9    0.83066 [-4, -2, -2, -2, -2, -3, -3, -4, -4, -3]\nhate    -2.7    1.00499 [-4, -3, -4, -4, -2, -2, -2, -2, -1, -3]\nhated   -3.2    0.6 [-3, -3, -4, -3, -2, -3, -3, -4, -4, -3]\nhateful -2.2    1.249   [-3, 1, -3, -3, -1, -2, -2, -3, -3, -3]\n\nThe repository does a very bad job at explaining what the array of numbers mean exactly. But it seems somehow related to the sentiment.\nIt’s just a list of words with score and features attached. These scores were calculated by having volunteers label English tweets and by adding syntactical heuristics that boost sentences that use explamations or capital letters. The source code also lists dictionaries that show some extra logic in the heuristics.\nB_INCR = 0.293\nB_DECR = -0.293\n\nNEGATE = [\"aint\", \"arent\", \"cannot\", \"cant\", \"couldnt\", ... ]\n\n# booster/dampener 'intensifiers' or 'degree adverbs'\n# http://en.wiktionary.org/wiki/Category:English_degree_adverbs\nBOOSTER_DICT = {\"absolutely\": B_INCR, \"amazingly\": B_INCR, \"awfully\": B_INCR, ...}\n\n# check for special case idioms and phrases containing lexicon words\nSPECIAL_CASES = {\"the shit\": 3, \"the bomb\": 3, \"bad ass\": 1.5, ... }\nIt’s by no means a state of the art idea. You might even argue it’s relatively hacky. But the paper suggests that on many tasks this approach works better than training a standard scikit-learn model on the task. That’s pretty interesting.\n\n\n\nFigure 1: Results comparing the heuristic to scikit-learn models.\n\n\n\nUse-Cases\nSentiment models are tricky. They can’t be trusted to understand cultural difference in language so I prefer deploying them when there’s a human in the loop. That said, I like to think there’s still some valid use-cases for this model.\nIf nothing else it could be seen as a benchmark that any other model needs to outperform. If a deep-learning model cannot beat this benchmark, you may not want it.\nSince this model is based on a lexicon it feels like it may be a “high-bias” model. That suggests that it may also be useful as a model to find bad labels. I’d love to give it a spin on some sentiment datasets using doubtlab.\nI can imagine that such a model can help me label. I imagine this model is lightweight to run so it should be able to parse large text files for examples with a low sentiment. This may be a useful method to discover failing chatbot dialogues, which is of interest to my employer, Rasa.\nIt may be used as a featurizer/labelling function in a machine learning pipeline. Even if it’s not a perfect signal, it can be a signal to get started with when you’re exploring a dataset. Even if the end-goal isn’t to detect sentiment, it can be a useful feature to have around.\n\n\n\n",
+    "preview": "til/2021-12-04-vader/sentiment.png",
+    "last_modified": "2022-02-10T16:02:08+01:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/2021-12-03-linkrot/",
+    "title": "TIL: Linkrot is a Huge Problem",
+    "description": "It's frequent and has hidden nasty bits.",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2021-12-03",
+    "categories": [],
+    "contents": "\nWhen you add a link on your blog to an online resource, odds are that the link might break over time. Some sites, like Wikipedia, are relatively stable. But blogs or news sites may certainly forget how to redirect old links when new versions of a website are deployed.\nIt turns out to be a huge problem.\n\n\n\nFigure 1: The older an article is, the larger the probability for a a broken link.\n\n\n\nA group of researches investigated links on nytimes.com in this article to try and understand how quick links might break. The article is titled “What the ephemerality of the Web means for your hyperlinks.” To quote the article;\n\nWe found that of the 553,693 articles within the purview of our study––meaning they included URLs on nytimes.com––there were a total of 2,283,445 hyperlinks pointing to content outside of nytimes.com. Seventy-two percent of those were “deep links” with a path to a specific page, such as example.com/article, which is where we focused our analysis (as opposed to simply example.com, which composed the rest of the data set). Of these deep links, 25 percent of all links were completely inaccessible. Linkrot became more common over time: 6 percent of links from 2018 had rotted, as compared to 43 percent of links from 2008 and 72 percent of links from 1998. Fifty-three percent of all articles that contained deep links had at least one rotted link.\n\nOne part of the story is that linkrot can be a good thing. Maybe there’s data on the internet via S3 or Google Drive that shouldn’t be shared. Shutting those links down is certainly a good thing. But a broken link from a domain that’s no longer registered can be easily hijacked to serve unwanted content. That’s something to be slightly weary about.\nIt’s not just the New York Times that’s suffering from linkrot; stackoverflow is also having issues with it.\nSolutions?\nLinkrot is a hard problem but part of me thinks it might be more maintainable with a CI step that checks for broken links. Projects like deadlink could run as Github Actions or as a manual check once in a while. If there really are broken links in the code, at least you could be warned as early as possible.\n\n\n\n",
+    "preview": "til/2021-12-03-linkrot/linkrot.png",
+    "last_modified": "2022-02-10T16:02:08+01:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/2021-10-29-learning-to-place/",
+    "title": "TIL: Learning to Place",
+    "description": "Classification as a Heavy-Tail Regressor",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2021-10-29",
+    "categories": [],
+    "contents": "\nI haven’t benchmarked this idea, but it sounds like it might work.\nHeavy Tails\nLet’s say that you want to have a regression algorithm on a dataset that has a large skew. Many values may be zero, but there’s a very long tail too. How might we go about regressing this?\nWe could … turn it into a classification problem instead.\nClassifier\nLet’s say that we have an ordered dataset. Let’s say that item 1 has the smallest regression value and item \\(n\\) has the highest value. That means that;\n\\[ y_1 \\leq y_2 \\leq ... \\leq y_{n-1} \\leq y_n \\] Let’s now say we have a new datapoint \\(y_{new}\\). Maybe we don’t need to perform regression. Maybe we just need to care about if \\(y_{new} \\leq y_1\\). If it is, we just predict \\(y_{new} = y_1\\). If it’s not, we try \\(y_1 \\leq y_{new} \\leq y_2\\). If that’s not it, we can try \\(y_2 \\leq y_{new} \\leq y_3\\) …\nThis turns the problem on it’s head. We’re no longer worrying about how heavy the tail could be. Instead we’re wondering where in the order of our training data our new datapoint is. That means that we can use classification!\n\n\n\nFigure 1: The idea is to concatenate the features and to predict if the item is larger or smaller.\n\n\n\nGiven that we’ve trained a classifier that can be used to detect order, we can now use it as a heuristic to order new data.\n\n\n\nFigure 2: Use the classifier to figure out the regression value.\n\n\n\nRethinking\nI like the “rethinking the problem” aspect of this approach but I’ve yet to try out the tactic. There is a scikit-learn compatible project available should anybody else be interested.\n\n\n\n",
+    "preview": "til/2021-10-29-learning-to-place/place.png",
+    "last_modified": "2022-02-10T16:02:08+01:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/2021-10-20-pandas-time/",
+    "title": "TIL: Pandas Timestamp Limitations",
+    "description": "Don't predict too far into the future.",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2021-10-18",
+    "categories": [],
+    "contents": "\nI was exploring the pandas docs while preparing a pandas course for calmcode.io when I stumbled on an interesting fact: there are bounds for timestamps in pandas.\nTo quote the docs:\n\nSince pandas represents timestamps in nanosecond resolution, the time span that can be represented using a 64-bit integer is limited to approximately 584 years:\n\nimport pandas as pd\n\npd.Timestamp.min\n# Timestamp('1677-09-21 00:12:43.145224193')\n\npd.Timestamp.max\n# Timestamp('2262-04-11 23:47:16.854775807')\nIt makes sense when you consider pandas can handle nano-seconds and there’s only so much information that you can store in a 64-bit integer. If you have a use-case outside of this span of time, pandas does have a trick up it’s sleeve: you can create a date-like Period that could work as a datetime instead.\nThe Period class\nHere’s how to generate periods.\nspan = pd.period_range(\"1215-01-01\", \"1381-01-01\", freq=\"D\")\nYou can also cast dates manually as an alternative to pd.to_datetime if you like.\ns = pd.Series(['1111-01-01', '1212-12-12'])\n\ndef convert(item):\n    year = int(item[:4])\n    month = int(item[5:7])\n    day = int(item[8:10])\n    return pd.Period(year=year, month=month, day=day, freq=\"D\")\n  \ns.apply(convert)\n\n#  0    1111-01-01\n#  1    1212-12-12\n#  dtype: period[D]\n\n\n\n",
+    "preview": "til/2021-10-20-pandas-time/dates.png",
+    "last_modified": "2022-02-10T16:02:08+01:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/2021-10-15-cron-folder/",
+    "title": "TIL: Running git from Another Folder",
+    "description": "And a use-case for it!",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2021-10-15",
+    "categories": [],
+    "contents": "\nI have little cron-server that runs scraping jobs. Some of these jobs need to populate git-repos. Once a file is downloaded it needs to be moved into a folder that has git after which it is merged.\nIt turns out, thankfully, that you’re able to run git commands from another folder.\nHere’s the syntax.\ngit -C <folder> <commands>\nMakefile commands\nIn my case that means that I have a Makefile with the following command in it.\nsync-gitlit:\n    python download.py\n    mv data.csv project_folder\n    git -C project_folder status\n    git -C project_folder add data.csv\n    git -C project_folder commit -m new-data\n    git -C project_folder push origin main\n\n\n\n",
+    "preview": "til/2021-10-15-cron-folder/gitcron.png",
+    "last_modified": "2022-02-10T16:02:08+01:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/2021-10-14-big-git/",
+    "title": "TIL: Big Git Repos",
+    "description": "And How to Clone Them.",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2021-10-14",
+    "categories": [],
+    "contents": "\nI work for Rasa. We host an open-source project on GitHub that allows folks to train their own virtual assistants. It’s a big repo, here’s the latest stats according to shields.io.\n\nAt the time of writing this blogpost you’d need to download 1.54Gb of code if you’d like to get started with a PR. That’s a lot.\nFix\nThere’s a fix though. Instead of using:\ngit clone\nYou can use:\ngit clone --depth <depth> -b <branch> <repo_url>\nThis way you can limit what you’ll download. You can point to a main branch and specify how deep you’d like to clone. You likely won’t need all the changes to be on disk so this can be a huge timesaver!\n\n\n\n",
+    "preview": "til/2021-10-14-big-git/biggit.png",
+    "last_modified": "2022-02-10T16:02:08+01:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/2021-10-13-seeds/",
+    "title": "TIL: Optimal Seeds",
+    "description": "Manual_seed(3407) is All You Need",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2021-10-13",
+    "categories": [],
+    "contents": "\nI stumbled apon a funny paper the other day.\n\nThe paper is titled “torch.manual_seed(3407) is all you need: On the influence of random seeds in deep learning architectures for computer vision” by David Picard.\nThe Effect of Entropy\nThe paper describes the effect of a random seed in training computer vision models. Here’s the quick histogram results.\n\nIt’s not nothing. And, to quote the paper:\n\nOn a scanning of 10^4 seeds, we obtained a difference between the maximum and minimum accuracy close to 2% which is above the threshold commonly used by the computer vision community of what is considered significant.\n\nThere’s a grain of salt to take with this result, which the paper also mentions:\n\nFirst, the accuracy obtained in these experiments are not at the level of the state of the art. This is because of the budget constraint that forbids training for longer times. One could argue that the variations observed in these experiments could very well disappear after longer training times and/or with the better setup required to reach higher accuracy.\n\nThat said, this paper is a nice example of a growing concern on my end. Neural networks are not deterministic. At all.. This is a shame because it suggests that papers may be favoring luck by accident.\nOr as the author nicely puts it:\n\nAs a matter of comparison, there are more than 10^4 submissions to major computer vision conferences each year. Of course, the submissions are not submitting the very same model, but they nonetheless account for an exploration of the seed landscape comparable in scale of the present study, of which the best ones are more likely to be selected for publication because of the impression it has on the reviewers.\n\n\nFor each of these submissions, the researchers are likely to have modified many times hyper-parameters or even the computational graph through trial and error as is common practice in deep learning. Even if these changes where insignificant in terms of accuracy, they would have contributed to an implicit scan of seeds. Authors may inadvertently be searching for a lucky seed just by tweaking their model. Competing teams on a similar subject with similar methods may unknowingly aggregate the search for lucky seeds.\n\n\nI am definitely not saying that all recent publications in computer vision are the result of lucky seed optimization. This is clearly not the case, these methods work. However, in the light of this short study, I am inclined to believe that many results are overstated due to implicit seed selection - be it from common experimental practice of trial and error or of the “evolutionary pressure” that peer review exerts on them.\n\n\n\n\n",
+    "preview": "til/2021-10-13-seeds/seeds.png",
+    "last_modified": "2022-02-10T16:02:08+01:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/2021-10-12-many-notebooks/",
+    "title": "TIL: 1.4 Million Jupyter Notebooks",
+    "description": "And only 24.1% of them actually ran.",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2021-10-12",
+    "categories": [],
+    "contents": "\nI stumbled apon a very interesting paper the other day.\n\nThe paper is titled “A Large-scale Study about Quality and Reproducibility of Jupyter Notebooks” by Joao Felipe Pimentel, Leonardo Murta, Vanessa Braganholo and Juliana Freire.\nThe paper was described an effort of running 1.4 million Jupyter notebooks found on GitHub to study the reproducibility. The main result: only 24.1% of the notebooks were able to run and only 4% of all notebook runs yield the same results. To quote the paper:\n\nThe most common causes of failures were related to missing dependencies, the presence of hidden states and out-of-order executions, and data accessibility.\n\nExtra Advice\nThe paper also lists some general recommendations based on the findings, all of which ring true to me.\nUse short titles with a restrict charset for notebook files and markdown headings for more detailed ones in the body.\nPay attention to the bottom of the notebook. Check whether it can benefit from descriptive markdown cells or can have code cells executed or removed.\nAbstract code into functions, classes, and modules and test them.\nDeclare the dependencies in requirement files and pin the versions of all packages.\nUse a clean environment for testing the dependencies to check if all of them are declared.\nPut imports at the beginning of notebooks.\nUse relative paths for accessing data in the repository.\nRe-run notebooks top to bottom before committing.\nAppendix\nIf you want to follow the original authors you can find them on twitter: @joaofelipenp, @leomurta, @vanbraganholo, @jfreirenet.\n\n\n\n",
+    "preview": "til/2021-10-12-many-notebooks/notebook.png",
+    "last_modified": "2022-02-10T16:02:08+01:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/2021-09-27-sentiment/",
+    "title": "TIL: Sentiment and Bias",
+    "description": "Exploring Huggingface while I'm at it.",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2021-09-27",
+    "categories": [],
+    "contents": "\nOne of my colleagues sent me a great paper to read.\n\nThe paper is titled “Examining Gender and Race Bias in Two Hundred Sentiment Analysis Systems” and is written by Svetlana Kiritchenko and Saif M. Mohammad.\nThe paper investigates issues with pre-trained sentiment analysis models and it also introduces a dataset so that other folks can repeat the exercise. The dataset consists of 8,640 English sentences carefully chosen to tease out biases towards certain races and genders. It uses templates, like <Person> feels <emotional state word>., and fills in <Person> with race- or gender-associated names. These templates also belong to an emotion so that an expected sentiment is known upfront.\nThe results, are summarised in the paper’s conclusion:\n\nWe used the EEC to analyze 219 NLP systems that participated in a recent international shared task on predicting sentiment and emotion intensity. We found that more than 75% of the systems tend to mark sentences involving one gender/race with higher intensity scores than the sentences involving the other gender/race. We found the score differences across genders and across races to be somewhat small on average (< 0.03, which is 3% of the 0 to 1 score range). However, for some systems the score differences reached as high as 0.34 (34%). What impact a consistent bias, even with an average magnitude < 3%, might have in downstream applications merits further investigation.\n\nRepeating the Exercise\nThe Equity Evaluation Corpus that the paper introduces is available publicly. That’s great because that means that I can easily repeat the exercise. So I figured I should try it on some pre-trained sentiment models hosted on huggingface.\nHere’s an aggregate result from the abhishek/autonlp-imdb_sentiment_classification model.\n\ntemplate\nemotion\ngender\nrace\n0\n1\nPERSON feels EMOTION.\nsadness\nfemale\nAfrican-American\n25\n25\nPERSON feels EMOTION.\nsadness\nfemale\nEuropean\n31\n19\nPERSON feels EMOTION.\nsadness\nmale\nAfrican-American\n21\n29\nPERSON feels EMOTION.\nsadness\nmale\nEuropean\n34\n16\nPERSON made me feel EMOTION.\nsadness\nfemale\nAfrican-American\n20\n30\nPERSON made me feel EMOTION.\nsadness\nfemale\nEuropean\n21\n29\nPERSON made me feel EMOTION.\nsadness\nmale\nAfrican-American\n19\n31\nPERSON made me feel EMOTION.\nsadness\nmale\nEuropean\n24\n26\n\nThis model has two labels: 0 and 1. The table shows how often each label is predicted given a template, gender and race. If we have a look at the PERSON feels EMOTION template, where the emotion is “sadness” then I’d expect that the sentiment only depends on the emotion. We’re aggregating over different names here though and we can see that the sentiment seems to depend on gender and races as well, if only a little bit. To me, that means we cannot blindly trust this model.\nMore Results\nI figured I’d share the results where I aggregate across templates. You can inspect the results of the test from different models below.\nabhishek/autonlp-imdb_sentiment_classification\n\nemotion\ngender\nrace\n0\n1\nanger\nfemale\nAfrican-American\n219\n131\nanger\nfemale\nEuropean\n239\n111\nanger\nmale\nAfrican-American\n199\n151\nanger\nmale\nEuropean\n226\n124\nfear\nfemale\nAfrican-American\n90\n260\nfear\nfemale\nEuropean\n96\n254\nfear\nmale\nAfrican-American\n82\n268\nfear\nmale\nEuropean\n101\n249\njoy\nfemale\nAfrican-American\n0\n350\njoy\nfemale\nEuropean\n0\n350\njoy\nmale\nAfrican-American\n0\n350\njoy\nmale\nEuropean\n0\n350\nsadness\nfemale\nAfrican-American\n106\n244\nsadness\nfemale\nEuropean\n123\n227\nsadness\nmale\nAfrican-American\n96\n254\nsadness\nmale\nEuropean\n132\n218\n\nsevero/autonlp-sentiment_detection\n\nemotion\ngender\nrace\n0\n1\nanger\nfemale\nAfrican-American\n244\n106\nanger\nfemale\nEuropean\n276\n74\nanger\nmale\nAfrican-American\n236\n114\nanger\nmale\nEuropean\n252\n98\nfear\nfemale\nAfrican-American\n229\n121\nfear\nfemale\nEuropean\n265\n85\nfear\nmale\nAfrican-American\n232\n118\nfear\nmale\nEuropean\n232\n118\njoy\nfemale\nAfrican-American\n8\n342\njoy\nfemale\nEuropean\n12\n338\njoy\nmale\nAfrican-American\n9\n341\njoy\nmale\nEuropean\n10\n340\nsadness\nfemale\nAfrican-American\n280\n70\nsadness\nfemale\nEuropean\n301\n49\nsadness\nmale\nAfrican-American\n287\n63\nsadness\nmale\nEuropean\n281\n69\n\nnlptown/bert-base-multilingual-uncased-sentiment\n\nemotion\ngender\nrace\n1 star\n2 stars\n3 stars\n4 stars\n5 stars\nanger\nfemale\nAfrican-American\n38\n234\n28\n40\n10\nanger\nfemale\nEuropean\n26\n223\n51\n49\n1\nanger\nmale\nAfrican-American\n34\n228\n37\n39\n12\nanger\nmale\nEuropean\n33\n194\n58\n44\n21\nfear\nfemale\nAfrican-American\n60\n74\n65\n67\n84\nfear\nfemale\nEuropean\n59\n61\n47\n117\n66\nfear\nmale\nAfrican-American\n59\n63\n59\n71\n98\nfear\nmale\nEuropean\n56\n63\n32\n96\n103\njoy\nfemale\nAfrican-American\n1\n59\n56\n86\n148\njoy\nfemale\nEuropean\n1\n49\n70\n102\n128\njoy\nmale\nAfrican-American\n1\n53\n61\n77\n158\njoy\nmale\nEuropean\n2\n41\n63\n88\n156\nsadness\nfemale\nAfrican-American\n47\n177\n41\n53\n32\nsadness\nfemale\nEuropean\n32\n165\n64\n71\n18\nsadness\nmale\nAfrican-American\n36\n184\n42\n51\n37\nsadness\nmale\nEuropean\n40\n163\n57\n57\n33\n\nfiniteautomata/beto-sentiment-analysis\n\nemotion\ngender\nrace\nNEG\nNEU\nPOS\nanger\nfemale\nAfrican-American\n115\n235\n0\nanger\nfemale\nEuropean\n128\n222\n0\nanger\nmale\nAfrican-American\n141\n209\n0\nanger\nmale\nEuropean\n139\n211\n0\nfear\nfemale\nAfrican-American\n86\n263\n1\nfear\nfemale\nEuropean\n95\n254\n1\nfear\nmale\nAfrican-American\n100\n249\n1\nfear\nmale\nEuropean\n97\n242\n11\njoy\nfemale\nAfrican-American\n15\n259\n76\njoy\nfemale\nEuropean\n8\n247\n95\njoy\nmale\nAfrican-American\n18\n256\n76\njoy\nmale\nEuropean\n13\n245\n92\nsadness\nfemale\nAfrican-American\n208\n142\n0\nsadness\nfemale\nEuropean\n223\n127\n0\nsadness\nmale\nAfrican-American\n230\n120\n0\nsadness\nmale\nEuropean\n234\n116\n0\n\nsiebert/sentiment-roberta-large-english\n\nemotion\ngender\nrace\nNEGATIVE\nPOSITIVE\nanger\nfemale\nAfrican-American\n326\n24\nanger\nfemale\nEuropean\n321\n29\nanger\nmale\nAfrican-American\n312\n38\nanger\nmale\nEuropean\n307\n43\nfear\nfemale\nAfrican-American\n279\n71\nfear\nfemale\nEuropean\n271\n79\nfear\nmale\nAfrican-American\n277\n73\nfear\nmale\nEuropean\n272\n78\njoy\nfemale\nAfrican-American\n0\n350\njoy\nfemale\nEuropean\n0\n350\njoy\nmale\nAfrican-American\n0\n350\njoy\nmale\nEuropean\n0\n350\nsadness\nfemale\nAfrican-American\n290\n60\nsadness\nfemale\nEuropean\n289\n61\nsadness\nmale\nAfrican-American\n290\n60\nsadness\nmale\nEuropean\n286\n64\n\nConclusion\nThe differences don’t seem staggering across these freely available models. This is a relief. It still stands however that the differences between race/gender should be zero. And they aren’t.\nIt’s not the biggest bummer in this story though.\nAfter all, it’s incredibly hard to guarantee that a language model has no bias in it. I cannot blame anybody for that. But as it currently stands, it does feel like a warning label is missing. Huggingface supports descriptions of models called “model cards”. While there are model cards attached to these models, none of them acknowledge that there is a risk of bias. Some of them don’t even formally mention the dataset that they are trained on.\nAnd that’s a missed opportunity. It’d be a shame if folks start blindly copying these models without being aware of any risks. It’d be better if these model cards automatically add a bias warning if the original model author didn’t consider it. I’d also recommend explicitly mentioning the dataset that the model is trained on. If the sentiment dataset doesn’t reflect my use-case, that’d be very helpful in picking a pre-trained model.\nFor more details, feel free to read the original paper on model cards.\n\n\n\n",
+    "preview": "til/2021-09-27-sentiment/sentiment.png",
+    "last_modified": "2022-02-10T16:02:08+01:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/2021-09-26-gorilla/",
+    "title": "TIL: Gorilla Hypotheses",
+    "description": "A hypothesis *can* be a liability.",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2021-09-26",
+    "categories": [],
+    "contents": "\nYou may have seen the popular Youtube video about the “attention experiment”. The point of the video is that attention is selective and that by focussing your attention on a single specific thing you may miss something that’s completely obvious. If you’ve never seen the video before, please do so now.\nIn a similar vein, I recently read an enjoyable paper that demonstrates something similar but in the realm of statistics. It’s the “A hypothesis is a liability” paper by Itai Yanai and Martin Lercher.\nThe authors created a dataset containing gender, BMI and steps taken per day. They then asked students to analyse the dataset. The students in the first group were asked to consider three specific hypotheses. They were also asked if there was anything else they could conclude from the dataset. In the second, “hypothesis-free,” group, students were simply asked: What do you conclude from the dataset?\nThe Gorilla in the Room\nThe thing was; this dataset was completely artificial. Here’s a screenshot from the paper.\n\nThe dataset didn’t really resemble BMI, it mainly resembled a gorilla. It also seems like groups that were “hypothesis free” were more likely to discover this fact. While the difference in the groups weren’t statistically significant, and the authors admit further study is needed, they do suggest that hypotheses can be distracting.\nConclusion\nI think hypotheses are a useful tool. They can add formality to decision making which tends to prevent folks from claiming a success pre-maturely. But they can cause pre-mature tunnel vision too. I’ve seen it happen in data teams but this paper demonstrates what may go wrong with a humorous example.\n\n\n\n",
+    "preview": "til/2021-09-26-gorilla/gorilla.png",
+    "last_modified": "2022-02-10T16:02:08+01:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/2021-09-13-scots/",
+    "title": "TIL: Scots Wikipedia",
+    "description": "The Saga continues in Embeddings",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2021-09-13",
+    "categories": [],
+    "contents": "\nA while ago there was a story in the news about an American teenager that wrote over 20,000 entries and many 200,000 edits for items in Scots Wikipedia. He caused a controversy in doing so.\nThe kids seems have had good intentions, but the crucial problem was that he did not speak Scots himself and he wrote a mixture of English and Scots on the pages. Many of his pages contain typos but also errornous definitions. Given that Scots is an endangered language, there was an awkward side effect: he may have been responsible for about 33-49% of all Scots content.\nThis story got plenty of coverage (1, 2, 3) but the saga seems to continue in the world of text embeddings. The thing is that many popular embeddings are trained on Wikipedia. After all, it’s a reasonably well structured dataset on a wide range of topics. So it makes sense as a data source for embeddings. But when half of the text comes from an errournous source … you kind of wonder if the embeddings contain made up words.\nSo I figured it’d be interesting to try and see if I could find one. I downloaded fasttext embeddings and bytepair embeddings to try it out. The slate article mentions that “smawer” is a fake word that got added and I can confirm this by checking the online scots dictionary.\nSo is it in the vocabulary?\nBytePair Results\n> from whatlies.language import BytePairLanguage\n> lang = BytePairLanguage(lang=\"sco\", vs=100000)\n> lang.score_similar(\"smawer\")\n\n# [(Emb[smawer], 0.0),\n#  (Emb[lairger], 0.18736843287866867),\n#  (Emb[sma], 0.3332672898020761),\n#  (Emb[than], 0.3675327164548263),\n#  (Emb[anes], 0.3803581570228056),\n#  (Emb[ither], 0.38676436447569584),\n#  (Emb[pairts], 0.3880290360751052),\n#  (Emb[lairge], 0.39303860726974627),\n#  (Emb[veelages], 0.3976859689479768),\n#  (Emb[▁smawer], 0.405010403535216)]\nFasttext Results\nNote, this is a 3.7G filesize.\n> from whatlies.language import FastTextLanguage\n> lang = FastTextLanguage(\"cc.sco.300.bin\")\n> lang.score_similar(\"smawer\")\n\n# [(Emb[smawer], 1.1920928955078125e-07),\n#  (Emb[lairger], 0.6052425503730774),\n#  (Emb[than], 0.6364072561264038),\n#  (Emb[ither], 0.642298698425293),\n#  (Emb[larger], 0.656043291091919),\n#  (Emb[Canis], 0.675086259841919),\n#  (Emb[ootlyin], 0.6806771159172058),\n#  (Emb[bigger], 0.6863239407539368),\n#  (Emb[Nayarit], 0.7038226127624512),\n#  (Emb[nor], 0.7145431041717529)]\nResults\nBoth embeddings contain that “smawer”. The word does not exist in Scots, but I imagine it’s picked up the embeddings because the kid added it as a “Scottish”-sounding variant of “smaller” to the corpus. Both language models seem to agree that the word “lairger” is related to it, which the online Scots dictionary confirms could mean “large”.\nOuch.\n\n\n\n",
+    "preview": "til/2021-09-13-scots/scots.png",
+    "last_modified": "2022-02-10T16:02:08+01:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/2021-09-01-analytics/",
+    "title": "TIL: Analytics Providers",
+    "description": "It's Numbers that Differ!",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2021-09-01",
+    "categories": [],
+    "contents": "\nI’m hosting my calmcode.io and I was curious about the usage numbers. This got me using Plausible and although I very much like the service, I recognize that it only tracks traffic in the front end. This got me curious, would the number be any different if I was tracking via the backend instead? This is a service that Netlify supports so I figured giving it a spin so that I could compare numbers.\nThe different, turns out, is big!\n\n\n\nOver the same month, Plausible would report 8994 users while Netlify would report 19112. The difference makes sense to me though, considering the demographic that I get on that website. My audience is mainly developers which, I imagine, are much more likely to have extensions around that block front-end trackers. Even the privacy preserving ones that are hosted by Plausible.\nStill. That’s a ~2x difference! That’s huge! Something to keep in mind for anybody that makes websites for developers.\n\n\n\n",
+    "preview": "til/2021-09-01-analytics/analytics.png",
+    "last_modified": "2022-02-10T16:02:08+01:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/2021-08-27-poke2vec/",
+    "title": "TIL: poke2vec",
+    "description": "As in ... text embeddings!",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2021-08-27",
+    "categories": [],
+    "contents": "\nI read a surprisingly good paper the other day. One that involves making word embeddings for Pokemon. It understand that it might sound like a meme but I genuinely think the authors did something interesting here.\n\nThe Task\nThe authors were trying to find descriptive adjectives for Pokemon. From my end this is pretty interesting/non-abritrary for a few reasons;\nPikachu is yellow. That’s obvious. But because it’s obvious, you may wonder if there’s any text out there to even mention it. If no text mentions it, how may you learn it as a pattern?\nIt’s plausible that this domain is too niche for most pretrained embedding models. Do you need to train your own? On what data might you do that? Subtitles?\nThe Approach\nTo find the adjectives the authors ended up scraping fan fiction for their experiment. They ended up using 2.3 Gb of fanfiction to train their own embeddings which they’ve also open-sourced.\nTo quote the paper:\n\nIn order to rank Pokemon properties, we crawl a larger corpus of texts written about Pokemon. Many Wikipedia-like sources are too neutral to reveal anything meaningful about Pokemon, Pokedex entries are usually too short and nondescriptive for our needs. Subtitles form the Pokemon TV show come with their own problem of audio-visual grounding of the text. Fortunately, we found a great resource of stories authored by Pok´emon fans called Fanfiction\n\nThey tried a bunch of approaches, some of which are summarised in the table below.\n\nThe Lesson\nSo what did the authors learn? Something that applies to a lot of tasks! To quote their conclusion:\n\nBased on our research, we can conclude that the pretrained models do not work with Pokemon at all. Clearly, Pokemon itself is by no means so deviant a phenomenon that it could not be modeled with word embeddings. The problem we can see is part of a wider phenomenon that has received a little attention in the field of NLP. If pretrained models, which are constantly used in various NLP studies, are not able to describe Pokemon, what other phenomena might they describe equally poorly? In general, our discipline does not pay very much attention to how well computational models work when applied to a completely new context.\n\nIt confirms one of my beliefs: it may make sense to train your own embeddings instead of hoping that the general embeddings from Wikipedia will aid in a specific domain.\nRelated: most domains are specific.\n\n\n\n",
+    "preview": "til/2021-08-27-poke2vec/poke.png",
+    "last_modified": "2022-02-10T16:02:08+01:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/2021-08-20-markdown-ticks/",
+    "title": "TIL: Markdown Ticks",
+    "description": "And how to render them.",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2021-08-22",
+    "categories": [],
+    "contents": "\nWhen you write markdown, you often write code blocks. Like below;\na = 1 \nb = 2\nc = a + b\nBut what if you want to show the markdown that you need to render such codeblock? You might go for something like;\n# Hello\n\nThis is text \n\n```python\na = 1 \nb = 2\nc = a + b\n```\nFour Backticks\nYou may wonder here though, how did I get the triple backticks to render? Aren’t these backticks going to stop a codeblock?! It turns out, you can use quadruple backticks to display triple backticks in a fenced code block.\nHere’s the code I used to make the markdown block listed above.\n````md\n# Hello\n\nThis is text \n\n```python\na = 1 \nb = 2\nc = a + b\n```\n\n````\nFive Backticks?\nBut how did I should the previous codeblock? How can I show quadruple backticks?!\nYou guessed it, by using five backticks.\n`````md\n````md\n# Hello\n\nThis is text \n\n```python\na = 1 \nb = 2\nc = a + b\n```\n\n````\n`````\n\n\n\n",
+    "preview": "til/2021-08-20-markdown-ticks/light.png",
+    "last_modified": "2022-02-10T16:02:08+01:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/2021-08-11-pandas-format/",
+    "title": "TIL: Pandas Format",
+    "description": "Pretty table renders.",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2021-08-10",
+    "categories": [],
+    "contents": "\nI’ve been working on a project where I look at the Github Actions costs for mayor open source projects. It turns out, these costs can be significant. In fact, they are so significant that my pandas tables no longer render in a clear manner in Jupyter.\nHere’s an example.\n\nThe table renders, but the dollar amounts are hard to read. It turns out though that pandas comes with a style formatter that can be used to render pretty values.\n\nThis is great for dollar amounts but it’s a very flexible system. You can also add captions to the rendered table if you’re interested.\n(agg.style\n .format({'yearly_cost': '${0:,.2f}', 'daily_cost': '${0:,.2f}'})\n .set_caption(\"GitHub Actions costs for popular projets.\")\n .set_table_styles([{\n     'selector': 'caption',\n     'props': 'caption-side: bottom; font-size:0.9em; color: gray;'\n }]))\n\nYou could even add a bit of interactivity, change the background color or change the color of the text by changing the css properties. It’s a bit too much effort for my taste but the docs show a fancy demo in case you’re interested.\n\n\n\n",
+    "preview": "til/2021-08-11-pandas-format/light.png",
+    "last_modified": "2022-02-10T16:02:08+01:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/2021-08-06-stopwords/",
+    "title": "TIL: Stopwords",
+    "description": "They're not very consistent.",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2021-08-06",
+    "categories": [],
+    "contents": "\nI stumbled on an interesting paper about stopwords. Stop words are words that are typically filtered out before processing natural language data. Usually these are the most common words in a language but there is no single universal list of stop words that all common open-source packages use. It turns out that stopword lists are suprisingly inconsistent across open-source packages. The paper is a bit dated (2018) but the paper offers fair critique and it’s a very good read.\n\nTo quote the abstract:\n\nOpen-source software (OSS) packages for natural language processing often include stop word lists. Users may apply them without awareness of their surprising omissions (e.g. hasn’t but not hadn’t) and inclusions (e.g. computer), or their incompatibility with particular tokenizers. Motivated by issues raised about the Scikit-Learn stop list, we investigate variation among and consistency within 52 popular English-language stop lists, and propose strategies for mitigating these issues.\n\nThe paper really dives into scikit-learn list in particular. This project used a copy from the Glasgow Information Retrieval Group but the scikit-learn variant wasn’t without issues.\nThe list seems to contain spelling errors. The word fifty appeared in the list but was originally misspelled as fify.\nThe list contains words that arguably shouldn’t be stopwords to a general audience. The word computer was on a stop list but also system and cry.\nThe list seems to miss a few words. The list contains has but omits does. Likewise, it contains very but omits really.\nThe list contains words with less than two characters (I, a) which are ignored by the default tokeniser that scikit-learn provides.\nWhile some of these issues have been addressed, other haven’t. The scikit-learn maintainers argued making big changes to the word list would break reproducibility across software versions, so some of the issues remain. A main take-away for me here is how hard it is to offer (and maintain) an appropriate stop word list for a global community.\nOther Libraries\n\nScikit-Learn is one library, but the paper explores many packages. They compare 52 lists and find that ~40% words in all of these lists appear in only one list.\nA big part of the issue is that word-lists are highly dependant on their associated tokeniser. A whitespace tokeniser might take the word “hasn’t” and turn it into [hasn, t] while the spaCy tokeniser would turn it into [has, n't].\nAnother big issue is that a stopword may only become a stopword given a specific context. A list of stopwords for a medical document is not going to be useful in a newspaper use-case and vise versa.\nIt’s that last bit that really rings true to me. Stopword lists are usually blindly copied and this is where the trouble can start. To quote the conclusion of the paper:\n\nStop word lists are a simple but useful tool for managing noise, with ubiquitous support in natural language processing software. We have found that popular stop lists, which users often apply blindly, may suffer from surprising omissions and inclusions, or their incompatibility with particular tokenizers. Many of these issues may derive from generating stop lists using corpus statistics. We hence recommend better documentation, dynamically adapting stop lists during preprocessing, as well as creating tools for stop list quality control and automatically generating stop lists.\n\n\n\n\n",
+    "preview": "til/2021-08-06-stopwords/bug.png",
+    "last_modified": "2022-02-10T16:02:08+01:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/2021-07-29-dixit/",
+    "title": "TIL: Dixit Data",
+    "description": "How a Great Game became a Grand Challenge",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2021-07-29",
+    "categories": [],
+    "contents": "\nOn twitter I saw a mention of an interesting paper, one that is based on the popular dixit card game.\n\nThe goal of the game is to describe your card with a perfect clue.\n\n\n\nFigure 1: The paper lists some examples of cards. You can imagine the wide scope of captions that are possible.\n\n\n\nThis clue needs to be chosen such that most, but not all (!), players guess the right surreal image card. It involves a lot of creative, lateral thinking and it’s a joy to play.\n\n\n\nFigure 2: The paper lists an example of a round too.\n\n\n\nThis creative captioning is also something that is incredibly hard to do for an AI, which is why the paper is suggesting that it might be an engaging benchmark.\nResearch\nDixit, it turns out, is a popular board game to study. The paper lists many examples of research studies that involve the board game. The effect of Dixit as part of therapy is studied as well as how the game might elicit more lexical diversity in children. It’s because of the broad creativity that is involved that the paper argues it might make for an interesting variant of the Turing test. If a game is played and none of the human players can distinguish between the AI and the fellow players, it would indicate a new milestone.\nIt’s an interesting idea for sure and you would touch a few interesting topics in AI. When you consider the task of creative captioning, you suddenly get to combine many fields. The paper mentions:\nComputer Vision\nObject recognition: What is in the image?\nScene analysis: How are the objects related?\nAffective analysis: What is the emotional content of an image?\n\nNatural Language Processing/Understanding/Generation\nStory Reasoning/Narrative Understanding/Generation\nI’m curious how you might go and practically implement this though. I guess we’ll see.\n\n\n\n",
+    "preview": "til/2021-07-29-dixit/data.png",
+    "last_modified": "2022-02-10T16:02:08+01:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/2021-07-22-moar-bad-labels/",
+    "title": "TIL: Label Errors",
+    "description": "How to find LOTS of them.",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2021-07-22",
+    "categories": [],
+    "contents": "\nI asked a question on twitter on finding bad labels in training data that gave some interesting responses. One suggestion led me to this paper.\n\nThe paper has a method to find bad labels and they varify this method via mechanical turk. After doing their exercise they really list some hard facts.\n\nThe QuickDraw dataset is especially worrying with a 10.12% error rate. Note, we’re talking about wrong labels in the test set here! That means that state-of-the-art results have been published based on these erroneous labels.\nLabel Errors\nThe effort in the paper eventually led to labelerrors.com project. It’s a website that lets you explore labels that are suspicious. It’s definitely worth a visit if you haven’t seen it yet\n\nFinding Bad Examples\nThe way the bad examples are found are pretty interesting too. There’s more parts to the big picture but one part of their analysis revolves around analyzing the confusion matrix that the algorithm generates.\n\nGiven such a confusion matrix, we need to follow three steps.\nUse the numbers in the confusion matrix to estimate bad examples. Let’s say your data set has 100 examples then you can infer that there will be 10 foxes wrongly classified as dogs in our example.\nMark the 10 images labeled dog with largest probability of belonging to class fox as label issues.\nRepeat for all non-diagonal entries in the matrix.\nThere’s some extra’s that I’m skipping here but the heuristic feels sensible. It’s a pretty simple avenue to consider too, so it’s certainly worth the exercise! If you’re interested in giving this idea a spin it’s good to know the authors released an open source package called cleanlab that features algorithms to help you identify bad labels.\n\n\n\n",
+    "preview": "til/2021-07-22-moar-bad-labels/oops.jpg",
+    "last_modified": "2022-02-10T16:02:08+01:00",
+    "input_file": {}
+  },
+  {
+    "path": "til/2021-07-21-variability/",
+    "title": "TIL: Confidence vs. Variability",
+    "description": "Tracking Metrics over Epochs to Understand Labels Better.",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2021-07-21",
+    "categories": [],
+    "contents": "\nI asked a question on twitter on finding bad labels in training data that gave some interesting responses. One suggested idea introduces the idea of tracking “variability” and “confidence” while training a neural network. It’s described in this arxiv paper.\n\nThe confidence metric \\(\\mu_i\\) for a data-point is the mean model probability of the true label that we measure across epochs.\n\\[\\hat{\\mu}_{i}=\\frac{1}{E} \\sum_{e=1}^{E} p_{\\boldsymbol{\\theta}^{(e)}}\\left(y_{i}^{*} \\mid \\boldsymbol{x}_{i}\\right)\\]\nThe “variability” metric measures the spread of the estimated confidence across training epochs using standard deviation.\n\\[\\hat{\\sigma}_{i}=\\sqrt{\\frac{\\sum_{e=1}^E [p_{\\boldsymbol{\\theta}^{(e)}}\\left(y_{i}^{*} \\mid \\boldsymbol{x}_{i}\\right) - \\mu_i ]^2}{E}}\\]\nFor both of these measure you got to note that \\(p_{\\boldsymbol{\\theta}^{(e)}}\\) is the probability given weights \\(\\theta\\) during epoch \\(e\\). As we train our system, the weights update and so do the estimated probabilities.\nOutput\nSo what do you get when you train a system this way? You’ll get data that can generate images like this one;\n\nAfter your training run, you kept track of the confidence and the variability in the training loop. You can then wonder what it might mean to have a data-point with high confidence and low variability. You could argue that these data-points were perhaps the ones that were easy to distinguish and learn.\nSimilarly you could argue that there’s a region where data-points are hard to label but also that there’s a region with ambiguous data-points. These groups of data-points may deserve an extra look. There may be bad labels in there or classes that deserve a better definition.\nIt’s a neat idea and I gotta try it out some time.\nEDIT\nI tried it out and didn’t really like it. The problem is that this method depends a lot on the number of epochs that you pick. Got a lot of epochs? This’ll impact the confidence and variability. Got very few epochs? Same!\nThere’s simpler tools out there that don’t require you to worry about the epochs and those certainly seem preferable.\n\n\n\n",
+    "preview": "til/2021-07-21-variability/light.png",
+    "last_modified": "2022-02-10T16:02:08+01:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/dnd-data/",
+    "title": "TIL: DnD Data",
+    "description": "There's a lot of it.",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2021-07-17",
+    "categories": [],
+    "contents": "\nToday I learned about the crd3 dataset which is introduced in this paper.\n\nCRD3 stands for Critical Role Dungeons and Dragons Dataset. It turns out that there is a show called Critical Role. It’s an unscripted, live-streamed show where a fixed group of people play Dungeons and Dragons. This dataset contains trascribed text from 159 episodes consisting of 398,682 turns of dialogue.\nIt’s an interesting dataset. To quote the abstract:\n\nThe dataset is linguistically unique in that the narratives are generated entirely through player collaboration and spoken interaction. For each dialogue, there are a large number of turns, multiple abstractive summaries with varying levels of detail, and semantic ties to the previous dialogues.\n\nAfter learning about this I checked the references and it turns out it’s not even the 1st dialogue data from the realm of Dungeons and Dragons.\nThere another dataset called the DDD dataset, which stands for “Deep Dungeons and Dragons” and is part of this paper.\n\nTo quote the introduction of this paper:\n\nImagine a giant, a dwarf, and a fairy in a combat situation. We would expect them to act differently,and conversely, if we are told of even a few actions taken by a character in a story, we naturally start to draw inferences about that character’s personality. Communicating narrative is a fundamental task of natural language, and understanding narrative requires modelling the interaction between events and characters.\n\nUsecase\nThese datasets got me thinking about usecases. The huggingface website lists the first dataset as a dataset for the text summarisation use-case. But this isn’t what came to mind when I first saw it.\nAfter all, these are some of the few large datasets out there that are genuinely conversational. Wikipedia is a huge corpus, sure, but the text does not represent two people in a conversation. This data on the other hand, sure it might be about fantasy, but the style of the text will be very much informal and conversational. I wonder if it might make sense to train embeddings on this just to see how much of the conversational aspect might be captured.\nThen again … we might just get something that overfits on elves, halflings and orcs.\n\n\n\n",
+    "preview": "til/dnd-data/data.png",
+    "last_modified": "2022-02-10T16:02:08+01:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/screenshot/",
+    "title": "TIL: Shaded Screenshots",
+    "description": "A \"shortcut\" with 4 keys.",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2021-07-17",
+    "categories": [],
+    "contents": "\nIn the past I’ve always seen these pretty screenshots of part of a window with a shadow.\n\n\n\nFigure 1: This looks real pretty right?\n\n\n\nThanks to twitter I discovered that this can be generated by just using a mac via a shortcut.\nJust use CMD + SHIFT + 4 then SPACEBAR.\n\n\n\nFigure 2: Neeto!\n\n\n\n\n\n\n",
+    "preview": "til/screenshot/light.png",
+    "last_modified": "2022-02-10T16:02:08+01:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/copilot-pytest/",
+    "title": "TIL: Copilot & Pytest",
+    "description": "Pytest vs. Parrot",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2021-07-16",
+    "categories": [],
+    "contents": "\nA while ago I got access to the Github Copilot program. I’ve yet to be impressed by the tool but I figured sharing some of the results that it generated.\nI figured I should try writing some unit tests for it. So I wrote some tests that are able to remove the Rasa entity syntax from some strings.\n\n\n\nFigure 1: Before and after. Written by a human.\n\n\n\nNote a few things.\nThe function accepts a list of strings.\nThe function outputs a list if strings.\nInside of the test I’m wrapping the going_in and going_out variables to accomodate for this.\nNew Test\nNext, I wrote def test_replace_ent_assignment_empty_string and asked co-pilot to complete the text. Here’s what it came up with.\n\n\n\nFigure 2: All these examples are incorrect.\n\n\n\nTechnically, all of these tests are wrong. It fails to understand that I want a list with an empty string inside of the body. The output should also equal a list with an empty string.\nI can imagine how these samples got generated. But they are all wrong.\nNew Parameters\nInstead of generating a new test, I wondered if we could get the algorithm to generate new examples for the original test. So I asked the algorithm to generate one example. It generated right after the \"there be no entities\" example.\n\n\n\nThis was a fair example. Then this happened.\n\n\n\nIt seems to have generated appropriate candidates inside of parameterize, but part of me isn’t that impressed. It’s still very much a “repeating parrot”-kind of behavior, not the behavior of a pair programmer.\n\n\n\n",
+    "preview": "til/copilot-pytest/copilot.png",
+    "last_modified": "2022-02-10T16:02:08+01:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/metatags/",
+    "title": "TIL: metatags.io",
+    "description": "It's a great helper",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2021-07-15",
+    "categories": [],
+    "contents": "\nI maintain a website called calmcode.io. It’s a website that is shared by a lot of folks on social media which means that I’d like proper images to automatically generate when folks share it. Most blogging frameworks generate these for you, but since calmcode is rendered by custom python code I needed to implement this myself.\nAnd here’s where the tricky stuff starts. Twitter does it differently than linkedin, which in turn does it differently than slack. Figuring this stuff out manually was a huge pain. And then I learned about metatags.io.\nIt’s great! You basically have a GUI which shows you what all the different social platforms will render like. Once you like what you see, it can even generate the meta tags for you!\n\n\n\nFigure 1: Neeto!\n\n\n\nFigured I should mention it somewhere. This is a huge timesaver.\n\n\n\n",
+    "preview": "til/metatags/great.png",
+    "last_modified": "2022-02-10T16:02:08+01:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/copilot-fairlearn/",
+    "title": "TIL: Copilot & Submodules",
+    "description": "Autocomplete Might be Better",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2021-07-08",
+    "categories": [],
+    "contents": "\nA while ago I got access to the Github Copilot program. I’ve yet to be impressed by the tool but I figured sharing some of the results that it generated.\nI figured it’d be fun to work on a fairlearn project while using the copilot suggestion feature. Here’s the first suggestion that it generated.\n It’s a really interesting suggestion, but it’s also wrong. The project doesn’t have a fairlearn.classification submodule and it also doesn’t have an EmpiricalClassifier.\nHere’s what you ask the system to generate a paragraph.\n\nNotice that TransparentLogisticClassifier there? It’s an interesting example because it seems to parrot back to us that we’re indeed interested in something related to algorithmic fairness but it generates an API that simply does not exist.\nFancy a laugh?\n\nHere’s some more code that it keeps generating.\n\n\nfrom fairlearn.classification.simulation import simulate_data\nfrom fairlearn.classification.simulation import simulate_data_from_file\nfrom fairlearn.classification.simulation import simulate_data_from_file_with_noise\nfrom fairlearn.classification.simulation import simulate_data_from_file_with_noise_and_weights\nfrom fairlearn.classification.simulation import simulate_data_from_file_with_noise_and_weights_and_class_balance\nfrom fairlearn.classification.simulation import simulate_data_from_file_with_noise_and_weights_and_class_balance_and_class_imbalance\nfrom fairlearn.classification.simulation import simulate_data_from_file_with_noise_and_weights_and_class_balance_and_class_imbalance_and_weights\nfrom fairlearn.classification.simulation import simulate_data_from_file_with_noise_and_weights_and_class_balance_and_class_imbalance_and_weights_and_class_imbalance\nfrom fairlearn.classification.simulation import simulate_data_from_file_with_noise_and_weights_and_class_balance_and_class_imbalance_and_weights_and_class_imbalance_and_class_balance\nfrom fairlearn.classification.simulation import simulate_data_from_file_with_noise_and_weights_and_class_balance_and_class_imbalance_and_weights_and_class_imbalance_and_class_balance_and_class_imbalance\nfrom fairlearn.classification.simulation import simulate_data_from_file_with_noise_and_weights_and_class_balance_and_class_imbalance_and_weights_and_class_imbalance_and_class_balance_and_class_imbalance_and\n\n\nSure, it generates code that could exist. But that doesn’t mean the code does.\nGenerate a Script\nSo what happens when you ask it to generate more? You can see below how the comment is auto-completed.\n\nFrom here it will parrot onwards.\n\nIt really looks like code that you might find on the internet, but is this useful? I’m not so sure. We seem to be dealing with a parrot here, not a co-pilot.\nIt’s not just that the generated code won’t run. It’s also that the code seems to go against a style guide. The code compares two approaches, but it generates code that goes against the DRY principle. A for-loop may have been better, or better yet, a GridSearchCV object.\n\n\n\n",
+    "preview": "til/copilot-fairlearn/copilot.png",
+    "last_modified": "2022-02-10T16:02:08+01:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/action-costs/",
+    "title": "TIL: Github Actions as a Number",
+    "description": "Is it big or is it small?",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2021-06-25",
+    "categories": [],
+    "contents": "\nNumbers\n\n\n\n\n    Tangle document\n\n        function setUpTangle () {\n\n            var element = document.getElementById(\"example\");\n\n            var tangle = new Tangle(element, {\n                initialize: function () {\n                    this.grid = 4;\n                    this.minutes = 30;\n                    this.commits = 5;\n                    this.prs = 10;\n                },\n                update: function () {\n                    this.calories = this.cookies * this.caloriesPerCookie;\n                    this.commit_time = this.minutes * this.grid;\n                    this.pr_time = this.prs * this.commit_time * this.commits;\n                    this.per_day = parseInt(this.pr_time * 0.008);\n                    this.per_month = parseInt(this.pr_time * 0.008 * 20);\n                    this.per_year = parseInt(this.pr_time * 0.008 * 20 * 12);\n                }\n            });\n        }\n\n    Let's calculate something!\n\n\n    Let's consider a large project that is running GitHub Actions for unit tests.\n    \n    A single job of unit tests take about  minutes. \n    \n    This job runs in a paralle grid of size . \n    \n    That means that each commit can trigger a job that takes  minutes.\n    \n    This is just a single commit though. \n    Let's also consider that on average\n    each PR contains  commits. \n    If we now assume that our project has  pull requests per day.\n    Then our GitHub Actions bill will be \n    $ per day\n    $ per month (assuming 20 work days)\n    $ per year (assuming 50 work weeks)\n\n\n\n\nWhat’s in a number?\nNow let’s wonder. Is this a big number? I’ve been wondering about this number mainly because I wonder when the number is big enough for people to care. Tech teams are usually more concerned about velocity, which is a totally valid concern. The salary of a developer might still pale in comparison to the GitHub bill so it makes sense to prioritize.\nAt the same time though … it’s a lot of compute! We shouldn’t waste it just because there’s budget for it. It’s making me wonder what tools might be made that can help folks keep these compute times down. I’ve made pytest-duration-insights as a first step for python tests but I’m wondering if I can do more on a Github-level.\nGitHub is interesting because it’s not a cloud provider. It’s too small for something like the duckbill group but the costs are substantial enough to make me wonder about what could be done.\nHow it’s made\nThis was made with tangle.js. It’s a tool from 2011 that’s still great at interactive documents.\n\n\n\n",
+    "preview": "til/action-costs/dabble.png",
+    "last_modified": "2022-02-10T16:02:08+01:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/mislabel/",
+    "title": "TIL: Plenty of Bad Labels",
+    "description": "Data Quality Strikes Again",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2021-06-23",
+    "categories": [],
+    "contents": "\nI read a fun paper the other day.\n\nThe short story of this paper is that common benchmarking datasets contain bad labels. It was well known that in MNIST a 5 can sometimes look like an 8, so those mistakes might be forgiven. The paper however shows that the mistakes are a fair bit worse.\n\nThe paper tries to build algorithms to detect these mislabelled instances. The algorithm works by giving a percentage \\(\\alpha\\) of images the user is willing to manually re-evaluate and then the algorithm tries to find the appropriate candidates to check.\nTheir approach is straight-forward. A model is \\(g\\) is trained and applied on a datapoint \\(x_i\\). They then compare the model output \\(g(x_i)\\) with the true label \\(y_i\\). The model confidence can be used as a proxy to sort labels so that a user can check them.\n\nIt’s a neat trick but given that the state-of-the-art is often 99+% for some of these datasets, it might be time for a few of these models to be re-run.\n\n\n\n",
+    "preview": "til/mislabel/oops.jpg",
+    "last_modified": "2022-02-10T16:02:08+01:00",
+    "input_file": {}
+  },
+  {
+    "path": "til/recursive-html/",
+    "title": "TIL: Recursive HTML",
+    "description": "I *really* like Svelte.",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2021-06-18",
+    "categories": [],
+    "contents": "\nThese days, you’re not constrained to the standard HTML components. Frameworks allow you to define your own reusable components and my favorite tool for this is svelte. It’s really simple, fast, lightweight and it even plays nice with d3.\nThere was however also something that I didn’t expect … Svelte allows you to declare components recursively. Here’s an example Tree.svelte file that does exactly this.\n\n<script>\n    import IconOpen from './IconOpen.svelte';\n    import IconClosed from './IconClosed.svelte';\n    \n    export let data;\n    export let expanded = false;\n    export let maxtime = data['value'];\n    function toggle(){\n        expanded = !expanded;\n    }\n<\/script>\n\n<p on:click={toggle}>\n    {#if expanded}\n        <IconOpen/>  \n    {:else}\n        <IconClosed/>\n    {/if}\n    <span class=\"mono pointer\">{data['name']}<\/span>\n<\/p>\n\n<p style=\"padding-left: 30px\">\n    {#each data['children'] as child}\n        {#if expanded}\n            {#if 'children' in child}\n                <svelte:self data={child} maxtime={maxtime}/>\n            {:else}\n                <p class=\"mono\">{child['name']}<\/p>\n            {/if}\n        {/if}\n    {/each}\n<\/p>\n\nThis code is an subset from a expandable tree component that you can view here. The main thing that’s super neat is the <svelte:self data={child} maxtime={maxtime}/>-bit. You’re able to refer to itself.\nIt’s a technique that’s proven to be very useful for my pytest duration insights project. Where HTML files are static, Svelte allows you to make components a bit more like functions without overdoing it like React.\n\n\n\n",
+    "preview": "til/recursive-html/light.png",
+    "last_modified": "2022-02-10T16:02:08+01:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/risk/",
+    "title": "TIL: Clusters of Risk",
+    "description": "Graphs Mostly",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2021-06-16",
+    "categories": [],
+    "contents": "\nI found some really old code which I figured was worth sharing.\n\n\n{\"x\":{\"data\":[\"function (..., list = character(), package = NULL, lib.loc = NULL, \",\"    verbose = getOption(\\\"verbose\\\"), envir = .GlobalEnv, overwrite = TRUE) \",\"{\",\"    fileExt <- function(x) {\",\"        db <- grepl(\\\"\\\\\\\\.[^.]+\\\\\\\\.(gz|bz2|xz)$\\\", x)\",\"        ans <- sub(\\\".*\\\\\\\\.\\\", \\\"\\\", x)\",\"        ans[db] <- sub(\\\".*\\\\\\\\.([^.]+\\\\\\\\.)(gz|bz2|xz)$\\\", \\\"\\\\\\\\1\\\\\\\\2\\\", \",\"            x[db])\",\"        ans\",\"    }\",\"    my_read_table <- function(...) {\",\"        lcc <- Sys.getlocale(\\\"LC_COLLATE\\\")\",\"        on.exit(Sys.setlocale(\\\"LC_COLLATE\\\", lcc))\",\"        Sys.setlocale(\\\"LC_COLLATE\\\", \\\"C\\\")\",\"        read.table(...)\",\"    }\",\"    names <- c(as.character(substitute(list(...))[-1L]), list)\",\"    if (!is.null(package)) {\",\"        if (!is.character(package)) \",\"            stop(\\\"'package' must be a character string or NULL\\\")\",\"        if (FALSE) {\",\"            if (any(package %in% \\\"base\\\")) \",\"                warning(\\\"datasets have been moved from package 'base' to package 'datasets'\\\")\",\"            if (any(package %in% \\\"stats\\\")) \",\"                warning(\\\"datasets have been moved from package 'stats' to package 'datasets'\\\")\",\"            package[package %in% c(\\\"base\\\", \\\"stats\\\")] <- \\\"datasets\\\"\",\"        }\",\"    }\",\"    paths <- find.package(package, lib.loc, verbose = verbose)\",\"    if (is.null(lib.loc)) \",\"        paths <- c(path.package(package, TRUE), if (!length(package)) getwd(), \",\"            paths)\",\"    paths <- unique(normalizePath(paths[file.exists(paths)]))\",\"    paths <- paths[dir.exists(file.path(paths, \\\"data\\\"))]\",\"    dataExts <- tools:::.make_file_exts(\\\"data\\\")\",\"    if (length(names) == 0L) {\",\"        db <- matrix(character(), nrow = 0L, ncol = 4L)\",\"        for (path in paths) {\",\"            entries <- NULL\",\"            packageName <- if (file_test(\\\"-f\\\", file.path(path, \",\"                \\\"DESCRIPTION\\\"))) \",\"                basename(path)\",\"            else \\\".\\\"\",\"            if (file_test(\\\"-f\\\", INDEX <- file.path(path, \\\"Meta\\\", \",\"                \\\"data.rds\\\"))) {\",\"                entries <- readRDS(INDEX)\",\"            }\",\"            else {\",\"                dataDir <- file.path(path, \\\"data\\\")\",\"                entries <- tools::list_files_with_type(dataDir, \",\"                  \\\"data\\\")\",\"                if (length(entries)) {\",\"                  entries <- unique(tools::file_path_sans_ext(basename(entries)))\",\"                  entries <- cbind(entries, \\\"\\\")\",\"                }\",\"            }\",\"            if (NROW(entries)) {\",\"                if (is.matrix(entries) && ncol(entries) == 2L) \",\"                  db <- rbind(db, cbind(packageName, dirname(path), \",\"                    entries))\",\"                else warning(gettextf(\\\"data index for package %s is invalid and will be ignored\\\", \",\"                  sQuote(packageName)), domain = NA, call. = FALSE)\",\"            }\",\"        }\",\"        colnames(db) <- c(\\\"Package\\\", \\\"LibPath\\\", \\\"Item\\\", \\\"Title\\\")\",\"        footer <- if (missing(package)) \",\"            paste0(\\\"Use \\\", sQuote(paste(\\\"data(package =\\\", \\\".packages(all.available = TRUE))\\\")), \",\"                \\\"\\\\n\\\", \\\"to list the data sets in all *available* packages.\\\")\",\"        else NULL\",\"        y <- list(title = \\\"Data sets\\\", header = NULL, results = db, \",\"            footer = footer)\",\"        class(y) <- \\\"packageIQR\\\"\",\"        return(y)\",\"    }\",\"    paths <- file.path(paths, \\\"data\\\")\",\"    for (name in names) {\",\"        found <- FALSE\",\"        for (p in paths) {\",\"            tmp_env <- if (overwrite) \",\"                envir\",\"            else new.env()\",\"            if (file_test(\\\"-f\\\", file.path(p, \\\"Rdata.rds\\\"))) {\",\"                rds <- readRDS(file.path(p, \\\"Rdata.rds\\\"))\",\"                if (name %in% names(rds)) {\",\"                  found <- TRUE\",\"                  if (verbose) \",\"                    message(sprintf(\\\"name=%s:\\\\t found in Rdata.rds\\\", \",\"                      name), domain = NA)\",\"                  thispkg <- sub(\\\".*/([^/]*)/data$\\\", \\\"\\\\\\\\1\\\", p)\",\"                  thispkg <- sub(\\\"_.*$\\\", \\\"\\\", thispkg)\",\"                  thispkg <- paste0(\\\"package:\\\", thispkg)\",\"                  objs <- rds[[name]]\",\"                  lazyLoad(file.path(p, \\\"Rdata\\\"), envir = tmp_env, \",\"                    filter = function(x) x %in% objs)\",\"                  break\",\"                }\",\"                else if (verbose) \",\"                  message(sprintf(\\\"name=%s:\\\\t NOT found in names() of Rdata.rds, i.e.,\\\\n\\\\t%s\\\\n\\\", \",\"                    name, paste(names(rds), collapse = \\\",\\\")), \",\"                    domain = NA)\",\"            }\",\"            if (file_test(\\\"-f\\\", file.path(p, \\\"Rdata.zip\\\"))) {\",\"                warning(\\\"zipped data found for package \\\", sQuote(basename(dirname(p))), \",\"                  \\\".\\\\nThat is defunct, so please re-install the package.\\\", \",\"                  domain = NA)\",\"                if (file_test(\\\"-f\\\", fp <- file.path(p, \\\"filelist\\\"))) \",\"                  files <- file.path(p, scan(fp, what = \\\"\\\", quiet = TRUE))\",\"                else {\",\"                  warning(gettextf(\\\"file 'filelist' is missing for directory %s\\\", \",\"                    sQuote(p)), domain = NA)\",\"                  next\",\"                }\",\"            }\",\"            else {\",\"                files <- list.files(p, full.names = TRUE)\",\"            }\",\"            files <- files[grep(name, files, fixed = TRUE)]\",\"            if (length(files) > 1L) {\",\"                o <- match(fileExt(files), dataExts, nomatch = 100L)\",\"                paths0 <- dirname(files)\",\"                paths0 <- factor(paths0, levels = unique(paths0))\",\"                files <- files[order(paths0, o)]\",\"            }\",\"            if (length(files)) {\",\"                for (file in files) {\",\"                  if (verbose) \",\"                    message(\\\"name=\\\", name, \\\":\\\\t file= ...\\\", .Platform$file.sep, \",\"                      basename(file), \\\"::\\\\t\\\", appendLF = FALSE, \",\"                      domain = NA)\",\"                  ext <- fileExt(file)\",\"                  if (basename(file) != paste0(name, \\\".\\\", ext)) \",\"                    found <- FALSE\",\"                  else {\",\"                    found <- TRUE\",\"                    zfile <- file\",\"                    zipname <- file.path(dirname(file), \\\"Rdata.zip\\\")\",\"                    if (file.exists(zipname)) {\",\"                      Rdatadir <- tempfile(\\\"Rdata\\\")\",\"                      dir.create(Rdatadir, showWarnings = FALSE)\",\"                      topic <- basename(file)\",\"                      rc <- .External(C_unzip, zipname, topic, \",\"                        Rdatadir, FALSE, TRUE, FALSE, FALSE)\",\"                      if (rc == 0L) \",\"                        zfile <- file.path(Rdatadir, topic)\",\"                    }\",\"                    if (zfile != file) \",\"                      on.exit(unlink(zfile))\",\"                    switch(ext, R = , r = {\",\"                      library(\\\"utils\\\")\",\"                      sys.source(zfile, chdir = TRUE, envir = tmp_env)\",\"                    }, RData = , rdata = , rda = load(zfile, \",\"                      envir = tmp_env), TXT = , txt = , tab = , \",\"                      tab.gz = , tab.bz2 = , tab.xz = , txt.gz = , \",\"                      txt.bz2 = , txt.xz = assign(name, my_read_table(zfile, \",\"                        header = TRUE, as.is = FALSE), envir = tmp_env), \",\"                      CSV = , csv = , csv.gz = , csv.bz2 = , \",\"                      csv.xz = assign(name, my_read_table(zfile, \",\"                        header = TRUE, sep = \\\";\\\", as.is = FALSE), \",\"                        envir = tmp_env), found <- FALSE)\",\"                  }\",\"                  if (found) \",\"                    break\",\"                }\",\"                if (verbose) \",\"                  message(if (!found) \",\"                    \\\"*NOT* \\\", \\\"found\\\", domain = NA)\",\"            }\",\"            if (found) \",\"                break\",\"        }\",\"        if (!found) {\",\"            warning(gettextf(\\\"data set %s not found\\\", sQuote(name)), \",\"                domain = NA)\",\"        }\",\"        else if (!overwrite) {\",\"            for (o in ls(envir = tmp_env, all.names = TRUE)) {\",\"                if (exists(o, envir = envir, inherits = FALSE)) \",\"                  warning(gettextf(\\\"an object named %s already exists and will not be overwritten\\\", \",\"                    sQuote(o)))\",\"                else assign(o, get(o, envir = tmp_env, inherits = FALSE), \",\"                  envir = envir)\",\"            }\",\"            rm(tmp_env)\",\"        }\",\"    }\",\"    invisible(names)\",\"}\"],\"type\":\"function\",\"container\":\"div\",\"options\":null,\"script\":\"var d3Script = function(d3, r2d3, data, div, width, height, options, theme, console) {\\nthis.d3 = d3;\\n\\ndiv = d3.select(div.node());\\n/* R2D3 Source File:  risk.js */\\nvar graph = {\\n    \\\"nodes\\\": [{\\n        \\\"name\\\": \\\"WesternAustralia\\\",\\n        \\\"group\\\": \\\"Australia\\\"\\n    }, {\\n        \\\"name\\\": \\\"NewGuinea\\\",\\n        \\\"group\\\": \\\"Australia\\\"\\n    }, {\\n        \\\"name\\\": \\\"EasternAustralia\\\",\\n        \\\"group\\\": \\\"Australia\\\"\\n    }, {\\n        \\\"name\\\": \\\"Indonesia\\\",\\n        \\\"group\\\": \\\"Australia\\\"\\n    }, {\\n        \\\"name\\\": \\\"Siam\\\",\\n        \\\"group\\\": \\\"TheEast\\\"\\n    }, {\\n        \\\"name\\\": \\\"Jakutsk\\\",\\n        \\\"group\\\": \\\"TheEast\\\"\\n    }, {\\n        \\\"name\\\": \\\"Kamtchatska\\\",\\n        \\\"group\\\": \\\"TheEast\\\"\\n    }, {\\n        \\\"name\\\": \\\"Irkutsk\\\",\\n        \\\"group\\\": \\\"TheEast\\\"\\n    }, {\\n        \\\"name\\\": \\\"Siberia\\\",\\n        \\\"group\\\": \\\"TheEast\\\"\\n    }, {\\n        \\\"name\\\": \\\"China\\\",\\n        \\\"group\\\": \\\"TheEast\\\"\\n    }, {\\n        \\\"name\\\": \\\"Japan\\\",\\n        \\\"group\\\": \\\"TheEast\\\"\\n    }, {\\n        \\\"name\\\": \\\"Mongolia\\\",\\n        \\\"group\\\": \\\"TheEast\\\"\\n    }, {\\n        \\\"name\\\": \\\"India\\\",\\n        \\\"group\\\": \\\"TheEast\\\"\\n    }, {\\n        \\\"name\\\": \\\"Ural\\\",\\n        \\\"group\\\": \\\"TheEast\\\"\\n    }, {\\n        \\\"name\\\": \\\"Afganistan\\\",\\n        \\\"group\\\": \\\"TheEast\\\"\\n    }, {\\n        \\\"name\\\": \\\"MiddleEast\\\",\\n        \\\"group\\\": \\\"TheEast\\\"\\n    }, {\\n        \\\"name\\\": \\\"Greenland\\\",\\n        \\\"group\\\": \\\"NA\\\"\\n    }, {\\n        \\\"name\\\": \\\"IceLand\\\",\\n        \\\"group\\\": \\\"EUR\\\"\\n    }, {\\n        \\\"name\\\": \\\"NorthwestTerritory\\\",\\n        \\\"group\\\": \\\"NA\\\"\\n    }, {\\n        \\\"name\\\": \\\"Ontario\\\",\\n        \\\"group\\\": \\\"NA\\\"\\n    }, {\\n        \\\"name\\\": \\\"Alaska\\\",\\n        \\\"group\\\": \\\"NA\\\"\\n    }, {\\n        \\\"name\\\": \\\"Alberta\\\",\\n        \\\"group\\\": \\\"NA\\\"\\n    }, {\\n        \\\"name\\\": \\\"WesternUSA\\\",\\n        \\\"group\\\": \\\"NA\\\"\\n    }, {\\n        \\\"name\\\": \\\"Quebec\\\",\\n        \\\"group\\\": \\\"NA\\\"\\n    }, {\\n        \\\"name\\\": \\\"EasternUSA\\\",\\n        \\\"group\\\": \\\"NA\\\"\\n    }, {\\n        \\\"name\\\": \\\"mexico\\\",\\n        \\\"group\\\": \\\"NA\\\"\\n    }, {\\n        \\\"name\\\": \\\"Ukraine\\\",\\n        \\\"group\\\": \\\"EUR\\\"\\n    }, {\\n        \\\"name\\\": \\\"Scandinavia\\\",\\n        \\\"group\\\": \\\"EUR\\\"\\n    }, {\\n        \\\"name\\\": \\\"GreatBritain\\\",\\n        \\\"group\\\": \\\"EUR\\\"\\n    }, {\\n        \\\"name\\\": \\\"NorthernEurope\\\",\\n        \\\"group\\\": \\\"EUR\\\"\\n    }, {\\n        \\\"name\\\": \\\"SouthernEurope\\\",\\n        \\\"group\\\": \\\"EUR\\\"\\n    }, {\\n        \\\"name\\\": \\\"WesternEurope\\\",\\n        \\\"group\\\": \\\"EUR\\\"\\n    }, {\\n        \\\"name\\\": \\\"East_Afrika\\\",\\n        \\\"group\\\": \\\"Afrika\\\"\\n    }, {\\n        \\\"name\\\": \\\"Egypt\\\",\\n        \\\"group\\\": \\\"Afrika\\\"\\n    }, {\\n        \\\"name\\\": \\\"Madagasca\\\",\\n        \\\"group\\\": \\\"Afrika\\\"\\n    }, {\\n        \\\"name\\\": \\\"Congo\\\",\\n        \\\"group\\\": \\\"Afrika\\\"\\n    }, {\\n        \\\"name\\\": \\\"South_Afrika\\\",\\n        \\\"group\\\": \\\"Afrika\\\"\\n    }, {\\n        \\\"name\\\": \\\"North_Afrika\\\",\\n        \\\"group\\\": \\\"Afrika\\\"\\n    }, {\\n        \\\"name\\\": \\\"brazil\\\",\\n        \\\"group\\\": \\\"SA\\\"\\n    }, {\\n        \\\"name\\\": \\\"argentina\\\",\\n        \\\"group\\\": \\\"SA\\\"\\n    }, {\\n        \\\"name\\\": \\\"peru\\\",\\n        \\\"group\\\": \\\"SA\\\"\\n    }, {\\n        \\\"name\\\": \\\"venezuela\\\",\\n        \\\"group\\\": \\\"SA\\\"\\n    }],\\n    \\\"links\\\": [{\\n        \\\"source\\\": 1,\\n        \\\"target\\\": 0,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 2,\\n        \\\"target\\\": 0,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 2,\\n        \\\"target\\\": 1,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 1,\\n        \\\"target\\\": 3,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 0,\\n        \\\"target\\\": 3,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 4,\\n        \\\"target\\\": 3,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 6,\\n        \\\"target\\\": 5,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 7,\\n        \\\"target\\\": 5,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 7,\\n        \\\"target\\\": 8,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 5,\\n        \\\"target\\\": 8,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 9,\\n        \\\"target\\\": 8,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 6,\\n        \\\"target\\\": 7,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 6,\\n        \\\"target\\\": 10,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 6,\\n        \\\"target\\\": 11,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 10,\\n        \\\"target\\\": 11,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 7,\\n        \\\"target\\\": 11,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 9,\\n        \\\"target\\\": 4,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 11,\\n        \\\"target\\\": 9,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 9,\\n        \\\"target\\\": 12,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 4,\\n        \\\"target\\\": 12,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 8,\\n        \\\"target\\\": 13,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 14,\\n        \\\"target\\\": 13,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 12,\\n        \\\"target\\\": 15,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 14,\\n        \\\"target\\\": 15,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 9,\\n        \\\"target\\\": 14,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 17,\\n        \\\"target\\\": 16,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 16,\\n        \\\"target\\\": 18,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 19,\\n        \\\"target\\\": 18,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 6,\\n        \\\"target\\\": 20,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 21,\\n        \\\"target\\\": 20,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 18,\\n        \\\"target\\\": 20,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 18,\\n        \\\"target\\\": 21,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 19,\\n        \\\"target\\\": 21,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 22,\\n        \\\"target\\\": 21,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 16,\\n        \\\"target\\\": 19,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 23,\\n        \\\"target\\\": 19,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 24,\\n        \\\"target\\\": 19,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 16,\\n        \\\"target\\\": 23,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 24,\\n        \\\"target\\\": 23,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 25,\\n        \\\"target\\\": 24,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 19,\\n        \\\"target\\\": 22,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 24,\\n        \\\"target\\\": 22,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 25,\\n        \\\"target\\\": 22,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 13,\\n        \\\"target\\\": 26,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 14,\\n        \\\"target\\\": 26,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 27,\\n        \\\"target\\\": 17,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 28,\\n        \\\"target\\\": 17,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 26,\\n        \\\"target\\\": 27,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 27,\\n        \\\"target\\\": 29,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 27,\\n        \\\"target\\\": 28,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 29,\\n        \\\"target\\\": 28,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 26,\\n        \\\"target\\\": 30,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 29,\\n        \\\"target\\\": 30,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 28,\\n        \\\"target\\\": 31,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 30,\\n        \\\"target\\\": 31,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 29,\\n        \\\"target\\\": 31,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 15,\\n        \\\"target\\\": 32,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 33,\\n        \\\"target\\\": 32,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 15,\\n        \\\"target\\\": 33,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 30,\\n        \\\"target\\\": 33,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 32,\\n        \\\"target\\\": 34,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 32,\\n        \\\"target\\\": 35,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 36,\\n        \\\"target\\\": 35,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 30,\\n        \\\"target\\\": 37,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 31,\\n        \\\"target\\\": 37,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 32,\\n        \\\"target\\\": 37,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 33,\\n        \\\"target\\\": 37,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 35,\\n        \\\"target\\\": 37,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 34,\\n        \\\"target\\\": 36,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 37,\\n        \\\"target\\\": 38,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 39,\\n        \\\"target\\\": 38,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 41,\\n        \\\"target\\\": 40,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 39,\\n        \\\"target\\\": 40,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 25,\\n        \\\"target\\\": 41,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 38,\\n        \\\"target\\\": 41,\\n        \\\"value\\\": 5\\n    }]\\n}\\n\\nvar width  = 800,\\n    height = 400;\\n\\nvar color = d3.scale.category20();\\n\\nvar force = d3.layout.force()\\n    .charge(-150)\\n    .linkDistance(30)\\n    .size([width, height]);\\n\\nvar svg = div.append(\\\"svg\\\")\\n    .attr(\\\"width\\\", width)\\n    .attr(\\\"height\\\", height);\\n\\nforce\\n    .nodes(graph.nodes)\\n    .links(graph.links)\\n    .start();\\n\\nvar link = svg.selectAll(\\\"line.link\\\")\\n    .data(graph.links)\\n    .enter().append(\\\"line\\\")\\n    .attr(\\\"class\\\", \\\"link\\\")\\n    .style(\\\"stroke-width\\\", 2)\\n    .style(\\\"stroke\\\", \\\"#999\\\")\\n    .style(\\\"stroke-opacity\\\", 0.6);\\n\\nvar node = svg.selectAll(\\\"circle.node\\\")\\n    .data(graph.nodes)\\n    .enter().append(\\\"circle\\\")\\n    .attr(\\\"class\\\", \\\"node\\\")\\n    .attr(\\\"r\\\", 6)\\n    .attr(\\\"stroke\\\", \\\"#fff\\\")\\n    .attr(\\\"stroke-width\\\", 2)\\n    .style(\\\"fill\\\", function(d) {  switch (d.group){\\n      case \\\"Australia\\\":\\n        return \\\"purple\\\"\\n        break;\\n      case \\\"Afrika\\\":\\n        return \\\"brown\\\"\\n        break; \\n      case \\\"TheEast\\\":\\n        return \\\"green\\\"\\n        break; \\n      case \\\"EUR\\\":\\n        return \\\"blue\\\"\\n        break; \\n      case \\\"NA\\\":\\n        return \\\"yellow\\\"\\n        break; \\n      case \\\"SA\\\":\\n        return \\\"red\\\"\\n        break; \\n      }})\\n    .call(force.drag);\\n\\nnode.append(\\\"title\\\")\\n    .text(function(d) { return d.name; });\\n\\nforce.on(\\\"tick\\\", function() {\\n  link.attr(\\\"x1\\\", function(d) { return d.source.x; })\\n      .attr(\\\"y1\\\", function(d) { return d.source.y; })\\n      .attr(\\\"x2\\\", function(d) { return d.target.x; })\\n      .attr(\\\"y2\\\", function(d) { return d.target.y; });\\n\\n  node.attr(\\\"cx\\\", function(d) { return d.x; })\\n      .attr(\\\"cy\\\", function(d) { return d.y; });\\n});\\n};\",\"style\":null,\"version\":3,\"theme\":{\"default\":{\"background\":\"#FFFFFF\",\"foreground\":\"#000000\"},\"runtime\":null},\"useShadow\":true},\"evals\":[],\"jsHooks\":[]}\nIt’s the graph layout from the risk board-game. It’s something I used way back in the day to help a colleague build a risk simulator.\nThis made me wonder though. What will happen when we run a community detection algorithm over this? Will it be able to detect the clusters as defined by risk? Or will we get something completely different?\n\n\n{\"x\":{\"data\":[\"function (..., list = character(), package = NULL, lib.loc = NULL, \",\"    verbose = getOption(\\\"verbose\\\"), envir = .GlobalEnv, overwrite = TRUE) \",\"{\",\"    fileExt <- function(x) {\",\"        db <- grepl(\\\"\\\\\\\\.[^.]+\\\\\\\\.(gz|bz2|xz)$\\\", x)\",\"        ans <- sub(\\\".*\\\\\\\\.\\\", \\\"\\\", x)\",\"        ans[db] <- sub(\\\".*\\\\\\\\.([^.]+\\\\\\\\.)(gz|bz2|xz)$\\\", \\\"\\\\\\\\1\\\\\\\\2\\\", \",\"            x[db])\",\"        ans\",\"    }\",\"    my_read_table <- function(...) {\",\"        lcc <- Sys.getlocale(\\\"LC_COLLATE\\\")\",\"        on.exit(Sys.setlocale(\\\"LC_COLLATE\\\", lcc))\",\"        Sys.setlocale(\\\"LC_COLLATE\\\", \\\"C\\\")\",\"        read.table(...)\",\"    }\",\"    names <- c(as.character(substitute(list(...))[-1L]), list)\",\"    if (!is.null(package)) {\",\"        if (!is.character(package)) \",\"            stop(\\\"'package' must be a character string or NULL\\\")\",\"        if (FALSE) {\",\"            if (any(package %in% \\\"base\\\")) \",\"                warning(\\\"datasets have been moved from package 'base' to package 'datasets'\\\")\",\"            if (any(package %in% \\\"stats\\\")) \",\"                warning(\\\"datasets have been moved from package 'stats' to package 'datasets'\\\")\",\"            package[package %in% c(\\\"base\\\", \\\"stats\\\")] <- \\\"datasets\\\"\",\"        }\",\"    }\",\"    paths <- find.package(package, lib.loc, verbose = verbose)\",\"    if (is.null(lib.loc)) \",\"        paths <- c(path.package(package, TRUE), if (!length(package)) getwd(), \",\"            paths)\",\"    paths <- unique(normalizePath(paths[file.exists(paths)]))\",\"    paths <- paths[dir.exists(file.path(paths, \\\"data\\\"))]\",\"    dataExts <- tools:::.make_file_exts(\\\"data\\\")\",\"    if (length(names) == 0L) {\",\"        db <- matrix(character(), nrow = 0L, ncol = 4L)\",\"        for (path in paths) {\",\"            entries <- NULL\",\"            packageName <- if (file_test(\\\"-f\\\", file.path(path, \",\"                \\\"DESCRIPTION\\\"))) \",\"                basename(path)\",\"            else \\\".\\\"\",\"            if (file_test(\\\"-f\\\", INDEX <- file.path(path, \\\"Meta\\\", \",\"                \\\"data.rds\\\"))) {\",\"                entries <- readRDS(INDEX)\",\"            }\",\"            else {\",\"                dataDir <- file.path(path, \\\"data\\\")\",\"                entries <- tools::list_files_with_type(dataDir, \",\"                  \\\"data\\\")\",\"                if (length(entries)) {\",\"                  entries <- unique(tools::file_path_sans_ext(basename(entries)))\",\"                  entries <- cbind(entries, \\\"\\\")\",\"                }\",\"            }\",\"            if (NROW(entries)) {\",\"                if (is.matrix(entries) && ncol(entries) == 2L) \",\"                  db <- rbind(db, cbind(packageName, dirname(path), \",\"                    entries))\",\"                else warning(gettextf(\\\"data index for package %s is invalid and will be ignored\\\", \",\"                  sQuote(packageName)), domain = NA, call. = FALSE)\",\"            }\",\"        }\",\"        colnames(db) <- c(\\\"Package\\\", \\\"LibPath\\\", \\\"Item\\\", \\\"Title\\\")\",\"        footer <- if (missing(package)) \",\"            paste0(\\\"Use \\\", sQuote(paste(\\\"data(package =\\\", \\\".packages(all.available = TRUE))\\\")), \",\"                \\\"\\\\n\\\", \\\"to list the data sets in all *available* packages.\\\")\",\"        else NULL\",\"        y <- list(title = \\\"Data sets\\\", header = NULL, results = db, \",\"            footer = footer)\",\"        class(y) <- \\\"packageIQR\\\"\",\"        return(y)\",\"    }\",\"    paths <- file.path(paths, \\\"data\\\")\",\"    for (name in names) {\",\"        found <- FALSE\",\"        for (p in paths) {\",\"            tmp_env <- if (overwrite) \",\"                envir\",\"            else new.env()\",\"            if (file_test(\\\"-f\\\", file.path(p, \\\"Rdata.rds\\\"))) {\",\"                rds <- readRDS(file.path(p, \\\"Rdata.rds\\\"))\",\"                if (name %in% names(rds)) {\",\"                  found <- TRUE\",\"                  if (verbose) \",\"                    message(sprintf(\\\"name=%s:\\\\t found in Rdata.rds\\\", \",\"                      name), domain = NA)\",\"                  thispkg <- sub(\\\".*/([^/]*)/data$\\\", \\\"\\\\\\\\1\\\", p)\",\"                  thispkg <- sub(\\\"_.*$\\\", \\\"\\\", thispkg)\",\"                  thispkg <- paste0(\\\"package:\\\", thispkg)\",\"                  objs <- rds[[name]]\",\"                  lazyLoad(file.path(p, \\\"Rdata\\\"), envir = tmp_env, \",\"                    filter = function(x) x %in% objs)\",\"                  break\",\"                }\",\"                else if (verbose) \",\"                  message(sprintf(\\\"name=%s:\\\\t NOT found in names() of Rdata.rds, i.e.,\\\\n\\\\t%s\\\\n\\\", \",\"                    name, paste(names(rds), collapse = \\\",\\\")), \",\"                    domain = NA)\",\"            }\",\"            if (file_test(\\\"-f\\\", file.path(p, \\\"Rdata.zip\\\"))) {\",\"                warning(\\\"zipped data found for package \\\", sQuote(basename(dirname(p))), \",\"                  \\\".\\\\nThat is defunct, so please re-install the package.\\\", \",\"                  domain = NA)\",\"                if (file_test(\\\"-f\\\", fp <- file.path(p, \\\"filelist\\\"))) \",\"                  files <- file.path(p, scan(fp, what = \\\"\\\", quiet = TRUE))\",\"                else {\",\"                  warning(gettextf(\\\"file 'filelist' is missing for directory %s\\\", \",\"                    sQuote(p)), domain = NA)\",\"                  next\",\"                }\",\"            }\",\"            else {\",\"                files <- list.files(p, full.names = TRUE)\",\"            }\",\"            files <- files[grep(name, files, fixed = TRUE)]\",\"            if (length(files) > 1L) {\",\"                o <- match(fileExt(files), dataExts, nomatch = 100L)\",\"                paths0 <- dirname(files)\",\"                paths0 <- factor(paths0, levels = unique(paths0))\",\"                files <- files[order(paths0, o)]\",\"            }\",\"            if (length(files)) {\",\"                for (file in files) {\",\"                  if (verbose) \",\"                    message(\\\"name=\\\", name, \\\":\\\\t file= ...\\\", .Platform$file.sep, \",\"                      basename(file), \\\"::\\\\t\\\", appendLF = FALSE, \",\"                      domain = NA)\",\"                  ext <- fileExt(file)\",\"                  if (basename(file) != paste0(name, \\\".\\\", ext)) \",\"                    found <- FALSE\",\"                  else {\",\"                    found <- TRUE\",\"                    zfile <- file\",\"                    zipname <- file.path(dirname(file), \\\"Rdata.zip\\\")\",\"                    if (file.exists(zipname)) {\",\"                      Rdatadir <- tempfile(\\\"Rdata\\\")\",\"                      dir.create(Rdatadir, showWarnings = FALSE)\",\"                      topic <- basename(file)\",\"                      rc <- .External(C_unzip, zipname, topic, \",\"                        Rdatadir, FALSE, TRUE, FALSE, FALSE)\",\"                      if (rc == 0L) \",\"                        zfile <- file.path(Rdatadir, topic)\",\"                    }\",\"                    if (zfile != file) \",\"                      on.exit(unlink(zfile))\",\"                    switch(ext, R = , r = {\",\"                      library(\\\"utils\\\")\",\"                      sys.source(zfile, chdir = TRUE, envir = tmp_env)\",\"                    }, RData = , rdata = , rda = load(zfile, \",\"                      envir = tmp_env), TXT = , txt = , tab = , \",\"                      tab.gz = , tab.bz2 = , tab.xz = , txt.gz = , \",\"                      txt.bz2 = , txt.xz = assign(name, my_read_table(zfile, \",\"                        header = TRUE, as.is = FALSE), envir = tmp_env), \",\"                      CSV = , csv = , csv.gz = , csv.bz2 = , \",\"                      csv.xz = assign(name, my_read_table(zfile, \",\"                        header = TRUE, sep = \\\";\\\", as.is = FALSE), \",\"                        envir = tmp_env), found <- FALSE)\",\"                  }\",\"                  if (found) \",\"                    break\",\"                }\",\"                if (verbose) \",\"                  message(if (!found) \",\"                    \\\"*NOT* \\\", \\\"found\\\", domain = NA)\",\"            }\",\"            if (found) \",\"                break\",\"        }\",\"        if (!found) {\",\"            warning(gettextf(\\\"data set %s not found\\\", sQuote(name)), \",\"                domain = NA)\",\"        }\",\"        else if (!overwrite) {\",\"            for (o in ls(envir = tmp_env, all.names = TRUE)) {\",\"                if (exists(o, envir = envir, inherits = FALSE)) \",\"                  warning(gettextf(\\\"an object named %s already exists and will not be overwritten\\\", \",\"                    sQuote(o)))\",\"                else assign(o, get(o, envir = tmp_env, inherits = FALSE), \",\"                  envir = envir)\",\"            }\",\"            rm(tmp_env)\",\"        }\",\"    }\",\"    invisible(names)\",\"}\"],\"type\":\"function\",\"container\":\"div\",\"options\":null,\"script\":\"var d3Script = function(d3, r2d3, data, div, width, height, options, theme, console) {\\nthis.d3 = d3;\\n/* R2D3 Source File:  netClustering.js */\\n// https://github.com/john-guerra/netClusteringJS#readme v0.0.2 Copyright 2019 John Alexis Guerra Gómez\\n(function (global, factory) {\\ntypeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :\\ntypeof define === 'function' && define.amd ? define(factory) :\\n(global.netClustering = factory());\\n}(this, (function () { 'use strict';\\n\\n/*\\n    Copyright 2010 by Robin W. Spencer, packaged by John A. Guerra Gómez\\n\\n  This program is free software: you can redistribute it and/or modify\\n  it under the terms of the GNU General Public License as published by\\n  the Free Software Foundation, either version 3 of the License, or\\n  (at your option) any later version.\\n\\n  This program is distributed in the hope that it will be useful,\\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\\n  GNU General Public License for more details.\\n\\n  You can find a copy of the GNU General Public License\\n  at http://www.gnu.org/licenses/.\\n\\n*/\\n/*jslint browser: true, devel: true, regexp: true, white: true */\\n/*\\n*/\\n\\n\\nlet netClustering =  (function () {\\n  let netClustering = {};\\n\\n  // \\\"use strict\\\";\\n  //  Specific utilities: data import & recursive traverses\\n  function binaryTreeWalk(currentNode,tree,depth,doLeafAction,doDownAction,doUpAction){\\n    //  General purpose recursive binary depth-first tree walk, with three possible action functions:\\n    //  at each leaf node, on the way down a branch, and on the way back up a branch.\\n    if(tree[currentNode].leftChild>-1){\\n      depth+=1;\\n      if(doDownAction) { doDownAction(currentNode,tree,depth); }\\n      binaryTreeWalk(tree[currentNode].leftChild,tree,depth,doLeafAction,doDownAction,doUpAction);\\n    }\\n    if(tree[currentNode].rightChild==-1){ // It\\\"s a leaf node\\n      if(doLeafAction){ doLeafAction(currentNode,tree,depth); }\\n    }\\n    if(tree[currentNode].rightChild>-1){\\n      binaryTreeWalk(tree[currentNode].rightChild,tree,depth,doLeafAction,doDownAction,doUpAction);\\n      if(doUpAction){ doUpAction(currentNode,tree,depth); }\\n      depth-=1;\\n    }\\n  }\\n\\n  //  Community detection algorithms and recursion\\n  function addClosestPairByCommunity(tree,deltaQ,a){\\n    //  Newman\\\"s communities algorithm, http://arxiv.org/abs/cond-mat/0309508v1\\n    //  Find the largest deltaQ for each row, and overall\\n\\n    //  Where Newman et al keep the H as max-heaps, we rebuild H from scratch for code clarity.\\n    //  Semi-sparse:  We still make H arrays for sorting but do it in one pass from the sparse deltaQ.\\n\\n    // logTime(\\\"start step\\\");\\n\\n    var n=tree.length;\\n    var H={};\\n    for(var hash in deltaQ){\\n      var dQ=deltaQ[hash];\\n      var keys=hash.split(\\\"~\\\");\\n      var i=Number(keys[0]);\\n      var j=Number(keys[1]);\\n      if (!H[i]) { H[i]=[]; }\\n      if (!H[j]) { H[j]=[]; }\\n      H[i].push({\\\"dQ\\\": dQ, \\\"i\\\": i, \\\"j\\\": j});\\n      H[j].push({\\\"dQ\\\": dQ, \\\"i\\\": i, \\\"j\\\": j});\\n    }\\n\\n    // logTime(\\\"assign H\\\");\\n\\n    //  Find nodes to join\\n    var Hmax={\\\"dQ\\\":-Infinity, \\\"i\\\": -1, \\\"j\\\": -1};\\n    for(var i=0;i<n;i++){\\n      if (H[i]){\\n        H[i].sort(function (a,b) {\\n          return b.dQ-a.dQ;\\n        });  // Full sort, overkill but native & clean\\n        //  The [0] element in each H array now has the largest deltaQ for that row\\n        if(H[i][0].dQ>Hmax.dQ){\\n          Hmax.dQ=H[i][0].dQ;\\n          Hmax.i =H[i][0].i;\\n          Hmax.j =H[i][0].j;\\n        }\\n      }\\n    }\\n\\n    // logTime(\\\"find Hmax\\\");\\n    //  Diagnostic info\\n    //  console(\\\"&nbsp;(\\\"+Hmax.i+\\\",\\\"+Hmax.j+\\\") -> \\\"+n+\\\"&nbsp; &nbsp; &Delta;Q = \\\"+Hmax.dQ.toFixed(3));\\n\\n    //  On full recursion, unweighted datasets can end up with degenerate small subsets, trapped here.\\n    if (Hmax.i==-1) {\\n      return null;\\n    }\\n\\n    //  Create a combined node.  The tree[] is needed only for later drawing;\\n    //  all the work here is done with the deltaQ[].\\n    var wt=tree[Hmax.i].weight+tree[Hmax.j].weight;\\n    tree.push({\\\"parent\\\": -1, \\\"leftChild\\\": Hmax.i, \\\"rightChild\\\": Hmax.j, \\\"weight\\\": wt, \\\"dQ\\\": Hmax.dQ});\\n    tree[Hmax.i].parent=n;  // n = the new one we just created\\n    tree[Hmax.j].parent=n;\\n\\n    //  Update all deltaQ, Clauset eq 10a-c\\n    var hashToZap=[];  //  Remember the deltaQ for the nodes we\\\"re joining, to null out later.\\n    for(var k=0;k<n;k++){\\n      if(k!=Hmax.i && k!=Hmax.j && H[k]){  //  H[k]!=null => node still in play\\n        var hashik=Math.min(Hmax.i,k)+\\\"~\\\"+Math.max(Hmax.i,k);\\n        var hashjk=Math.min(Hmax.j,k)+\\\"~\\\"+Math.max(Hmax.j,k);\\n        var hashNew=k+\\\"~\\\"+n;\\n        var t1=deltaQ[hashik];\\n        var t2=deltaQ[hashjk];\\n        //  Javascript thinks zero and null are both false, so some type tricks are needed;\\n        //  zero is a valid entry for deltaQ and common for small graphs.\\n        if(!isNaN(t1)){\\n          hashToZap.push(hashik);\\n          if(!isNaN(t2)){\\n            hashToZap.push(hashjk);\\n            deltaQ[hashNew]=t1+t2;\\n          }else{\\n            deltaQ[hashNew]=t1-2.0*a[Hmax.j]*a[k];\\n          }\\n        }else{\\n          if(!isNaN(t2)){\\n            hashToZap.push(hashjk);\\n            deltaQ[hashNew]=t2-2.0*a[Hmax.i]*a[k];\\n          }else{\\n            deltaQ[hashNew]=null; // Important to zap dQ when t1 & t2 undefined\\n          }\\n        }\\n      }\\n    }\\n\\n    // logTime(\\\"update dQ\\\");\\n\\n    //  Update a[]\\n    a[n]=a[Hmax.i]+a[Hmax.j];\\n    //   a[Hmax.i]=0;a[Hmax.j]=0;  //   No need to zero-out; these a[] are not used again\\n\\n    //  Experiments verify that sum a[i] = 1.00 at all stages of agglomeration.\\n\\n    //  Remove any deltaQ for nodes now absorbed in this join.\\n    deltaQ[Hmax.i+\\\"~\\\"+Hmax.j]=null;\\n    for(var i=0;i<hashToZap.length;i++){\\n      deltaQ[hashToZap[i]]=null;\\n    }\\n    //  Make dQ array smaller by not copying over any dQ set to null above.\\n    var dQcopy={};\\n    for(var hash in deltaQ){\\n      if (deltaQ[hash]) {\\n        dQcopy[hash]=deltaQ[hash];\\n      }\\n    }\\n\\n    // logTime(\\\"add a[], prune dQ\\\");\\n    return {\\\"value\\\": Hmax.dQ, \\\"array\\\": dQcopy};\\n  }\\n  function buildTreeByCommunities(dataObj,showNotes){\\n    //  Implement the fast Newman method, as in Clauset, Newman, Moore, arXiv:cond-mat/0408187v2\\n    var n=dataObj.names.length;\\n    var k=[];\\n    for(var i=0;i<n;i++){\\n      k[i]=0;\\n    }\\n    var m=0;\\n    var W=0;\\n    if(dataObj.useWeights){\\n      for(var hash in dataObj.distances){\\n        var keys=hash.split(\\\"~\\\");\\n        var i=Number(keys[0]);\\n        var j=Number(keys[1]);\\n        var d=dataObj.distances[hash];\\n        k[i]+=d;\\n        k[j]+=d;\\n        W+=d;\\n        m+=1;\\n      }\\n      if(!W){W=1e-7;}      var inv2m=1/(2*W);\\n    }else{\\n      for(var hash in dataObj.distances){\\n        var keys=hash.split(\\\"~\\\");\\n        var i=Number(keys[0]);\\n        var j=Number(keys[1]);\\n        k[i]+=1;\\n        k[j]+=1;\\n        m+=1;\\n      }\\n      if(!m){m=1e-7;}      var inv2m=1/(2*m);\\n    }\\n    //  See Berry et al arXiv:0903.1072v2 eq 16; note the 2x difference between Clauset and Berry.\\n    var deltaQ={};\\n    for(var hash in dataObj.distances){\\n      var keys=hash.split(\\\"~\\\");\\n      var i=Number(keys[0]);\\n      var j=Number(keys[1]);\\n      if(dataObj.useWeights){\\n        deltaQ[hash]=2.0*inv2m*dataObj.distances[hash] - 2.0*inv2m*inv2m*k[i]*k[j];\\n      }else{\\n        deltaQ[hash]=2.0*(inv2m-k[i]*k[j]*inv2m*inv2m);  // 2x assures identical Q for unweighted datasets\\n      }\\n    }\\n    var a=[];\\n    for(var i=0;i<n;i++){\\n      a[i]=inv2m*k[i];\\n    }\\n    // var s=0;for(var i=0;i<a.length;i++){s+=a[i]};alert(s);  //  always 1.00 but good to check\\n\\n    //  Initialize the binary tree, used only for later display.\\n    var tree=[];\\n    for(var i=0;i<n;i++){\\n      tree.push({\\\"parent\\\": -1, \\\"leftChild\\\": -1 ,\\\"rightChild\\\": -1, \\\"weight\\\": 1, \\\"linkage\\\": a[i], \\\"name\\\": dataObj.names[i], \\\"primaryKey\\\": i});\\n    }\\n\\n    // logTime(\\\"initialize k,a,dQ\\\");\\n    //  Do the actual agglomerative joining\\n    var Q=0.0;\\n    var maxQ=-Infinity;\\n    var dQobj={\\\"value\\\": 0, \\\"array\\\": deltaQ};\\n    var numCommunities=1;\\n\\n    while(dQobj && tree.length<(2*n-1)) {\\n      dQobj=addClosestPairByCommunity(tree,dQobj.array,a);\\n      if(dQobj) {\\n        Q+=dQobj.value;\\n        if(dQobj.value<0){numCommunities+=1;}        maxQ=Math.max(maxQ,Q);\\n      }else{\\n        //  We hit a small degenerate subset -- another stop to recursion\\n        return null;\\n      }\\n    }\\n    //  showTimes();  //   diagnostic for speed optimization\\n\\n    //  Assign index = sequence of traverse for coloring\\n    var index = 0;\\n    var root=tree.length - 1;\\n    binaryTreeWalk(root, tree, 0, function (currentNode,tree,depth){\\n      tree[currentNode].index=index;\\n      index+=1;\\n    },null,null);\\n\\n    if(showNotes){\\n      var notes=n+\\\" nodes, \\\"+m+\\\" of \\\"+(n*(n-1)/2)+\\\" possible edges (\\\"+Math.round(200*m/(n*(n-1)))+\\\"%) \\\";\\n      notes+=\\\"with data, and \\\"+numCommunities+\\\" primary communities identified.\\\";\\n      notes+=\\\"&nbsp; &nbsp; Q=\\\"+maxQ.toFixed(3);\\n      document.getElementById(\\\"notes\\\").innerHTML=notes;\\n    }\\n    return {\\\"tree\\\": tree, \\\"distances\\\": dataObj.distances, \\\"root\\\": root, \\\"names\\\": dataObj.names, \\\"useWeights\\\": dataObj.useWeights};\\n  }\\n  function findSplits(treeObj){\\n    //   The treeObj has dQ info from the Newman joining, so we can\\n    //   identify communities based on when dQ went negative.\\n    var breakNext = true;\\n    var breakNodes = [];\\n    var g = -1;\\n    var group = [];\\n    var members = \\\"\\\";\\n    var tracker = 0;\\n    binaryTreeWalk(treeObj.root, treeObj.tree, 0, function (node,tree,depth) {\\n       if(breakNext) {\\n        g += 1;\\n        breakNodes.push(node);\\n        breakNext = false;\\n       }\\n       group[node] = g;\\n       members += treeObj.tree[node].name + \\\",\\\";\\n    },\\n    function(node, tree, depth) {\\n       var thisNode = tree[node];\\n      if(thisNode.dQ < 0){\\n        breakNext = true;\\n        tracker = 0;\\n      }\\n      tracker += 1;\\n    },\\n    function(node, tree, depth) {\\n      var thisNode = tree[node];\\n      tracker -= 1;\\n      if (tracker == 1){\\n        breakNext = true;\\n        members += \\\"~\\\";\\n      }\\n    });\\n\\n    // //Search for any nodes that aren\\\"t in any group and put them in one\\n    // var createdGroupForLoners = false, lonersCount = 0;\\n\\n    // treeObj.names.forEach(function (d, i) {\\n    //     if (!group.hasOwnProperty(i)) {\\n    //         if (members[members.length-1]!=\\\"~\\\" && !createdGroupForLoners) {\\n    //             members+=\\\"~\\\"\\n    //         }\\n    //         group[i] = g+1;\\n    //         createdGroupForLoners = true;\\n    //         members+=d + \\\",\\\";\\n    //         lonersCount++;\\n    //     }\\n    // })\\n    // //If we created a new group for loners increase the group size\\n    // if (createdGroupForLoners) {\\n    //     g+=1;\\n    //     members+=\\\"~\\\";\\n    //     console.log(\\\"netClustering lonersCount=\\\" + lonersCount);\\n    // }\\n\\n    var numGroups = g + 1;\\n    members = members.slice(0, -2);\\n    members = members.replace(/,~/g, \\\"~\\\");\\n    //  members has the names of nodes, comma separated within groups and \\\"~\\\" between groups\\n    return {\\\"numGroups\\\": numGroups, \\\"group\\\": group, \\\"members\\\": members, \\\"breakNodes\\\": breakNodes};\\n  }\\n  function findSubCommunities(treeObj,depth,prevGroup){\\n    if (!treeObj) {return}\\n\\n    var tree = treeObj.tree;\\n    var root = treeObj.root;\\n    var names = treeObj.names;\\n    //  Identify the communities in the data\\n    var splitInfo = findSplits(treeObj);\\n    var numGroups = splitInfo.numGroups;\\n    var group = splitInfo.group;\\n\\n    var t = splitInfo.members.split(\\\"~\\\");  //  string to array\\n    var groups = [];\\n    for(var g = 0; g < t.length; g++) {\\n      groups.push((t[g]).split(\\\",\\\"));\\n    }\\n    //  groups is now a set of nested arrays of names, what we return\\n\\n    //  Split the original distance & name tables into separate dataObj for each group\\n    //  so we can repeat the analysis recursively.\\n    var dataObjList = [];\\n    for (var g = 0; g < numGroups; g++){\\n       dataObjList.push({\\\"names\\\":[],\\\"distances\\\":[],\\\"useWeights\\\":treeObj.useWeights});\\n    }\\n    var nameKeys=[];   //  New groups must have new hash codes, thus new index keys\\n\\n    for(var i=0;i<names.length;i++){\\n      var name=names[i];\\n      dataObjList[group[i]].names.push(name);  //  Assign names to groups in one pass\\n      nameKeys[i]=dataObjList[group[i]].names.length-1;\\n    }\\n\\n    for(var hash in treeObj.distances){\\n      var keys=hash.split(\\\"~\\\");\\n      var i=Number(keys[0]);\\n      var j=Number(keys[1]);\\n      if(group[i]==group[j]){\\n        //   These two are in the same group so keep this distance value\\n        var newHash=nameKeys[i]+\\\"~\\\"+nameKeys[j];\\n        dataObjList[group[i]].distances[newHash]=treeObj.distances[hash];\\n      }\\n    }\\n    //   Now we have separate dataObj\\\"s for each community.  Do the analysis on each.\\n    if(numGroups>1){\\n      for(var g=0;g<numGroups;g++){\\n        //  This is where CNM is called for the sub-community\\n        var innerTreeObj=buildTreeByCommunities(dataObjList[g]);\\n        if(innerTreeObj && innerTreeObj.tree){\\n          var innerGroups=findSplits(innerTreeObj).numGroups;\\n          //   Simplest stopping rule -- communities of one\\n          if(innerGroups>1){\\n            //  Recursion: find any sub-groups\\n            var subgroups=findSubCommunities(innerTreeObj,depth+1,g);\\n            //  Replace the current group with its set of subgroups, which builds a tree.\\n            groups[g]=subgroups;\\n          }\\n        }\\n      }\\n    }\\n    return groups;\\n  }\\n\\n\\n\\n  //Exports\\n  netClustering.buildTreeByCommunities = buildTreeByCommunities;\\n  netClustering.findSubCommunities = findSubCommunities;\\n  //buildTreeByCommunities parameter should be\\n  //Object {names: Array[39], distances: Array[0], method: \\\"newman\\\", useWeights: true}\\n\\n\\n  //Receives nodes and edges on the d3 format clusters them, and return the clusters\\n  // the nodes should be a list of objects that at least contains an attribute id\\n  // and the edges should be a list of objects {source:index, target:index, count}\\n  netClustering.cluster = function (nodes, edges, clusterAttr, edgesCountAttr) {\\n    var dataObj = {},\\n      treeObj, groups = [];\\n\\n    if (clusterAttr === undefined) {\\n      clusterAttr=\\\"cluster\\\";\\n    }\\n    if (edgesCountAttr === undefined) {\\n      edgesCountAttr=\\\"value\\\";\\n    }\\n\\n    var linksForClustering  = [];\\n    //Do edges come with pointers to the nodes or just indexes?\\n    if (edges.length>0 && typeof(edges[0].source)===\\\"object\\\") {\\n      linksForClustering = edges.map(function (d) {\\n        var sourceId=nodes.indexOf(d.source),\\n          targetId=nodes.indexOf(d.target);\\n        if (sourceId===-1 || targetId===-1) {\\n          return null;\\n        } else {\\n          return {\\n            source: sourceId,\\n            target: targetId,\\n            count : d[edgesCountAttr]!==undefined ? d[edgesCountAttr] : 1\\n          }\\n\\n        }\\n      });\\n    } else {\\n      //copy the links to ensure they have counts\\n\\n      edges.forEach(function (d) {\\n        linksForClustering.push({\\n          source: d.source,\\n          target: d.target,\\n          count: d[edgesCountAttr]!==undefined ? d[edgesCountAttr] : 1\\n        });\\n      });\\n\\n\\n    }\\n\\n    dataObj.method = \\\"newman\\\";\\n    dataObj.useWeights = true;\\n    dataObj.names = nodes.map(function (d, i) { return \\\"\\\"+i; });\\n\\n    // dataObj.names = nodes;\\n    dataObj.distances = {};\\n    linksForClustering =  linksForClustering.filter(function (d) { return d.source !== d.target; }); //avoid loops\\n    linksForClustering.forEach(function (d) {\\n      var hash = Math.min(d.source, d.target) + \\\"~\\\" + Math.max(d.source, d.target); // hash always has left key < right key})\\n      dataObj.distances[hash] = +d.count;\\n    });\\n\\n    dataObj = addDummyMetaNode(dataObj);\\n\\n    treeObj=buildTreeByCommunities(dataObj, false);\\n    groups=findSubCommunities(treeObj,0,0);\\n\\n    groups=removeDummyMetaNode(groups);\\n    groups.forEach(function (d, i) {\\n      function assignToCluster(ele, i) {\\n        if (ele instanceof Array) {\\n          ele.forEach(function (e) {\\n            assignToCluster(e, i);\\n          });\\n        } else {\\n          nodes[+ele][clusterAttr] = i.toString();\\n        }\\n\\n      }\\n      assignToCluster(d, i);\\n    });\\n\\n    return groups;\\n  };\\n\\n\\n\\n  function addDummyMetaNode(dataObj) {\\n    //Add a dummy node linked to all the nodes to guarantee that the graph is connected\\n    dataObj.names.push(\\\"DUMMY\\\");\\n    dataObj.names.forEach(function (d, i) {\\n      if (i===dataObj.names.length-1) {\\n        return;\\n      }\\n      var hash = i+\\\"~\\\"+ (dataObj.names.length-1);\\n      dataObj.distances[hash] = 0.1;\\n    });\\n    return dataObj;\\n  }\\n\\n  function removeDummyMetaNode(groups) {\\n    var i, ele;\\n    for (i = 0; i < groups.length; i++) {\\n      ele = groups[i];\\n      if (ele instanceof Array) {\\n        ele = removeDummyMetaNode(ele);\\n        if (ele.length===0) {\\n          //DUMMY was on an empty cluster, delete it\\n          groups.splice(i, 1);\\n        }\\n        // groups[i];\\n      } else {\\n        if (ele === \\\"DUMMY\\\" || ele === \\\"DUMM\\\") {\\n          groups.splice(i, 1);//Remove\\n          break;\\n        }\\n      }\\n    }\\n    return groups;\\n  }\\n\\n  return netClustering;\\n})();\\n\\nreturn netClustering;\\n\\n})));\\ndiv = d3.select(div.node());\\n/* R2D3 Source File:  cluster.js */\\nvar graph = {\\n    \\\"nodes\\\": [{\\n        \\\"name\\\": \\\"WesternAustralia\\\",\\n        \\\"group\\\": \\\"Australia\\\"\\n    }, {\\n        \\\"name\\\": \\\"NewGuinea\\\",\\n        \\\"group\\\": \\\"Australia\\\"\\n    }, {\\n        \\\"name\\\": \\\"EasternAustralia\\\",\\n        \\\"group\\\": \\\"Australia\\\"\\n    }, {\\n        \\\"name\\\": \\\"Indonesia\\\",\\n        \\\"group\\\": \\\"Australia\\\"\\n    }, {\\n        \\\"name\\\": \\\"Siam\\\",\\n        \\\"group\\\": \\\"TheEast\\\"\\n    }, {\\n        \\\"name\\\": \\\"Jakutsk\\\",\\n        \\\"group\\\": \\\"TheEast\\\"\\n    }, {\\n        \\\"name\\\": \\\"Kamtchatska\\\",\\n        \\\"group\\\": \\\"TheEast\\\"\\n    }, {\\n        \\\"name\\\": \\\"Irkutsk\\\",\\n        \\\"group\\\": \\\"TheEast\\\"\\n    }, {\\n        \\\"name\\\": \\\"Siberia\\\",\\n        \\\"group\\\": \\\"TheEast\\\"\\n    }, {\\n        \\\"name\\\": \\\"China\\\",\\n        \\\"group\\\": \\\"TheEast\\\"\\n    }, {\\n        \\\"name\\\": \\\"Japan\\\",\\n        \\\"group\\\": \\\"TheEast\\\"\\n    }, {\\n        \\\"name\\\": \\\"Mongolia\\\",\\n        \\\"group\\\": \\\"TheEast\\\"\\n    }, {\\n        \\\"name\\\": \\\"India\\\",\\n        \\\"group\\\": \\\"TheEast\\\"\\n    }, {\\n        \\\"name\\\": \\\"Ural\\\",\\n        \\\"group\\\": \\\"TheEast\\\"\\n    }, {\\n        \\\"name\\\": \\\"Afganistan\\\",\\n        \\\"group\\\": \\\"TheEast\\\"\\n    }, {\\n        \\\"name\\\": \\\"MiddleEast\\\",\\n        \\\"group\\\": \\\"TheEast\\\"\\n    }, {\\n        \\\"name\\\": \\\"Greenland\\\",\\n        \\\"group\\\": \\\"NA\\\"\\n    }, {\\n        \\\"name\\\": \\\"IceLand\\\",\\n        \\\"group\\\": \\\"EUR\\\"\\n    }, {\\n        \\\"name\\\": \\\"NorthwestTerritory\\\",\\n        \\\"group\\\": \\\"NA\\\"\\n    }, {\\n        \\\"name\\\": \\\"Ontario\\\",\\n        \\\"group\\\": \\\"NA\\\"\\n    }, {\\n        \\\"name\\\": \\\"Alaska\\\",\\n        \\\"group\\\": \\\"NA\\\"\\n    }, {\\n        \\\"name\\\": \\\"Alberta\\\",\\n        \\\"group\\\": \\\"NA\\\"\\n    }, {\\n        \\\"name\\\": \\\"WesternUSA\\\",\\n        \\\"group\\\": \\\"NA\\\"\\n    }, {\\n        \\\"name\\\": \\\"Quebec\\\",\\n        \\\"group\\\": \\\"NA\\\"\\n    }, {\\n        \\\"name\\\": \\\"EasternUSA\\\",\\n        \\\"group\\\": \\\"NA\\\"\\n    }, {\\n        \\\"name\\\": \\\"mexico\\\",\\n        \\\"group\\\": \\\"NA\\\"\\n    }, {\\n        \\\"name\\\": \\\"Ukraine\\\",\\n        \\\"group\\\": \\\"EUR\\\"\\n    }, {\\n        \\\"name\\\": \\\"Scandinavia\\\",\\n        \\\"group\\\": \\\"EUR\\\"\\n    }, {\\n        \\\"name\\\": \\\"GreatBritain\\\",\\n        \\\"group\\\": \\\"EUR\\\"\\n    }, {\\n        \\\"name\\\": \\\"NorthernEurope\\\",\\n        \\\"group\\\": \\\"EUR\\\"\\n    }, {\\n        \\\"name\\\": \\\"SouthernEurope\\\",\\n        \\\"group\\\": \\\"EUR\\\"\\n    }, {\\n        \\\"name\\\": \\\"WesternEurope\\\",\\n        \\\"group\\\": \\\"EUR\\\"\\n    }, {\\n        \\\"name\\\": \\\"East_Afrika\\\",\\n        \\\"group\\\": \\\"Afrika\\\"\\n    }, {\\n        \\\"name\\\": \\\"Egypt\\\",\\n        \\\"group\\\": \\\"Afrika\\\"\\n    }, {\\n        \\\"name\\\": \\\"Madagasca\\\",\\n        \\\"group\\\": \\\"Afrika\\\"\\n    }, {\\n        \\\"name\\\": \\\"Congo\\\",\\n        \\\"group\\\": \\\"Afrika\\\"\\n    }, {\\n        \\\"name\\\": \\\"South_Afrika\\\",\\n        \\\"group\\\": \\\"Afrika\\\"\\n    }, {\\n        \\\"name\\\": \\\"North_Afrika\\\",\\n        \\\"group\\\": \\\"Afrika\\\"\\n    }, {\\n        \\\"name\\\": \\\"brazil\\\",\\n        \\\"group\\\": \\\"SA\\\"\\n    }, {\\n        \\\"name\\\": \\\"argentina\\\",\\n        \\\"group\\\": \\\"SA\\\"\\n    }, {\\n        \\\"name\\\": \\\"peru\\\",\\n        \\\"group\\\": \\\"SA\\\"\\n    }, {\\n        \\\"name\\\": \\\"venezuela\\\",\\n        \\\"group\\\": \\\"SA\\\"\\n    }],\\n    \\\"links\\\": [{\\n        \\\"source\\\": 1,\\n        \\\"target\\\": 0,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 2,\\n        \\\"target\\\": 0,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 2,\\n        \\\"target\\\": 1,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 1,\\n        \\\"target\\\": 3,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 0,\\n        \\\"target\\\": 3,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 4,\\n        \\\"target\\\": 3,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 6,\\n        \\\"target\\\": 5,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 7,\\n        \\\"target\\\": 5,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 7,\\n        \\\"target\\\": 8,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 5,\\n        \\\"target\\\": 8,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 9,\\n        \\\"target\\\": 8,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 6,\\n        \\\"target\\\": 7,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 6,\\n        \\\"target\\\": 10,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 6,\\n        \\\"target\\\": 11,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 10,\\n        \\\"target\\\": 11,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 7,\\n        \\\"target\\\": 11,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 9,\\n        \\\"target\\\": 4,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 11,\\n        \\\"target\\\": 9,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 9,\\n        \\\"target\\\": 12,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 4,\\n        \\\"target\\\": 12,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 8,\\n        \\\"target\\\": 13,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 14,\\n        \\\"target\\\": 13,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 12,\\n        \\\"target\\\": 15,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 14,\\n        \\\"target\\\": 15,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 9,\\n        \\\"target\\\": 14,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 17,\\n        \\\"target\\\": 16,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 16,\\n        \\\"target\\\": 18,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 19,\\n        \\\"target\\\": 18,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 6,\\n        \\\"target\\\": 20,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 21,\\n        \\\"target\\\": 20,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 18,\\n        \\\"target\\\": 20,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 18,\\n        \\\"target\\\": 21,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 19,\\n        \\\"target\\\": 21,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 22,\\n        \\\"target\\\": 21,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 16,\\n        \\\"target\\\": 19,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 23,\\n        \\\"target\\\": 19,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 24,\\n        \\\"target\\\": 19,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 16,\\n        \\\"target\\\": 23,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 24,\\n        \\\"target\\\": 23,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 25,\\n        \\\"target\\\": 24,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 19,\\n        \\\"target\\\": 22,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 24,\\n        \\\"target\\\": 22,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 25,\\n        \\\"target\\\": 22,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 13,\\n        \\\"target\\\": 26,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 14,\\n        \\\"target\\\": 26,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 27,\\n        \\\"target\\\": 17,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 28,\\n        \\\"target\\\": 17,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 26,\\n        \\\"target\\\": 27,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 27,\\n        \\\"target\\\": 29,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 27,\\n        \\\"target\\\": 28,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 29,\\n        \\\"target\\\": 28,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 26,\\n        \\\"target\\\": 30,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 29,\\n        \\\"target\\\": 30,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 28,\\n        \\\"target\\\": 31,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 30,\\n        \\\"target\\\": 31,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 29,\\n        \\\"target\\\": 31,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 15,\\n        \\\"target\\\": 32,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 33,\\n        \\\"target\\\": 32,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 15,\\n        \\\"target\\\": 33,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 30,\\n        \\\"target\\\": 33,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 32,\\n        \\\"target\\\": 34,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 32,\\n        \\\"target\\\": 35,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 36,\\n        \\\"target\\\": 35,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 30,\\n        \\\"target\\\": 37,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 31,\\n        \\\"target\\\": 37,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 32,\\n        \\\"target\\\": 37,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 33,\\n        \\\"target\\\": 37,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 35,\\n        \\\"target\\\": 37,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 34,\\n        \\\"target\\\": 36,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 37,\\n        \\\"target\\\": 38,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 39,\\n        \\\"target\\\": 38,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 41,\\n        \\\"target\\\": 40,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 39,\\n        \\\"target\\\": 40,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 25,\\n        \\\"target\\\": 41,\\n        \\\"value\\\": 5\\n    }, {\\n        \\\"source\\\": 38,\\n        \\\"target\\\": 41,\\n        \\\"value\\\": 5\\n    }]\\n}\\n\\nvar width  = 800,\\n    height = 400;\\n\\nnetClustering.cluster(graph.nodes, graph.links);\\n\\nvar color = d3.scale.category20();\\n\\nvar force = d3.layout.force()\\n    .charge(-150)\\n    .linkDistance(30)\\n    .size([width, height]);\\n\\nvar svg = div.append(\\\"svg\\\")\\n    .attr(\\\"width\\\", width)\\n    .attr(\\\"height\\\", height);\\n\\nforce\\n    .nodes(graph.nodes)\\n    .links(graph.links)\\n    .start();\\n\\nvar link = svg.selectAll(\\\"line.link\\\")\\n    .data(graph.links)\\n    .enter().append(\\\"line\\\")\\n    .attr(\\\"class\\\", \\\"link\\\")\\n    .style(\\\"stroke-width\\\", 2)\\n    .style(\\\"stroke\\\", \\\"#999\\\")\\n    .style(\\\"stroke-opacity\\\", 0.6);\\n\\nvar node = svg.selectAll(\\\"circle.node\\\")\\n    .data(graph.nodes)\\n    .enter().append(\\\"circle\\\")\\n    .attr(\\\"class\\\", \\\"node\\\")\\n    .attr(\\\"r\\\", 6)\\n    .attr(\\\"stroke\\\", \\\"#fff\\\")\\n    .attr(\\\"stroke-width\\\", 2)\\n    .style(\\\"fill\\\", function(d) {  switch (d.group){\\n      case \\\"Australia\\\":\\n        return \\\"purple\\\"\\n        break;\\n      case \\\"Afrika\\\":\\n        return \\\"brown\\\"\\n        break; \\n      case \\\"TheEast\\\":\\n        return \\\"green\\\"\\n        break; \\n      case \\\"EUR\\\":\\n        return \\\"blue\\\"\\n        break; \\n      case \\\"NA\\\":\\n        return \\\"yellow\\\"\\n        break; \\n      case \\\"SA\\\":\\n        return \\\"red\\\"\\n        break; \\n      }})\\n    .call(force.drag);\\n\\nnode.append(\\\"title\\\")\\n    .text(function(d) { return d.name; });\\n\\nforce.on(\\\"tick\\\", function() {\\n  link.attr(\\\"x1\\\", function(d) { return d.source.x; })\\n      .attr(\\\"y1\\\", function(d) { return d.source.y; })\\n      .attr(\\\"x2\\\", function(d) { return d.target.x; })\\n      .attr(\\\"y2\\\", function(d) { return d.target.y; });\\n\\n  node.attr(\\\"cx\\\", function(d) { return d.x; })\\n      .attr(\\\"cy\\\", function(d) { return d.y; });\\n});\\n\\nsvg.selectAll(\\\".node\\\").transition().duration(2000).style(\\\"fill\\\", function(d) { return color(d.cluster); });\\n};\",\"style\":[],\"version\":3,\"theme\":{\"default\":{\"background\":\"#FFFFFF\",\"foreground\":\"#000000\"},\"runtime\":null},\"useShadow\":true},\"evals\":[],\"jsHooks\":[]}\nI’m using netClustering.js here. It seems like risk clusters nicely.\n\n\n\n",
+    "preview": "til/risk/tech.jpg",
+    "last_modified": "2022-02-10T16:02:08+01:00",
+    "input_file": {}
+  },
+  {
+    "path": "til/urban/",
+    "title": "TIL: Urban Dictionary Embeddings",
+    "description": "It's an entertaining idea.",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2021-06-13",
+    "categories": [],
+    "contents": "\nWhen you train embeddings, like many things in data science, the data that you train on matters more than the algorithm that you use. That’s why I was immediately interested when I learned that a group of researchers trained custom embeddings on the urban dictionary project.\n\nIn case you’re not familiar, the urban dictionary is a user contributed dictionary for slang. It helps folks get familiar with abbreviations, internet slang, consultancy jargon and even some terms that can refer to an insult. It’s certainly an interesting project for sure, even though they certainly have a problem with internet hate speech.\nThe paper can be found here and the embeddings can be found here.\nResults\nOne of the interesting goals the authors had for these embeddings is sarcasm detection. They also ran the embeddings as a featurization step for a twitter sentiment task and it seems to be on-par with fasttext.\n\n\nUsecase\nThe embedding themselves are still 4Gb, which is too big for comfort for a lot of applications but it might be something worth playing with when you’re doing with a task that requires a lot of slang. Another alternative might be the sense2vec implementation from explosion.ai. It might also capture some slang but they train on the reddit corpus instead.\nReality\nA downside of both of these approaches is that slang will go stale very quickly. Slang that was last year is, well, so last year now.\n\n\n\n",
+    "preview": "til/urban/light.png",
+    "last_modified": "2022-02-10T16:02:08+01:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/gensim/",
+    "title": "TIL: Gensim Koan",
+    "description": "Ten Year Old Bug?",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2021-06-11",
+    "categories": [],
+    "contents": "\n\nA while ago one of my managers shared a paper on slack. It’s a paper on a 10 year old software bug in gensim. There are many ways to train word-embeddings but some common advise may be based on a software bug. To quote the abstract:\n\nIt is a common belief in the NLP community that continuous bag-of-words (CBOW) word embeddings tend to underperform skip-gram (SG) embeddings. We find that this belief is founded less on theoretical differences in their training objectives but more on faulty CBOW implementations in standard software libraries such as the official implementation word2vec.c and Gensim. We show that our correct implementation of CBOW yields word embeddings that are fully competitive with SG on various intrinsic and extrinsic tasks while being more than three times as fast to train.\n\nThat’d be a big “Ouch”. The described bug is also a pretty big one.\n\nSpecifically, we find that in these implementations, the gradient for source embeddings is incorrectly multiplied by the context window size, resulting in incorrect weight updates and inferior performance.\n\nThe bug is suggested to also have an effect on the hyperparameters.\n\nWe believe that Gensim requires a smaller learning rate for CBOW, because a smaller learning rate is more likely to reduce the stochastic loss, since the incorrect update is still a descent direction, although not following the negative stochastic gradient.\n\nThe article then goes on to show that their implementation is faster to train and still maintains predictive properties.\nLessons\nThere’s a few lessons that you might be able to learn from this. One lesson might be “open source software can still be fragile”. While true, I think there’s a even better lesson. If the code wasn’t open sourced, this error would never have been found.\nThen again, another big lesson is that numeric algorithms are very tricky to debug.\nRequired Nuance\nThe Gensim twitter account made a comment on this work and pointed me to this GitHub issue. It seems that the initial version of the paper is a pre-print and that the paper has since changed. It even got a new name!\nIt also seems like there is plenty of nuance that could be applied. This quote, on GitHub, stands out to me in particular:\n\n(as is sadly rampant in papers) it’s not crystal-clear that they’ve given preexisting implementations (in this case Gensim) the same breadth of meta-parameter optimizations as their method.\n\nI’m inclined to agree here. The paper could do a better job of saying “we really only changed this one thing”. Without this explicit mention, one is at risk of reporting on metric-hacking results.\nOne big lesson still stands. Numeric algorithms are not easy to debug.\n\n\n\n",
+    "preview": "til/gensim/bug.png",
+    "last_modified": "2022-02-10T16:02:08+01:00",
+    "input_file": {},
+    "preview_width": 600,
+    "preview_height": 159
+  },
+  {
+    "path": "til/tesla/",
+    "title": "TIL: Tesla vs. Stoplights",
+    "description": "Data Quality Strikes Again",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2021-06-05",
+    "categories": [],
+    "contents": "\nTesla cars come with software that tries to interpret the surrounding of the car. Sometimes it gets it wrong though and this is nice example.\n\n\n\nFigure 1: This is what the computer makes of the surrounding.\n\n\n\nThe car seems to predict that there are traffic lights spawning on the ground.\n\n\n\nFigure 2: This is the viewpoint from the car.\n\n\n\nThis is actually partially true, because the truck ahead of the car is carrying traffic lights.\n\n\n\nFigure 3: Yep. The truck is carrying traffic lights.\n\n\n\nYou might argue that “the computer is doing it right” while you can also argue that it isn’t. The main lesson is that these systems will never be perfect if their training data doesn’t reflect reality and reality includes a truck carrying traffic lights.\n\n\n\n",
+    "preview": "til/tesla/oops.jpg",
+    "last_modified": "2022-02-10T16:02:08+01:00",
+    "input_file": {}
+  },
+  {
+    "path": "til/kolektor/",
+    "title": "TIL: Kolektor",
+    "description": "My take on Git-Scraping[tm]",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2021-06-03",
+    "categories": [],
+    "contents": "\nI was inspired by the git scraping technique from Simon Willison a while ago which led me to maintaining my own public scraper.\nMy scraper is a little bit different though. The initial technique involves scraping and overwriting the data. My technique is to commit incremental changes instead. The idea is that this allows me to have a public git dashboard as well!\nHere’s a workflow demo that collects download statistics from my python projects. There’s a command line script that prints to stdout, which is then logged in the appropriate file. I concatenate all the results in a single file at the end before I commit the changes back to master.\nname: Kollekt Pepy\n\non:\n  workflow_dispatch:\n  schedule:\n    - cron:  '0 10 * * *'\n\njobs:\n  scheduled:\n    runs-on: ubuntu-latest\n    steps:\n    - name: Check out this repo\n      uses: actions/checkout@v2\n    - name: Set up Python ${{ matrix.python-version }}\n      uses: actions/setup-python@v1\n      with:\n        python-version: 3.7\n    - name: Install dependencies\n      run: |\n        python -m pip install --upgrade pip\n        pip install -r requirements.txt\n    - name: Fetch latest data\n      run: |-\n        python download/pepy.py scikit-lego >> data/pepy/scikit-lego.jsonl\n        python download/pepy.py human-learn >> data/pepy/human-learn.jsonl\n        python download/pepy.py whatlies >> data/pepy/whatlies.jsonl\n        python download/pepy.py drawdata >> data/pepy/drawdata.jsonl\n        python download/pepy.py tokenwiser >> data/pepy/tokenwiser.jsonl\n        python download/pepy.py memo >> data/pepy/memo.jsonl\n        python download/pepy.py clumper >> data/pepy/clumper.jsonl\n        python download/pepy.py mktestdocs >> data/pepy/mktestdocs.jsonl\n    - name: Concatenate it all\n      run: |-\n        python common/concat.py data/pepy/*.jsonl data/pepy/downloads.csv\n    - name: Commit and push if it changed\n      run: |-\n        git config user.name \"Automated\"\n        git config user.email \"actions@users.noreply.github.com\"\n        git add -A\n        timestamp=$(date -u)\n        git commit -m \"Latest data: ${timestamp}\" || exit 0\n        git push\nYou can find the project on github.\nVisuals\nIt’s a pretty powerful technique that you can easily combine with my justcharts library. I’m using the related github pages to host a dashboard here but the data can also be viewed via flatgithub. This flatgithub project is part of the flat data effort on github.\n\n\n\n",
+    "preview": "til/kolektor/tech.jpg",
+    "last_modified": "2022-02-10T16:02:08+01:00",
+    "input_file": {}
+  },
+  {
+    "path": "til/flightsim/",
+    "title": "TIL: Flight Simulatoops",
+    "description": "Data Quality Strikes Again",
+    "author": [
+      {
+        "name": "Vincent Warmerdam",
+        "url": "koaning.io"
+      }
+    ],
+    "date": "2021-06-01",
+    "categories": [],
+    "contents": "\nI knew data quality issues are a thing, but this one kind of blew my mind.\n\n\n\nFigure 1: See that tower all the way in the back there?\n\n\n\nMicrosoft Flight tries to mimic the real world and it uses open data to construct the world. At some point gamers found a 212-storey tower of a house in “Australia” due to a data issue.\n\n\n\nFigure 2: This is a close-up.\n\n\n\nIt’s explained in more detail in this guardian article and this tweet. To quote the guardian article of what went wrong here:\n\nA user on Openstreetmap named nathanwright120 appears to have, accidentally, entered in the height of the Fawkner home as 212 storeys, rather than just two. The edit was fixed by another user but not before Flight Simulator’s developers had pulled the data from Openstreetmap in the construction of its world, leading to a home with more than double the number of floors of Melbourne’s Eureka tower. Given the sheer size of the game, mistakes of this kind are likely to occur, and will no doubt continue to be discovered by users in the coming weeks and months. Other hiccups include an unusual looking Sydney Harbour Bridge and a Buckingham Palace that more resembles an office block.\n\nIt’s a nice example of a datapoint that’s very easy to look for once you find it, but it’s not something that comes to mind as something to check.\n\n\n\n",
+    "preview": "til/flightsim/oops.jpg",
+    "last_modified": "2022-02-10T16:02:08+01:00",
+    "input_file": {}
+  }
+]

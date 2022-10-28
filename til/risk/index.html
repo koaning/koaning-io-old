@@ -1,0 +1,1939 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ad0000; } /* Alert */
+code span.an { color: #5e5e5e; } /* Annotation */
+code span.at { color: #20794d; } /* Attribute */
+code span.bn { color: #ad0000; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007ba5; } /* ControlFlow */
+code span.ch { color: #20794d; } /* Char */
+code span.cn { color: #8f5902; } /* Constant */
+code span.co { color: #5e5e5e; } /* Comment */
+code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+code span.dt { color: #ad0000; } /* DataType */
+code span.dv { color: #ad0000; } /* DecVal */
+code span.er { color: #ad0000; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #ad0000; } /* Float */
+code span.fu { color: #4758ab; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #5e5e5e; } /* Information */
+code span.kw { color: #007ba5; } /* Keyword */
+code span.op { color: #5e5e5e; } /* Operator */
+code span.ot { color: #007ba5; } /* Other */
+code span.pp { color: #ad0000; } /* Preprocessor */
+code span.sc { color: #20794d; } /* SpecialChar */
+code span.ss { color: #20794d; } /* SpecialString */
+code span.st { color: #20794d; } /* String */
+code span.va { color: #111111; } /* Variable */
+code span.vs { color: #20794d; } /* VerbatimString */
+code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+</style>
+
+  <!--radix_placeholder_meta_tags-->
+<title>koaning.io: TIL: Clusters of Risk</title>
+
+<meta property="description" itemprop="description" content="Graphs Mostly"/>
+
+<link rel="canonical" href="https://koaning.io/til/risk/"/>
+<link rel="icon" type="image/png" href="../../favicon.png"/>
+
+<!--  https://schema.org/Article -->
+<meta property="article:published" itemprop="datePublished" content="2021-06-16"/>
+<meta property="article:created" itemprop="dateCreated" content="2021-06-16"/>
+<meta name="article:author" content="Vincent Warmerdam"/>
+
+<!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+<meta property="og:title" content="koaning.io: TIL: Clusters of Risk"/>
+<meta property="og:type" content="article"/>
+<meta property="og:description" content="Graphs Mostly"/>
+<meta property="og:url" content="https://koaning.io/til/risk/"/>
+<meta property="og:image" content="https://koaning.io/til/risk/tech.jpg"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="koaning.io"/>
+
+<!--  https://dev.twitter.com/cards/types/summary -->
+<meta property="twitter:card" content="summary_large_image"/>
+<meta property="twitter:title" content="koaning.io: TIL: Clusters of Risk"/>
+<meta property="twitter:description" content="Graphs Mostly"/>
+<meta property="twitter:url" content="https://koaning.io/til/risk/"/>
+<meta property="twitter:image" content="https://koaning.io/til/risk/tech.jpg"/>
+
+<!--/radix_placeholder_meta_tags-->
+  <!--radix_placeholder_rmarkdown_metadata-->
+
+<script type="text/json" id="radix-rmarkdown-metadata">
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","preview","citation","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["TIL: Clusters of Risk"]},{"type":"character","attributes":{},"value":["Graphs Mostly"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Vincent Warmerdam"]},{"type":"character","attributes":{},"value":["koaning.io"]}]}]},{"type":"character","attributes":{},"value":["2021-06-16"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["tech.jpg"]},{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["https://koaning.io/til/risk/"]},{"type":"character","attributes":{},"value":["https://koaning.io/til/risk/"]}]}
+</script>
+<!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["cluster.js","netClustering.js","risk_files/anchor-4.2.2/anchor.min.js","risk_files/bowser-1.9.3/bowser.min.js","risk_files/d3-3.5.17/d3.min.js","risk_files/d3-3.5.17/LICENSE","risk_files/distill-2.2.21/template.v2.js","risk_files/header-attrs-2.8/header-attrs.js","risk_files/htmlwidgets-1.5.3/htmlwidgets.js","risk_files/jquery-1.11.3/jquery.min.js","risk_files/popper-2.6.0/popper.min.js","risk_files/r2d3-binding-0.2.5/r2d3.js","risk_files/r2d3-render-0.1.0/r2d3-render.js","risk_files/tippy-6.2.7/tippy-bundle.umd.min.js","risk_files/tippy-6.2.7/tippy-light-border.css","risk_files/tippy-6.2.7/tippy.css","risk_files/tippy-6.2.7/tippy.umd.min.js","risk_files/webcomponents-2.0.0/webcomponents.js","risk.js","tech.jpg"]}
+  </script>
+  <!--radix_placeholder_navigation_in_header-->
+<meta name="distill:offset" content="../.."/>
+
+<script type="application/javascript">
+
+  window.headroom_prevent_pin = false;
+
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+
+    // initialize headroom for banner
+    var header = $('header').get(0);
+    var headerHeight = header.offsetHeight;
+    var headroom = new Headroom(header, {
+      tolerance: 5,
+      onPin : function() {
+        if (window.headroom_prevent_pin) {
+          window.headroom_prevent_pin = false;
+          headroom.unpin();
+        }
+      }
+    });
+    headroom.init();
+    if(window.location.hash)
+      headroom.unpin();
+    $(header).addClass('headroom--transition');
+
+    // offset scroll location for banner on hash change
+    // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
+    window.addEventListener("hashchange", function(event) {
+      window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
+    });
+
+    // responsive menu
+    $('.distill-site-header').each(function(i, val) {
+      var topnav = $(this);
+      var toggle = topnav.find('.nav-toggle');
+      toggle.on('click', function() {
+        topnav.toggleClass('responsive');
+      });
+    });
+
+    // nav dropdowns
+    $('.nav-dropbtn').click(function(e) {
+      $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
+      $(this).parent().siblings('.nav-dropdown')
+         .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $("body").click(function(e){
+      $('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $(".nav-dropdown").click(function(e){
+      e.stopPropagation();
+    });
+  });
+</script>
+
+<style type="text/css">
+
+/* Theme (user-documented overrideables for nav appearance) */
+
+.distill-site-nav {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #0F2E3D;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.distill-site-nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.distill-site-nav a:hover {
+  color: white;
+}
+
+@media print {
+  .distill-site-nav {
+    display: none;
+  }
+}
+
+.distill-site-header {
+
+}
+
+.distill-site-footer {
+
+}
+
+
+/* Site Header */
+
+.distill-site-header {
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+.distill-site-header .nav-left {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header .nav-left {
+    margin-left: 0;
+  }
+}
+
+
+.distill-site-header .nav-right {
+  float: right;
+  margin-right: 8px;
+}
+
+.distill-site-header a,
+.distill-site-header .title {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 10px 14px 10px;
+}
+
+.distill-site-header .title {
+  font-size: 18px;
+  min-width: 150px;
+}
+
+.distill-site-header .logo {
+  padding: 0;
+}
+
+.distill-site-header .logo img {
+  display: none;
+  max-height: 20px;
+  width: auto;
+  margin-bottom: -4px;
+}
+
+.distill-site-header .nav-image img {
+  max-height: 18px;
+  width: auto;
+  display: inline-block;
+  margin-bottom: -3px;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+  .distill-site-header .logo img {
+    display: inline-block;
+  }
+  .distill-site-header .nav-left {
+    margin-left: 20px;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 20px;
+  }
+  .distill-site-header .title {
+    padding-left: 12px;
+  }
+}
+
+
+.distill-site-header .nav-toggle {
+  display: none;
+}
+
+.nav-dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-dropdown .nav-dropbtn {
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 16px 10px;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  margin-top: 1px;
+  z-index: 2;
+}
+
+.nav-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  z-index: 1;
+  margin-top: 2px;
+  white-space: nowrap;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.nav-dropdown-content hr {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-dropdown-active {
+  display: block;
+}
+
+.nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
+  color: black;
+  padding: 6px 24px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.nav-dropdown-content .nav-dropdown-header {
+  display: block;
+  padding: 5px 24px;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #999999;
+  white-space: nowrap;
+}
+
+.nav-dropdown:hover .nav-dropbtn {
+  color: white;
+}
+
+.nav-dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav-right .nav-dropdown-content {
+  margin-left: -45%;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
+  .distill-site-header a.nav-toggle {
+    float: right;
+    display: block;
+  }
+  .distill-site-header .title {
+    margin-left: 0;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 0;
+  }
+  .distill-site-header {
+    overflow: hidden;
+  }
+  .nav-right .nav-dropdown-content {
+    margin-left: 0;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .distill-site-header.responsive {position: relative; min-height: 500px; }
+  .distill-site-header.responsive a.nav-toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .distill-site-header.responsive a,
+  .distill-site-header.responsive .nav-dropdown {
+    display: block;
+    text-align: left;
+  }
+  .distill-site-header.responsive .nav-left,
+  .distill-site-header.responsive .nav-right {
+    width: 100%;
+  }
+  .distill-site-header.responsive .nav-dropdown {float: none;}
+  .distill-site-header.responsive .nav-dropdown-content {position: relative;}
+  .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* Site Footer */
+
+.distill-site-footer {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 3;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+/* Headroom */
+
+d-title {
+  padding-top: 6rem;
+}
+
+@media print {
+  d-title {
+    padding-top: 4rem;
+  }
+}
+
+.headroom {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.headroom--transition {
+  transition: all .4s ease-in-out;
+}
+
+.headroom--unpinned {
+  top: -100px;
+}
+
+.headroom--pinned {
+  top: 0;
+}
+
+/* adjust viewport for navbar height */
+/* helps vertically center bootstrap (non-distill) content */
+.min-vh-100 {
+  min-height: calc(100vh - 100px) !important;
+}
+
+</style>
+
+<script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
+<link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
+<script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
+<!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+
+<style type="text/css">
+
+body {
+  background-color: white;
+}
+
+.pandoc-table {
+  width: 100%;
+}
+
+.pandoc-table>caption {
+  margin-bottom: 10px;
+}
+
+.pandoc-table th:not([align]) {
+  text-align: left;
+}
+
+.pagedtable-footer {
+  font-size: 15px;
+}
+
+d-byline .byline {
+  grid-template-columns: 2fr 2fr;
+}
+
+d-byline .byline h3 {
+  margin-block-start: 1.5em;
+}
+
+d-byline .byline .authors-affiliations h3 {
+  margin-block-start: 0.5em;
+}
+
+.authors-affiliations .orcid-id {
+  width: 16px;
+  height:16px;
+  margin-left: 4px;
+  margin-right: 4px;
+  vertical-align: middle;
+  padding-bottom: 2px;
+}
+
+d-title .dt-tags {
+  margin-top: 1em;
+  grid-column: text;
+}
+
+.dt-tags .dt-tag {
+  text-decoration: none;
+  display: inline-block;
+  color: rgba(0,0,0,0.6);
+  padding: 0em 0.4em;
+  margin-right: 0.5em;
+  margin-bottom: 0.4em;
+  font-size: 70%;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+d-article table.gt_table td,
+d-article table.gt_table th {
+  border-bottom: none;
+}
+
+.html-widget {
+  margin-bottom: 2.0em;
+}
+
+.l-screen-inset {
+  padding-right: 16px;
+}
+
+.l-screen .caption {
+  margin-left: 10px;
+}
+
+.shaded {
+  background: rgb(247, 247, 247);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shaded .html-widget {
+  margin-bottom: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shaded .shaded-content {
+  background: white;
+}
+
+.text-output {
+  margin-top: 0;
+  line-height: 1.5em;
+}
+
+.hidden {
+  display: none !important;
+}
+
+d-article {
+  padding-top: 2.5rem;
+  padding-bottom: 30px;
+}
+
+d-appendix {
+  padding-top: 30px;
+}
+
+d-article>p>img {
+  width: 100%;
+}
+
+d-article h2 {
+  margin: 1rem 0 1.5rem 0;
+}
+
+d-article h3 {
+  margin-top: 1.5rem;
+}
+
+d-article iframe {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 2.0em;
+  width: 100%;
+}
+
+/* Tweak code blocks */
+
+d-article div.sourceCode code,
+d-article pre code {
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+d-article pre,
+d-article div.sourceCode,
+d-article div.sourceCode pre {
+  overflow: auto;
+}
+
+d-article div.sourceCode {
+  background-color: white;
+}
+
+d-article div.sourceCode pre {
+  padding-left: 10px;
+  font-size: 12px;
+  border-left: 2px solid rgba(0,0,0,0.1);
+}
+
+d-article pre {
+  font-size: 12px;
+  color: black;
+  background: none;
+  margin-top: 0;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+d-article pre a {
+  border-bottom: none;
+}
+
+d-article pre a:hover {
+  border-bottom: none;
+  text-decoration: underline;
+}
+
+d-article details {
+  grid-column: text;
+  margin-bottom: 0.8em;
+}
+
+@media(min-width: 768px) {
+
+d-article pre,
+d-article div.sourceCode,
+d-article div.sourceCode pre {
+  overflow: visible !important;
+}
+
+d-article div.sourceCode pre {
+  padding-left: 18px;
+  font-size: 14px;
+}
+
+d-article pre {
+  font-size: 14px;
+}
+
+}
+
+figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+/* CSS for d-contents */
+
+.d-contents {
+  grid-column: text;
+  color: rgba(0,0,0,0.8);
+  font-size: 0.9em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+  padding-left: 0.25em;
+  justify-self: start;
+}
+
+@media(min-width: 1000px) {
+  .d-contents.d-contents-float {
+    height: 0;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-self: center;
+    padding-right: 3em;
+    padding-left: 2em;
+  }
+}
+
+.d-contents nav h3 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.d-contents li {
+  list-style-type: none
+}
+
+.d-contents nav > ul {
+  padding-left: 0;
+}
+
+.d-contents ul {
+  padding-left: 1em
+}
+
+.d-contents nav ul li {
+  margin-top: 0.6em;
+  margin-bottom: 0.2em;
+}
+
+.d-contents nav a {
+  font-size: 13px;
+  border-bottom: none;
+  text-decoration: none
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.d-contents nav a:hover {
+  text-decoration: underline solid rgba(0, 0, 0, 0.6)
+}
+
+.d-contents nav > ul > li > a {
+  font-weight: 600;
+}
+
+.d-contents nav > ul > li > ul {
+  font-weight: inherit;
+}
+
+.d-contents nav > ul > li > ul > li {
+  margin-top: 0.2em;
+}
+
+
+.d-contents nav ul {
+  margin-top: 0;
+  margin-bottom: 0.25em;
+}
+
+.d-article-with-toc h2:nth-child(2) {
+  margin-top: 0;
+}
+
+
+/* Figure */
+
+.figure {
+  position: relative;
+  margin-bottom: 2.5em;
+  margin-top: 1.5em;
+}
+
+.figure img {
+  width: 100%;
+}
+
+.figure .caption {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+.figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+.figure .caption a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.figure .caption b,
+.figure .caption strong, {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1.0);
+}
+
+/* Citations */
+
+d-article .citation {
+  color: inherit;
+  cursor: inherit;
+}
+
+div.hanging-indent{
+  margin-left: 1em; text-indent: -1em;
+}
+
+/* Citation hover box */
+
+.tippy-box[data-theme~=light-border] {
+  background-color: rgba(250, 250, 250, 0.95);
+}
+
+.tippy-content > p {
+  margin-bottom: 0;
+  padding: 2px;
+}
+
+
+/* Tweak 1000px media break to show more text */
+
+@media(min-width: 1000px) {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 16px;
+  }
+
+  .grid {
+    grid-column-gap: 16px;
+  }
+
+  d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+  }
+  figure .caption, .figure .caption, figure figcaption {
+    font-size: 13px;
+  }
+}
+
+@media(min-width: 1180px) {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 32px;
+  }
+
+  .grid {
+    grid-column-gap: 32px;
+  }
+}
+
+
+/* Get the citation styles for the appendix (not auto-injected on render since
+   we do our own rendering of the citation appendix) */
+
+d-appendix .citation-appendix,
+.d-appendix .citation-appendix {
+  font-size: 11px;
+  line-height: 15px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 18px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background: rgba(0, 0, 0, 0.02);
+  padding: 10px 18px;
+  border-radius: 3px;
+  color: rgba(150, 150, 150, 1);
+  overflow: hidden;
+  margin-top: -12px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Include appendix styles here so they can be overridden */
+
+d-appendix {
+  contain: layout style;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  margin-top: 60px;
+  margin-bottom: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  color: rgba(0,0,0,0.5);
+  padding-top: 60px;
+  padding-bottom: 48px;
+}
+
+d-appendix h3 {
+  grid-column: page-start / text-start;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 1em;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.65);
+}
+
+d-appendix h3 + * {
+  margin-top: 1em;
+}
+
+d-appendix ol {
+  padding: 0 0 0 15px;
+}
+
+@media (min-width: 768px) {
+  d-appendix ol {
+    padding: 0 0 0 30px;
+    margin-left: -30px;
+  }
+}
+
+d-appendix li {
+  margin-bottom: 1em;
+}
+
+d-appendix a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+d-appendix > * {
+  grid-column: text;
+}
+
+d-appendix > d-footnote-list,
+d-appendix > d-citation-list,
+d-appendix > distill-appendix {
+  grid-column: screen;
+}
+
+/* Include footnote styles here so they can be overridden */
+
+d-footnote-list {
+  contain: layout style;
+}
+
+d-footnote-list > * {
+  grid-column: text;
+}
+
+d-footnote-list a.footnote-backlink {
+  color: rgba(0,0,0,0.3);
+  padding-left: 0.5em;
+}
+
+
+
+/* Anchor.js */
+
+.anchorjs-link {
+  /*transition: all .25s linear; */
+  text-decoration: none;
+  border-bottom: none;
+}
+*:hover > .anchorjs-link {
+  margin-left: -1.125em !important;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+/* Social footer */
+
+.social_footer {
+  margin-top: 30px;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.67);
+}
+
+.disqus-comments {
+  margin-right: 30px;
+}
+
+.disqus-comment-count {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+#disqus_thread {
+  margin-top: 30px;
+}
+
+.article-sharing a {
+  border-bottom: none;
+  margin-right: 8px;
+}
+
+.article-sharing a:hover {
+  border-bottom: none;
+}
+
+.sidebar-section.subscribe {
+  font-size: 12px;
+  line-height: 1.6em;
+}
+
+.subscribe p {
+  margin-bottom: 0.5em;
+}
+
+
+.article-footer .subscribe {
+  font-size: 15px;
+  margin-top: 45px;
+}
+
+
+.sidebar-section.custom {
+  font-size: 12px;
+  line-height: 1.6em;
+}
+
+.custom p {
+  margin-bottom: 0.5em;
+}
+
+/* Styles for listing layout (hide title) */
+.layout-listing d-title, .layout-listing .d-title {
+  display: none;
+}
+
+/* Styles for posts lists (not auto-injected) */
+
+
+.posts-with-sidebar {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.posts-list .description h2,
+.posts-list .description p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.posts-list .description h2 {
+  font-weight: 700;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.posts-list h2.post-tag {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 12px;
+}
+.posts-list {
+  margin-top: 60px;
+  margin-bottom: 24px;
+}
+
+.posts-list .post-preview {
+  text-decoration: none;
+  overflow: hidden;
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 24px 0;
+}
+
+.post-preview-last {
+  border-bottom: none !important;
+}
+
+.posts-list .posts-list-caption {
+  grid-column: screen;
+  font-weight: 400;
+}
+
+.posts-list .post-preview h2 {
+  margin: 0 0 6px 0;
+  line-height: 1.2em;
+  font-style: normal;
+  font-size: 24px;
+}
+
+.posts-list .post-preview p {
+  margin: 0 0 12px 0;
+  line-height: 1.4em;
+  font-size: 16px;
+}
+
+.posts-list .post-preview .thumbnail {
+  box-sizing: border-box;
+  margin-bottom: 24px;
+  position: relative;
+  max-width: 500px;
+}
+.posts-list .post-preview img {
+  width: 100%;
+  display: block;
+}
+
+.posts-list .metadata {
+  font-size: 12px;
+  line-height: 1.4em;
+  margin-bottom: 18px;
+}
+
+.posts-list .metadata > * {
+  display: inline-block;
+}
+
+.posts-list .metadata .publishedDate {
+  margin-right: 2em;
+}
+
+.posts-list .metadata .dt-authors {
+  display: block;
+  margin-top: 0.3em;
+  margin-right: 2em;
+}
+
+.posts-list .dt-tags {
+  display: block;
+  line-height: 1em;
+}
+
+.posts-list .dt-tags .dt-tag {
+  display: inline-block;
+  color: rgba(0,0,0,0.6);
+  padding: 0.3em 0.4em;
+  margin-right: 0.2em;
+  margin-bottom: 0.4em;
+  font-size: 60%;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.posts-list img {
+  opacity: 1;
+}
+
+.posts-list img[data-src] {
+  opacity: 0;
+}
+
+.posts-more {
+  clear: both;
+}
+
+
+.posts-sidebar {
+  font-size: 16px;
+}
+
+.posts-sidebar h3 {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.sidebar-section {
+  margin-bottom: 30px;
+}
+
+.categories ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.categories li {
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 0;
+}
+
+.categories li>a {
+  border-bottom: none;
+}
+
+.categories li>a:hover {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.categories .active {
+  font-weight: 600;
+}
+
+.categories .category-count {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+
+@media(min-width: 768px) {
+  .posts-list .post-preview h2 {
+    font-size: 26px;
+  }
+  .posts-list .post-preview .thumbnail {
+    float: right;
+    width: 30%;
+    margin-bottom: 0;
+  }
+  .posts-list .post-preview .description {
+    float: left;
+    width: 45%;
+  }
+  .posts-list .post-preview .metadata {
+    float: left;
+    width: 20%;
+    margin-top: 8px;
+  }
+  .posts-list .post-preview p {
+    margin: 0 0 12px 0;
+    line-height: 1.5em;
+    font-size: 16px;
+  }
+  .posts-with-sidebar .posts-list {
+    float: left;
+    width: 75%;
+  }
+  .posts-with-sidebar .posts-sidebar {
+    float: right;
+    width: 20%;
+    margin-top: 60px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+
+/* Improve display for browsers without grid (IE/Edge <= 15) */
+
+.downlevel {
+  line-height: 1.6em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+}
+
+.downlevel .d-title {
+  padding-top: 6rem;
+  padding-bottom: 1.5rem;
+}
+
+.downlevel .d-title h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.1em;
+  margin: 0 0 0.5rem;
+}
+
+.downlevel .d-title p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.55em;
+  margin-top: 0;
+}
+
+.downlevel .d-byline {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  font-size: 0.8rem;
+  line-height: 1.8em;
+}
+
+.downlevel .section-separator {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.downlevel .d-article {
+  font-size: 1.06rem;
+  line-height: 1.7em;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+
+.downlevel .d-appendix {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: none;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.5);
+  padding-top: 40px;
+  padding-bottom: 48px;
+}
+
+.downlevel .footnotes ol {
+  padding-left: 13px;
+}
+
+.downlevel .base-grid,
+.downlevel .distill-header,
+.downlevel .d-title,
+.downlevel .d-abstract,
+.downlevel .d-article,
+.downlevel .d-appendix,
+.downlevel .distill-appendix,
+.downlevel .d-byline,
+.downlevel .d-footnote-list,
+.downlevel .d-citation-list,
+.downlevel .distill-footer,
+.downlevel .appendix-bottom,
+.downlevel .posts-container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media(min-width: 768px) {
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+  padding-left: 150px;
+  padding-right: 150px;
+  max-width: 900px;
+}
+}
+
+.downlevel pre code {
+  display: block;
+  border-left: 2px solid rgba(0, 0, 0, .1);
+  padding: 0 0 0 20px;
+  font-size: 14px;
+}
+
+.downlevel code, .downlevel pre {
+  color: black;
+  background: none;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+.downlevel .posts-list .post-preview {
+  color: inherit;
+}
+
+
+
+</style>
+
+<script type="application/javascript">
+
+function is_downlevel_browser() {
+  if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                 window.navigator.userAgent)) {
+    return true;
+  } else {
+    return window.load_distill_framework === undefined;
+  }
+}
+
+// show body when load is complete
+function on_load_complete() {
+
+  // add anchors
+  if (window.anchors) {
+    window.anchors.options.placement = 'left';
+    window.anchors.add('d-article > h2, d-article > h3, d-article > h4, d-article > h5');
+  }
+
+
+  // set body to visible
+  document.body.style.visibility = 'visible';
+
+  // force redraw for leaflet widgets
+  if (window.HTMLWidgets) {
+    var maps = window.HTMLWidgets.findAll(".leaflet");
+    $.each(maps, function(i, el) {
+      var map = this.getMap();
+      map.invalidateSize();
+      map.eachLayer(function(layer) {
+        if (layer instanceof L.TileLayer)
+          layer.redraw();
+      });
+    });
+  }
+
+  // trigger 'shown' so htmlwidgets resize
+  $('d-article').trigger('shown');
+}
+
+function init_distill() {
+
+  init_common();
+
+  // create front matter
+  var front_matter = $('<d-front-matter></d-front-matter>');
+  $('#distill-front-matter').wrap(front_matter);
+
+  // create d-title
+  $('.d-title').changeElementType('d-title');
+
+  // create d-byline
+  var byline = $('<d-byline></d-byline>');
+  $('.d-byline').replaceWith(byline);
+
+  // create d-article
+  var article = $('<d-article></d-article>');
+  $('.d-article').wrap(article).children().unwrap();
+
+  // move posts container into article
+  $('.posts-container').appendTo($('d-article'));
+
+  // create d-appendix
+  $('.d-appendix').changeElementType('d-appendix');
+
+  // flag indicating that we have appendix items
+  var appendix = $('.appendix-bottom').children('h3').length > 0;
+
+  // replace footnotes with <d-footnote>
+  $('.footnote-ref').each(function(i, val) {
+    appendix = true;
+    var href = $(this).attr('href');
+    var id = href.replace('#', '');
+    var fn = $('#' + id);
+    var fn_p = $('#' + id + '>p');
+    fn_p.find('.footnote-back').remove();
+    var text = fn_p.html();
+    var dtfn = $('<d-footnote></d-footnote>');
+    dtfn.html(text);
+    $(this).replaceWith(dtfn);
+  });
+  // remove footnotes
+  $('.footnotes').remove();
+
+  // move refs into #references-listing
+  $('#references-listing').replaceWith($('#refs'));
+
+  $('h1.appendix, h2.appendix').each(function(i, val) {
+    $(this).changeElementType('h3');
+  });
+  $('h3.appendix').each(function(i, val) {
+    var id = $(this).attr('id');
+    $('.d-contents a[href="#' + id + '"]').parent().remove();
+    appendix = true;
+    $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+  });
+
+  // show d-appendix if we have appendix content
+  $("d-appendix").css('display', appendix ? 'grid' : 'none');
+
+  // localize layout chunks to just output
+  $('.layout-chunk').each(function(i, val) {
+
+    // capture layout
+    var layout = $(this).attr('data-layout');
+
+    // apply layout to markdown level block elements
+    var elements = $(this).children().not('details, div.sourceCode, pre, script');
+    elements.each(function(i, el) {
+      var layout_div = $('<div class="' + layout + '"></div>');
+      if (layout_div.hasClass('shaded')) {
+        var shaded_content = $('<div class="shaded-content"></div>');
+        $(this).wrap(shaded_content);
+        $(this).parent().wrap(layout_div);
+      } else {
+        $(this).wrap(layout_div);
+      }
+    });
+
+
+    // unwrap the layout-chunk div
+    $(this).children().unwrap();
+  });
+
+  // remove code block used to force  highlighting css
+  $('.distill-force-highlighting-css').parent().remove();
+
+  // remove empty line numbers inserted by pandoc when using a
+  // custom syntax highlighting theme
+  $('code.sourceCode a:empty').remove();
+
+  // load distill framework
+  load_distill_framework();
+
+  // wait for window.distillRunlevel == 4 to do post processing
+  function distill_post_process() {
+
+    if (!window.distillRunlevel || window.distillRunlevel < 4)
+      return;
+
+    // hide author/affiliations entirely if we have no authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+    if (!have_authors)
+      $('d-byline').addClass('hidden');
+
+    // article with toc class
+    $('.d-contents').parent().addClass('d-article-with-toc');
+
+    // strip links that point to #
+    $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+
+    // add orcid ids
+    $('.authors-affiliations').find('.author').each(function(i, el) {
+      var orcid_id = front_matter.authors[i].orcidID;
+      if (orcid_id) {
+        var a = $('<a></a>');
+        a.attr('href', 'https://orcid.org/' + orcid_id);
+        var img = $('<img></img>');
+        img.addClass('orcid-id');
+        img.attr('alt', 'ORCID ID');
+        img.attr('src','data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==');
+        a.append(img);
+        $(this).append(a);
+      }
+    });
+
+    // hide elements of author/affiliations grid that have no value
+    function hide_byline_column(caption) {
+      $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+    }
+
+    // affiliations
+    var have_affiliations = false;
+    for (var i = 0; i<front_matter.authors.length; ++i) {
+      var author = front_matter.authors[i];
+      if (author.affiliation !== "&nbsp;") {
+        have_affiliations = true;
+        break;
+      }
+    }
+    if (!have_affiliations)
+      $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+
+    // published date
+    if (!front_matter.publishedDate)
+      hide_byline_column("Published");
+
+    // document object identifier
+    var doi = $('d-byline').find('h3:contains("DOI")');
+    var doi_p = doi.next().empty();
+    if (!front_matter.doi) {
+      // if we have a citation and valid citationText then link to that
+      if ($('#citation').length > 0 && front_matter.citationText) {
+        doi.html('Citation');
+        $('<a href="#citation"></a>')
+          .text(front_matter.citationText)
+          .appendTo(doi_p);
+      } else {
+        hide_byline_column("DOI");
+      }
+    } else {
+      $('<a></a>')
+         .attr('href', "https://doi.org/" + front_matter.doi)
+         .html(front_matter.doi)
+         .appendTo(doi_p);
+    }
+
+     // change plural form of authors/affiliations
+    if (front_matter.authors.length === 1) {
+      var grid = $('.authors-affiliations');
+      grid.children('h3:contains("Authors")').text('Author');
+      grid.children('h3:contains("Affiliations")').text('Affiliation');
+    }
+
+    // remove d-appendix and d-footnote-list local styles
+    $('d-appendix > style:first-child').remove();
+    $('d-footnote-list > style:first-child').remove();
+
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+
+    // hoverable references
+    $('span.citation[data-cites]').each(function() {
+      var refs = $(this).attr('data-cites').split(" ");
+      var refHtml = refs.map(function(ref) {
+        return "<p>" + $('#ref-' + ref).html() + "</p>";
+      }).join("\n");
+      window.tippy(this, {
+        allowHTML: true,
+        content: refHtml,
+        maxWidth: 500,
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'light-border',
+        placement: 'bottom-start'
+      });
+    });
+
+    // clear polling timer
+    clearInterval(tid);
+
+    // show body now that everything is ready
+    on_load_complete();
+  }
+
+  var tid = setInterval(distill_post_process, 50);
+  distill_post_process();
+
+}
+
+function init_downlevel() {
+
+  init_common();
+
+   // insert hr after d-title
+  $('.d-title').after($('<hr class="section-separator"/>'));
+
+  // check if we have authors
+  var front_matter = JSON.parse($("#distill-front-matter").html());
+  var have_authors = front_matter.authors && front_matter.authors.length > 0;
+
+  // manage byline/border
+  if (!have_authors)
+    $('.d-byline').remove();
+  $('.d-byline').after($('<hr class="section-separator"/>'));
+  $('.d-byline a').remove();
+
+  // remove toc
+  $('.d-contents').remove();
+
+  // move appendix elements
+  $('h1.appendix, h2.appendix').each(function(i, val) {
+    $(this).changeElementType('h3');
+  });
+  $('h3.appendix').each(function(i, val) {
+    $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+  });
+
+
+  // inject headers into references and footnotes
+  var refs_header = $('<h3></h3>');
+  refs_header.text('References');
+  $('#refs').prepend(refs_header);
+
+  var footnotes_header = $('<h3></h3');
+  footnotes_header.text('Footnotes');
+  $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+
+  // move appendix-bottom entries to the bottom
+  $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+  $('.appendix-bottom').remove();
+
+  // remove appendix if it's empty
+  if ($('.d-appendix').children().length === 0)
+    $('.d-appendix').remove();
+
+  // prepend separator above appendix
+  $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+
+  // trim code
+  $('pre>code').each(function(i, val) {
+    $(this).html($.trim($(this).html()));
+  });
+
+  // move posts-container right before article
+  $('.posts-container').insertBefore($('.d-article'));
+
+  $('body').addClass('downlevel');
+
+  on_load_complete();
+}
+
+
+function init_common() {
+
+  // jquery plugin to change element types
+  (function($) {
+    $.fn.changeElementType = function(newType) {
+      var attrs = {};
+
+      $.each(this[0].attributes, function(idx, attr) {
+        attrs[attr.nodeName] = attr.nodeValue;
+      });
+
+      this.replaceWith(function() {
+        return $("<" + newType + "/>", attrs).append($(this).contents());
+      });
+    };
+  })(jQuery);
+
+  // prevent underline for linked images
+  $('a > img').parent().css({'border-bottom' : 'none'});
+
+  // mark non-body figures created by knitr chunks as 100% width
+  $('.layout-chunk').each(function(i, val) {
+    var figures = $(this).find('img, .html-widget');
+    if ($(this).attr('data-layout') !== "l-body") {
+      figures.css('width', '100%');
+    } else {
+      figures.css('max-width', '100%');
+      figures.filter("[width]").each(function(i, val) {
+        var fig = $(this);
+        fig.css('width', fig.attr('width') + 'px');
+      });
+
+    }
+  });
+
+  // auto-append index.html to post-preview links in file: protocol
+  // and in rstudio ide preview
+  $('.post-preview').each(function(i, val) {
+    if (window.location.protocol === "file:")
+      $(this).attr('href', $(this).attr('href') + "index.html");
+  });
+
+  // get rid of index.html references in header
+  if (window.location.protocol !== "file:") {
+    $('.distill-site-header a[href]').each(function(i,val) {
+      $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+    });
+  }
+
+  // add class to pandoc style tables
+  $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+  $('.kable-table').children('table').addClass('pandoc-table');
+
+  // add figcaption style to table captions
+  $('caption').parent('table').addClass("figcaption");
+
+  // initialize posts list
+  if (window.init_posts_list)
+    window.init_posts_list();
+
+  // implmement disqus comment link
+  $('.disqus-comment-count').click(function() {
+    window.headroom_prevent_pin = true;
+    $('#disqus_thread').toggleClass('hidden');
+    if (!$('#disqus_thread').hasClass('hidden')) {
+      var offset = $(this).offset();
+      $(window).resize();
+      $('html, body').animate({
+        scrollTop: offset.top - 35
+      });
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  if (is_downlevel_browser())
+    init_downlevel();
+  else
+    window.addEventListener('WebComponentsReady', init_distill);
+});
+
+</script>
+
+<!--/radix_placeholder_distill-->
+  <script src="../../site_libs/header-attrs-2.8/header-attrs.js"></script>
+  <script src="../../site_libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+  <script src="../../site_libs/r2d3-render-0.1.0/r2d3-render.js"></script>
+  <script src="../../site_libs/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="../../site_libs/r2d3-binding-0.2.5/r2d3.js"></script>
+  <script src="../../site_libs/d3-3.5.17/d3.min.js"></script>
+  <script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
+  <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="../../site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="../../site_libs/tippy-6.2.7/tippy.umd.min.js"></script>
+  <script src="../../site_libs/anchor-4.2.2/anchor.min.js"></script>
+  <script src="../../site_libs/bowser-1.9.3/bowser.min.js"></script>
+  <script src="../../site_libs/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+<script async defer data-domain="koaning.io" src="https://plausible.io/js/plausible.js"></script>
+
+<style type="text/css">
+p {
+  text-align: justify;
+}
+
+pre.text-output{
+  background: #f9f8f8;
+}
+
+d-article iframe{
+  border: 0;
+}
+
+d-article li{
+  margin-bottom: 0;
+}
+
+.distill-site-nav{
+  font-weight: 500;
+  background-color: #f9f8f8;
+  color: #000000;
+}
+
+.distill-site-nav a:hover {
+  color: black;
+  text-decoration: underline;   
+}
+</style>
+<!--/radix_placeholder_site_in_header-->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"TIL: Clusters of Risk","description":"Graphs Mostly","authors":[{"author":"Vincent Warmerdam","authorURL":"koaning.io","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-06-16T00:00:00.000+02:00","citationText":"Warmerdam, 2021"}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<header class="header header--fixed" role="banner">
+<nav class="distill-site-nav distill-site-header">
+<div class="nav-left">
+<a href="../../index.html" class="title">koaning.io</a>
+</div>
+<div class="nav-right">
+<a href="../../index.html">home</a>
+<a href="../../about.html">whois</a>
+<a href="../../projects.html">projects</a>
+<a href="../../talks.html">talks</a>
+<a href="../../til.html">TIL</a>
+<a href="../../links.html">links</a>
+<a href="../../index.xml">
+<i class="fa fa-rss" aria-hidden="true"></i>
+</a>
+<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
+</div>
+</nav>
+</header>
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>TIL: Clusters of Risk</h1>
+<!--radix_placeholder_categories-->
+<!--/radix_placeholder_categories-->
+<p><p>Graphs Mostly</p></p>
+</div>
+
+<div class="d-byline">
+  Vincent Warmerdam koaning.io 
+  
+<br/>2021-06-16
+</div>
+
+<div class="d-article">
+<p>I found some <em>really</em> old code which I figured was worth sharing.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div id="htmlwidget-9e2ca5139b5fef44081e" style="width:624px;height:384px;" class="r2d3 html-widget"></div>
+<script type="application/json" data-for="htmlwidget-9e2ca5139b5fef44081e">{"x":{"data":["function (..., list = character(), package = NULL, lib.loc = NULL, ","    verbose = getOption(\"verbose\"), envir = .GlobalEnv, overwrite = TRUE) ","{","    fileExt <- function(x) {","        db <- grepl(\"\\\\.[^.]+\\\\.(gz|bz2|xz)$\", x)","        ans <- sub(\".*\\\\.\", \"\", x)","        ans[db] <- sub(\".*\\\\.([^.]+\\\\.)(gz|bz2|xz)$\", \"\\\\1\\\\2\", ","            x[db])","        ans","    }","    my_read_table <- function(...) {","        lcc <- Sys.getlocale(\"LC_COLLATE\")","        on.exit(Sys.setlocale(\"LC_COLLATE\", lcc))","        Sys.setlocale(\"LC_COLLATE\", \"C\")","        read.table(...)","    }","    names <- c(as.character(substitute(list(...))[-1L]), list)","    if (!is.null(package)) {","        if (!is.character(package)) ","            stop(\"'package' must be a character string or NULL\")","        if (FALSE) {","            if (any(package %in% \"base\")) ","                warning(\"datasets have been moved from package 'base' to package 'datasets'\")","            if (any(package %in% \"stats\")) ","                warning(\"datasets have been moved from package 'stats' to package 'datasets'\")","            package[package %in% c(\"base\", \"stats\")] <- \"datasets\"","        }","    }","    paths <- find.package(package, lib.loc, verbose = verbose)","    if (is.null(lib.loc)) ","        paths <- c(path.package(package, TRUE), if (!length(package)) getwd(), ","            paths)","    paths <- unique(normalizePath(paths[file.exists(paths)]))","    paths <- paths[dir.exists(file.path(paths, \"data\"))]","    dataExts <- tools:::.make_file_exts(\"data\")","    if (length(names) == 0L) {","        db <- matrix(character(), nrow = 0L, ncol = 4L)","        for (path in paths) {","            entries <- NULL","            packageName <- if (file_test(\"-f\", file.path(path, ","                \"DESCRIPTION\"))) ","                basename(path)","            else \".\"","            if (file_test(\"-f\", INDEX <- file.path(path, \"Meta\", ","                \"data.rds\"))) {","                entries <- readRDS(INDEX)","            }","            else {","                dataDir <- file.path(path, \"data\")","                entries <- tools::list_files_with_type(dataDir, ","                  \"data\")","                if (length(entries)) {","                  entries <- unique(tools::file_path_sans_ext(basename(entries)))","                  entries <- cbind(entries, \"\")","                }","            }","            if (NROW(entries)) {","                if (is.matrix(entries) && ncol(entries) == 2L) ","                  db <- rbind(db, cbind(packageName, dirname(path), ","                    entries))","                else warning(gettextf(\"data index for package %s is invalid and will be ignored\", ","                  sQuote(packageName)), domain = NA, call. = FALSE)","            }","        }","        colnames(db) <- c(\"Package\", \"LibPath\", \"Item\", \"Title\")","        footer <- if (missing(package)) ","            paste0(\"Use \", sQuote(paste(\"data(package =\", \".packages(all.available = TRUE))\")), ","                \"\\n\", \"to list the data sets in all *available* packages.\")","        else NULL","        y <- list(title = \"Data sets\", header = NULL, results = db, ","            footer = footer)","        class(y) <- \"packageIQR\"","        return(y)","    }","    paths <- file.path(paths, \"data\")","    for (name in names) {","        found <- FALSE","        for (p in paths) {","            tmp_env <- if (overwrite) ","                envir","            else new.env()","            if (file_test(\"-f\", file.path(p, \"Rdata.rds\"))) {","                rds <- readRDS(file.path(p, \"Rdata.rds\"))","                if (name %in% names(rds)) {","                  found <- TRUE","                  if (verbose) ","                    message(sprintf(\"name=%s:\\t found in Rdata.rds\", ","                      name), domain = NA)","                  thispkg <- sub(\".*/([^/]*)/data$\", \"\\\\1\", p)","                  thispkg <- sub(\"_.*$\", \"\", thispkg)","                  thispkg <- paste0(\"package:\", thispkg)","                  objs <- rds[[name]]","                  lazyLoad(file.path(p, \"Rdata\"), envir = tmp_env, ","                    filter = function(x) x %in% objs)","                  break","                }","                else if (verbose) ","                  message(sprintf(\"name=%s:\\t NOT found in names() of Rdata.rds, i.e.,\\n\\t%s\\n\", ","                    name, paste(names(rds), collapse = \",\")), ","                    domain = NA)","            }","            if (file_test(\"-f\", file.path(p, \"Rdata.zip\"))) {","                warning(\"zipped data found for package \", sQuote(basename(dirname(p))), ","                  \".\\nThat is defunct, so please re-install the package.\", ","                  domain = NA)","                if (file_test(\"-f\", fp <- file.path(p, \"filelist\"))) ","                  files <- file.path(p, scan(fp, what = \"\", quiet = TRUE))","                else {","                  warning(gettextf(\"file 'filelist' is missing for directory %s\", ","                    sQuote(p)), domain = NA)","                  next","                }","            }","            else {","                files <- list.files(p, full.names = TRUE)","            }","            files <- files[grep(name, files, fixed = TRUE)]","            if (length(files) > 1L) {","                o <- match(fileExt(files), dataExts, nomatch = 100L)","                paths0 <- dirname(files)","                paths0 <- factor(paths0, levels = unique(paths0))","                files <- files[order(paths0, o)]","            }","            if (length(files)) {","                for (file in files) {","                  if (verbose) ","                    message(\"name=\", name, \":\\t file= ...\", .Platform$file.sep, ","                      basename(file), \"::\\t\", appendLF = FALSE, ","                      domain = NA)","                  ext <- fileExt(file)","                  if (basename(file) != paste0(name, \".\", ext)) ","                    found <- FALSE","                  else {","                    found <- TRUE","                    zfile <- file","                    zipname <- file.path(dirname(file), \"Rdata.zip\")","                    if (file.exists(zipname)) {","                      Rdatadir <- tempfile(\"Rdata\")","                      dir.create(Rdatadir, showWarnings = FALSE)","                      topic <- basename(file)","                      rc <- .External(C_unzip, zipname, topic, ","                        Rdatadir, FALSE, TRUE, FALSE, FALSE)","                      if (rc == 0L) ","                        zfile <- file.path(Rdatadir, topic)","                    }","                    if (zfile != file) ","                      on.exit(unlink(zfile))","                    switch(ext, R = , r = {","                      library(\"utils\")","                      sys.source(zfile, chdir = TRUE, envir = tmp_env)","                    }, RData = , rdata = , rda = load(zfile, ","                      envir = tmp_env), TXT = , txt = , tab = , ","                      tab.gz = , tab.bz2 = , tab.xz = , txt.gz = , ","                      txt.bz2 = , txt.xz = assign(name, my_read_table(zfile, ","                        header = TRUE, as.is = FALSE), envir = tmp_env), ","                      CSV = , csv = , csv.gz = , csv.bz2 = , ","                      csv.xz = assign(name, my_read_table(zfile, ","                        header = TRUE, sep = \";\", as.is = FALSE), ","                        envir = tmp_env), found <- FALSE)","                  }","                  if (found) ","                    break","                }","                if (verbose) ","                  message(if (!found) ","                    \"*NOT* \", \"found\", domain = NA)","            }","            if (found) ","                break","        }","        if (!found) {","            warning(gettextf(\"data set %s not found\", sQuote(name)), ","                domain = NA)","        }","        else if (!overwrite) {","            for (o in ls(envir = tmp_env, all.names = TRUE)) {","                if (exists(o, envir = envir, inherits = FALSE)) ","                  warning(gettextf(\"an object named %s already exists and will not be overwritten\", ","                    sQuote(o)))","                else assign(o, get(o, envir = tmp_env, inherits = FALSE), ","                  envir = envir)","            }","            rm(tmp_env)","        }","    }","    invisible(names)","}"],"type":"function","container":"div","options":null,"script":"var d3Script = function(d3, r2d3, data, div, width, height, options, theme, console) {\nthis.d3 = d3;\n\ndiv = d3.select(div.node());\n/* R2D3 Source File:  risk.js */\nvar graph = {\n    \"nodes\": [{\n        \"name\": \"WesternAustralia\",\n        \"group\": \"Australia\"\n    }, {\n        \"name\": \"NewGuinea\",\n        \"group\": \"Australia\"\n    }, {\n        \"name\": \"EasternAustralia\",\n        \"group\": \"Australia\"\n    }, {\n        \"name\": \"Indonesia\",\n        \"group\": \"Australia\"\n    }, {\n        \"name\": \"Siam\",\n        \"group\": \"TheEast\"\n    }, {\n        \"name\": \"Jakutsk\",\n        \"group\": \"TheEast\"\n    }, {\n        \"name\": \"Kamtchatska\",\n        \"group\": \"TheEast\"\n    }, {\n        \"name\": \"Irkutsk\",\n        \"group\": \"TheEast\"\n    }, {\n        \"name\": \"Siberia\",\n        \"group\": \"TheEast\"\n    }, {\n        \"name\": \"China\",\n        \"group\": \"TheEast\"\n    }, {\n        \"name\": \"Japan\",\n        \"group\": \"TheEast\"\n    }, {\n        \"name\": \"Mongolia\",\n        \"group\": \"TheEast\"\n    }, {\n        \"name\": \"India\",\n        \"group\": \"TheEast\"\n    }, {\n        \"name\": \"Ural\",\n        \"group\": \"TheEast\"\n    }, {\n        \"name\": \"Afganistan\",\n        \"group\": \"TheEast\"\n    }, {\n        \"name\": \"MiddleEast\",\n        \"group\": \"TheEast\"\n    }, {\n        \"name\": \"Greenland\",\n        \"group\": \"NA\"\n    }, {\n        \"name\": \"IceLand\",\n        \"group\": \"EUR\"\n    }, {\n        \"name\": \"NorthwestTerritory\",\n        \"group\": \"NA\"\n    }, {\n        \"name\": \"Ontario\",\n        \"group\": \"NA\"\n    }, {\n        \"name\": \"Alaska\",\n        \"group\": \"NA\"\n    }, {\n        \"name\": \"Alberta\",\n        \"group\": \"NA\"\n    }, {\n        \"name\": \"WesternUSA\",\n        \"group\": \"NA\"\n    }, {\n        \"name\": \"Quebec\",\n        \"group\": \"NA\"\n    }, {\n        \"name\": \"EasternUSA\",\n        \"group\": \"NA\"\n    }, {\n        \"name\": \"mexico\",\n        \"group\": \"NA\"\n    }, {\n        \"name\": \"Ukraine\",\n        \"group\": \"EUR\"\n    }, {\n        \"name\": \"Scandinavia\",\n        \"group\": \"EUR\"\n    }, {\n        \"name\": \"GreatBritain\",\n        \"group\": \"EUR\"\n    }, {\n        \"name\": \"NorthernEurope\",\n        \"group\": \"EUR\"\n    }, {\n        \"name\": \"SouthernEurope\",\n        \"group\": \"EUR\"\n    }, {\n        \"name\": \"WesternEurope\",\n        \"group\": \"EUR\"\n    }, {\n        \"name\": \"East_Afrika\",\n        \"group\": \"Afrika\"\n    }, {\n        \"name\": \"Egypt\",\n        \"group\": \"Afrika\"\n    }, {\n        \"name\": \"Madagasca\",\n        \"group\": \"Afrika\"\n    }, {\n        \"name\": \"Congo\",\n        \"group\": \"Afrika\"\n    }, {\n        \"name\": \"South_Afrika\",\n        \"group\": \"Afrika\"\n    }, {\n        \"name\": \"North_Afrika\",\n        \"group\": \"Afrika\"\n    }, {\n        \"name\": \"brazil\",\n        \"group\": \"SA\"\n    }, {\n        \"name\": \"argentina\",\n        \"group\": \"SA\"\n    }, {\n        \"name\": \"peru\",\n        \"group\": \"SA\"\n    }, {\n        \"name\": \"venezuela\",\n        \"group\": \"SA\"\n    }],\n    \"links\": [{\n        \"source\": 1,\n        \"target\": 0,\n        \"value\": 5\n    }, {\n        \"source\": 2,\n        \"target\": 0,\n        \"value\": 5\n    }, {\n        \"source\": 2,\n        \"target\": 1,\n        \"value\": 5\n    }, {\n        \"source\": 1,\n        \"target\": 3,\n        \"value\": 5\n    }, {\n        \"source\": 0,\n        \"target\": 3,\n        \"value\": 5\n    }, {\n        \"source\": 4,\n        \"target\": 3,\n        \"value\": 5\n    }, {\n        \"source\": 6,\n        \"target\": 5,\n        \"value\": 5\n    }, {\n        \"source\": 7,\n        \"target\": 5,\n        \"value\": 5\n    }, {\n        \"source\": 7,\n        \"target\": 8,\n        \"value\": 5\n    }, {\n        \"source\": 5,\n        \"target\": 8,\n        \"value\": 5\n    }, {\n        \"source\": 9,\n        \"target\": 8,\n        \"value\": 5\n    }, {\n        \"source\": 6,\n        \"target\": 7,\n        \"value\": 5\n    }, {\n        \"source\": 6,\n        \"target\": 10,\n        \"value\": 5\n    }, {\n        \"source\": 6,\n        \"target\": 11,\n        \"value\": 5\n    }, {\n        \"source\": 10,\n        \"target\": 11,\n        \"value\": 5\n    }, {\n        \"source\": 7,\n        \"target\": 11,\n        \"value\": 5\n    }, {\n        \"source\": 9,\n        \"target\": 4,\n        \"value\": 5\n    }, {\n        \"source\": 11,\n        \"target\": 9,\n        \"value\": 5\n    }, {\n        \"source\": 9,\n        \"target\": 12,\n        \"value\": 5\n    }, {\n        \"source\": 4,\n        \"target\": 12,\n        \"value\": 5\n    }, {\n        \"source\": 8,\n        \"target\": 13,\n        \"value\": 5\n    }, {\n        \"source\": 14,\n        \"target\": 13,\n        \"value\": 5\n    }, {\n        \"source\": 12,\n        \"target\": 15,\n        \"value\": 5\n    }, {\n        \"source\": 14,\n        \"target\": 15,\n        \"value\": 5\n    }, {\n        \"source\": 9,\n        \"target\": 14,\n        \"value\": 5\n    }, {\n        \"source\": 17,\n        \"target\": 16,\n        \"value\": 5\n    }, {\n        \"source\": 16,\n        \"target\": 18,\n        \"value\": 5\n    }, {\n        \"source\": 19,\n        \"target\": 18,\n        \"value\": 5\n    }, {\n        \"source\": 6,\n        \"target\": 20,\n        \"value\": 5\n    }, {\n        \"source\": 21,\n        \"target\": 20,\n        \"value\": 5\n    }, {\n        \"source\": 18,\n        \"target\": 20,\n        \"value\": 5\n    }, {\n        \"source\": 18,\n        \"target\": 21,\n        \"value\": 5\n    }, {\n        \"source\": 19,\n        \"target\": 21,\n        \"value\": 5\n    }, {\n        \"source\": 22,\n        \"target\": 21,\n        \"value\": 5\n    }, {\n        \"source\": 16,\n        \"target\": 19,\n        \"value\": 5\n    }, {\n        \"source\": 23,\n        \"target\": 19,\n        \"value\": 5\n    }, {\n        \"source\": 24,\n        \"target\": 19,\n        \"value\": 5\n    }, {\n        \"source\": 16,\n        \"target\": 23,\n        \"value\": 5\n    }, {\n        \"source\": 24,\n        \"target\": 23,\n        \"value\": 5\n    }, {\n        \"source\": 25,\n        \"target\": 24,\n        \"value\": 5\n    }, {\n        \"source\": 19,\n        \"target\": 22,\n        \"value\": 5\n    }, {\n        \"source\": 24,\n        \"target\": 22,\n        \"value\": 5\n    }, {\n        \"source\": 25,\n        \"target\": 22,\n        \"value\": 5\n    }, {\n        \"source\": 13,\n        \"target\": 26,\n        \"value\": 5\n    }, {\n        \"source\": 14,\n        \"target\": 26,\n        \"value\": 5\n    }, {\n        \"source\": 27,\n        \"target\": 17,\n        \"value\": 5\n    }, {\n        \"source\": 28,\n        \"target\": 17,\n        \"value\": 5\n    }, {\n        \"source\": 26,\n        \"target\": 27,\n        \"value\": 5\n    }, {\n        \"source\": 27,\n        \"target\": 29,\n        \"value\": 5\n    }, {\n        \"source\": 27,\n        \"target\": 28,\n        \"value\": 5\n    }, {\n        \"source\": 29,\n        \"target\": 28,\n        \"value\": 5\n    }, {\n        \"source\": 26,\n        \"target\": 30,\n        \"value\": 5\n    }, {\n        \"source\": 29,\n        \"target\": 30,\n        \"value\": 5\n    }, {\n        \"source\": 28,\n        \"target\": 31,\n        \"value\": 5\n    }, {\n        \"source\": 30,\n        \"target\": 31,\n        \"value\": 5\n    }, {\n        \"source\": 29,\n        \"target\": 31,\n        \"value\": 5\n    }, {\n        \"source\": 15,\n        \"target\": 32,\n        \"value\": 5\n    }, {\n        \"source\": 33,\n        \"target\": 32,\n        \"value\": 5\n    }, {\n        \"source\": 15,\n        \"target\": 33,\n        \"value\": 5\n    }, {\n        \"source\": 30,\n        \"target\": 33,\n        \"value\": 5\n    }, {\n        \"source\": 32,\n        \"target\": 34,\n        \"value\": 5\n    }, {\n        \"source\": 32,\n        \"target\": 35,\n        \"value\": 5\n    }, {\n        \"source\": 36,\n        \"target\": 35,\n        \"value\": 5\n    }, {\n        \"source\": 30,\n        \"target\": 37,\n        \"value\": 5\n    }, {\n        \"source\": 31,\n        \"target\": 37,\n        \"value\": 5\n    }, {\n        \"source\": 32,\n        \"target\": 37,\n        \"value\": 5\n    }, {\n        \"source\": 33,\n        \"target\": 37,\n        \"value\": 5\n    }, {\n        \"source\": 35,\n        \"target\": 37,\n        \"value\": 5\n    }, {\n        \"source\": 34,\n        \"target\": 36,\n        \"value\": 5\n    }, {\n        \"source\": 37,\n        \"target\": 38,\n        \"value\": 5\n    }, {\n        \"source\": 39,\n        \"target\": 38,\n        \"value\": 5\n    }, {\n        \"source\": 41,\n        \"target\": 40,\n        \"value\": 5\n    }, {\n        \"source\": 39,\n        \"target\": 40,\n        \"value\": 5\n    }, {\n        \"source\": 25,\n        \"target\": 41,\n        \"value\": 5\n    }, {\n        \"source\": 38,\n        \"target\": 41,\n        \"value\": 5\n    }]\n}\n\nvar width  = 800,\n    height = 400;\n\nvar color = d3.scale.category20();\n\nvar force = d3.layout.force()\n    .charge(-150)\n    .linkDistance(30)\n    .size([width, height]);\n\nvar svg = div.append(\"svg\")\n    .attr(\"width\", width)\n    .attr(\"height\", height);\n\nforce\n    .nodes(graph.nodes)\n    .links(graph.links)\n    .start();\n\nvar link = svg.selectAll(\"line.link\")\n    .data(graph.links)\n    .enter().append(\"line\")\n    .attr(\"class\", \"link\")\n    .style(\"stroke-width\", 2)\n    .style(\"stroke\", \"#999\")\n    .style(\"stroke-opacity\", 0.6);\n\nvar node = svg.selectAll(\"circle.node\")\n    .data(graph.nodes)\n    .enter().append(\"circle\")\n    .attr(\"class\", \"node\")\n    .attr(\"r\", 6)\n    .attr(\"stroke\", \"#fff\")\n    .attr(\"stroke-width\", 2)\n    .style(\"fill\", function(d) {  switch (d.group){\n      case \"Australia\":\n        return \"purple\"\n        break;\n      case \"Afrika\":\n        return \"brown\"\n        break; \n      case \"TheEast\":\n        return \"green\"\n        break; \n      case \"EUR\":\n        return \"blue\"\n        break; \n      case \"NA\":\n        return \"yellow\"\n        break; \n      case \"SA\":\n        return \"red\"\n        break; \n      }})\n    .call(force.drag);\n\nnode.append(\"title\")\n    .text(function(d) { return d.name; });\n\nforce.on(\"tick\", function() {\n  link.attr(\"x1\", function(d) { return d.source.x; })\n      .attr(\"y1\", function(d) { return d.source.y; })\n      .attr(\"x2\", function(d) { return d.target.x; })\n      .attr(\"y2\", function(d) { return d.target.y; });\n\n  node.attr(\"cx\", function(d) { return d.x; })\n      .attr(\"cy\", function(d) { return d.y; });\n});\n};","style":null,"version":3,"theme":{"default":{"background":"#FFFFFF","foreground":"#000000"},"runtime":null},"useShadow":true},"evals":[],"jsHooks":[]}</script>
+</div>
+<p>It’s the graph layout from the risk board-game. It’s something I used <em>way</em> back in the day to help a <a href="https://www.youtube.com/watch?v=z4KvTviqKAs">colleague build a risk simulator</a>.</p>
+<p>This made me wonder though. What will happen when we run a community detection algorithm over this? Will it be able to detect the clusters as defined by risk? Or will we get something completely different?</p>
+<div class="layout-chunk" data-layout="l-body">
+<div id="htmlwidget-6b678ac62e8f3c461dd8" style="width:624px;height:384px;" class="r2d3 html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6b678ac62e8f3c461dd8">{"x":{"data":["function (..., list = character(), package = NULL, lib.loc = NULL, ","    verbose = getOption(\"verbose\"), envir = .GlobalEnv, overwrite = TRUE) ","{","    fileExt <- function(x) {","        db <- grepl(\"\\\\.[^.]+\\\\.(gz|bz2|xz)$\", x)","        ans <- sub(\".*\\\\.\", \"\", x)","        ans[db] <- sub(\".*\\\\.([^.]+\\\\.)(gz|bz2|xz)$\", \"\\\\1\\\\2\", ","            x[db])","        ans","    }","    my_read_table <- function(...) {","        lcc <- Sys.getlocale(\"LC_COLLATE\")","        on.exit(Sys.setlocale(\"LC_COLLATE\", lcc))","        Sys.setlocale(\"LC_COLLATE\", \"C\")","        read.table(...)","    }","    names <- c(as.character(substitute(list(...))[-1L]), list)","    if (!is.null(package)) {","        if (!is.character(package)) ","            stop(\"'package' must be a character string or NULL\")","        if (FALSE) {","            if (any(package %in% \"base\")) ","                warning(\"datasets have been moved from package 'base' to package 'datasets'\")","            if (any(package %in% \"stats\")) ","                warning(\"datasets have been moved from package 'stats' to package 'datasets'\")","            package[package %in% c(\"base\", \"stats\")] <- \"datasets\"","        }","    }","    paths <- find.package(package, lib.loc, verbose = verbose)","    if (is.null(lib.loc)) ","        paths <- c(path.package(package, TRUE), if (!length(package)) getwd(), ","            paths)","    paths <- unique(normalizePath(paths[file.exists(paths)]))","    paths <- paths[dir.exists(file.path(paths, \"data\"))]","    dataExts <- tools:::.make_file_exts(\"data\")","    if (length(names) == 0L) {","        db <- matrix(character(), nrow = 0L, ncol = 4L)","        for (path in paths) {","            entries <- NULL","            packageName <- if (file_test(\"-f\", file.path(path, ","                \"DESCRIPTION\"))) ","                basename(path)","            else \".\"","            if (file_test(\"-f\", INDEX <- file.path(path, \"Meta\", ","                \"data.rds\"))) {","                entries <- readRDS(INDEX)","            }","            else {","                dataDir <- file.path(path, \"data\")","                entries <- tools::list_files_with_type(dataDir, ","                  \"data\")","                if (length(entries)) {","                  entries <- unique(tools::file_path_sans_ext(basename(entries)))","                  entries <- cbind(entries, \"\")","                }","            }","            if (NROW(entries)) {","                if (is.matrix(entries) && ncol(entries) == 2L) ","                  db <- rbind(db, cbind(packageName, dirname(path), ","                    entries))","                else warning(gettextf(\"data index for package %s is invalid and will be ignored\", ","                  sQuote(packageName)), domain = NA, call. = FALSE)","            }","        }","        colnames(db) <- c(\"Package\", \"LibPath\", \"Item\", \"Title\")","        footer <- if (missing(package)) ","            paste0(\"Use \", sQuote(paste(\"data(package =\", \".packages(all.available = TRUE))\")), ","                \"\\n\", \"to list the data sets in all *available* packages.\")","        else NULL","        y <- list(title = \"Data sets\", header = NULL, results = db, ","            footer = footer)","        class(y) <- \"packageIQR\"","        return(y)","    }","    paths <- file.path(paths, \"data\")","    for (name in names) {","        found <- FALSE","        for (p in paths) {","            tmp_env <- if (overwrite) ","                envir","            else new.env()","            if (file_test(\"-f\", file.path(p, \"Rdata.rds\"))) {","                rds <- readRDS(file.path(p, \"Rdata.rds\"))","                if (name %in% names(rds)) {","                  found <- TRUE","                  if (verbose) ","                    message(sprintf(\"name=%s:\\t found in Rdata.rds\", ","                      name), domain = NA)","                  thispkg <- sub(\".*/([^/]*)/data$\", \"\\\\1\", p)","                  thispkg <- sub(\"_.*$\", \"\", thispkg)","                  thispkg <- paste0(\"package:\", thispkg)","                  objs <- rds[[name]]","                  lazyLoad(file.path(p, \"Rdata\"), envir = tmp_env, ","                    filter = function(x) x %in% objs)","                  break","                }","                else if (verbose) ","                  message(sprintf(\"name=%s:\\t NOT found in names() of Rdata.rds, i.e.,\\n\\t%s\\n\", ","                    name, paste(names(rds), collapse = \",\")), ","                    domain = NA)","            }","            if (file_test(\"-f\", file.path(p, \"Rdata.zip\"))) {","                warning(\"zipped data found for package \", sQuote(basename(dirname(p))), ","                  \".\\nThat is defunct, so please re-install the package.\", ","                  domain = NA)","                if (file_test(\"-f\", fp <- file.path(p, \"filelist\"))) ","                  files <- file.path(p, scan(fp, what = \"\", quiet = TRUE))","                else {","                  warning(gettextf(\"file 'filelist' is missing for directory %s\", ","                    sQuote(p)), domain = NA)","                  next","                }","            }","            else {","                files <- list.files(p, full.names = TRUE)","            }","            files <- files[grep(name, files, fixed = TRUE)]","            if (length(files) > 1L) {","                o <- match(fileExt(files), dataExts, nomatch = 100L)","                paths0 <- dirname(files)","                paths0 <- factor(paths0, levels = unique(paths0))","                files <- files[order(paths0, o)]","            }","            if (length(files)) {","                for (file in files) {","                  if (verbose) ","                    message(\"name=\", name, \":\\t file= ...\", .Platform$file.sep, ","                      basename(file), \"::\\t\", appendLF = FALSE, ","                      domain = NA)","                  ext <- fileExt(file)","                  if (basename(file) != paste0(name, \".\", ext)) ","                    found <- FALSE","                  else {","                    found <- TRUE","                    zfile <- file","                    zipname <- file.path(dirname(file), \"Rdata.zip\")","                    if (file.exists(zipname)) {","                      Rdatadir <- tempfile(\"Rdata\")","                      dir.create(Rdatadir, showWarnings = FALSE)","                      topic <- basename(file)","                      rc <- .External(C_unzip, zipname, topic, ","                        Rdatadir, FALSE, TRUE, FALSE, FALSE)","                      if (rc == 0L) ","                        zfile <- file.path(Rdatadir, topic)","                    }","                    if (zfile != file) ","                      on.exit(unlink(zfile))","                    switch(ext, R = , r = {","                      library(\"utils\")","                      sys.source(zfile, chdir = TRUE, envir = tmp_env)","                    }, RData = , rdata = , rda = load(zfile, ","                      envir = tmp_env), TXT = , txt = , tab = , ","                      tab.gz = , tab.bz2 = , tab.xz = , txt.gz = , ","                      txt.bz2 = , txt.xz = assign(name, my_read_table(zfile, ","                        header = TRUE, as.is = FALSE), envir = tmp_env), ","                      CSV = , csv = , csv.gz = , csv.bz2 = , ","                      csv.xz = assign(name, my_read_table(zfile, ","                        header = TRUE, sep = \";\", as.is = FALSE), ","                        envir = tmp_env), found <- FALSE)","                  }","                  if (found) ","                    break","                }","                if (verbose) ","                  message(if (!found) ","                    \"*NOT* \", \"found\", domain = NA)","            }","            if (found) ","                break","        }","        if (!found) {","            warning(gettextf(\"data set %s not found\", sQuote(name)), ","                domain = NA)","        }","        else if (!overwrite) {","            for (o in ls(envir = tmp_env, all.names = TRUE)) {","                if (exists(o, envir = envir, inherits = FALSE)) ","                  warning(gettextf(\"an object named %s already exists and will not be overwritten\", ","                    sQuote(o)))","                else assign(o, get(o, envir = tmp_env, inherits = FALSE), ","                  envir = envir)","            }","            rm(tmp_env)","        }","    }","    invisible(names)","}"],"type":"function","container":"div","options":null,"script":"var d3Script = function(d3, r2d3, data, div, width, height, options, theme, console) {\nthis.d3 = d3;\n/* R2D3 Source File:  netClustering.js */\n// https://github.com/john-guerra/netClusteringJS#readme v0.0.2 Copyright 2019 John Alexis Guerra Gómez\n(function (global, factory) {\ntypeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :\ntypeof define === 'function' && define.amd ? define(factory) :\n(global.netClustering = factory());\n}(this, (function () { 'use strict';\n\n/*\n    Copyright 2010 by Robin W. Spencer, packaged by John A. Guerra Gómez\n\n  This program is free software: you can redistribute it and/or modify\n  it under the terms of the GNU General Public License as published by\n  the Free Software Foundation, either version 3 of the License, or\n  (at your option) any later version.\n\n  This program is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n  GNU General Public License for more details.\n\n  You can find a copy of the GNU General Public License\n  at http://www.gnu.org/licenses/.\n\n*/\n/*jslint browser: true, devel: true, regexp: true, white: true */\n/*\n*/\n\n\nlet netClustering =  (function () {\n  let netClustering = {};\n\n  // \"use strict\";\n  //  Specific utilities: data import & recursive traverses\n  function binaryTreeWalk(currentNode,tree,depth,doLeafAction,doDownAction,doUpAction){\n    //  General purpose recursive binary depth-first tree walk, with three possible action functions:\n    //  at each leaf node, on the way down a branch, and on the way back up a branch.\n    if(tree[currentNode].leftChild>-1){\n      depth+=1;\n      if(doDownAction) { doDownAction(currentNode,tree,depth); }\n      binaryTreeWalk(tree[currentNode].leftChild,tree,depth,doLeafAction,doDownAction,doUpAction);\n    }\n    if(tree[currentNode].rightChild==-1){ // It\"s a leaf node\n      if(doLeafAction){ doLeafAction(currentNode,tree,depth); }\n    }\n    if(tree[currentNode].rightChild>-1){\n      binaryTreeWalk(tree[currentNode].rightChild,tree,depth,doLeafAction,doDownAction,doUpAction);\n      if(doUpAction){ doUpAction(currentNode,tree,depth); }\n      depth-=1;\n    }\n  }\n\n  //  Community detection algorithms and recursion\n  function addClosestPairByCommunity(tree,deltaQ,a){\n    //  Newman\"s communities algorithm, http://arxiv.org/abs/cond-mat/0309508v1\n    //  Find the largest deltaQ for each row, and overall\n\n    //  Where Newman et al keep the H as max-heaps, we rebuild H from scratch for code clarity.\n    //  Semi-sparse:  We still make H arrays for sorting but do it in one pass from the sparse deltaQ.\n\n    // logTime(\"start step\");\n\n    var n=tree.length;\n    var H={};\n    for(var hash in deltaQ){\n      var dQ=deltaQ[hash];\n      var keys=hash.split(\"~\");\n      var i=Number(keys[0]);\n      var j=Number(keys[1]);\n      if (!H[i]) { H[i]=[]; }\n      if (!H[j]) { H[j]=[]; }\n      H[i].push({\"dQ\": dQ, \"i\": i, \"j\": j});\n      H[j].push({\"dQ\": dQ, \"i\": i, \"j\": j});\n    }\n\n    // logTime(\"assign H\");\n\n    //  Find nodes to join\n    var Hmax={\"dQ\":-Infinity, \"i\": -1, \"j\": -1};\n    for(var i=0;i<n;i++){\n      if (H[i]){\n        H[i].sort(function (a,b) {\n          return b.dQ-a.dQ;\n        });  // Full sort, overkill but native & clean\n        //  The [0] element in each H array now has the largest deltaQ for that row\n        if(H[i][0].dQ>Hmax.dQ){\n          Hmax.dQ=H[i][0].dQ;\n          Hmax.i =H[i][0].i;\n          Hmax.j =H[i][0].j;\n        }\n      }\n    }\n\n    // logTime(\"find Hmax\");\n    //  Diagnostic info\n    //  console(\"&nbsp;(\"+Hmax.i+\",\"+Hmax.j+\") -> \"+n+\"&nbsp; &nbsp; &Delta;Q = \"+Hmax.dQ.toFixed(3));\n\n    //  On full recursion, unweighted datasets can end up with degenerate small subsets, trapped here.\n    if (Hmax.i==-1) {\n      return null;\n    }\n\n    //  Create a combined node.  The tree[] is needed only for later drawing;\n    //  all the work here is done with the deltaQ[].\n    var wt=tree[Hmax.i].weight+tree[Hmax.j].weight;\n    tree.push({\"parent\": -1, \"leftChild\": Hmax.i, \"rightChild\": Hmax.j, \"weight\": wt, \"dQ\": Hmax.dQ});\n    tree[Hmax.i].parent=n;  // n = the new one we just created\n    tree[Hmax.j].parent=n;\n\n    //  Update all deltaQ, Clauset eq 10a-c\n    var hashToZap=[];  //  Remember the deltaQ for the nodes we\"re joining, to null out later.\n    for(var k=0;k<n;k++){\n      if(k!=Hmax.i && k!=Hmax.j && H[k]){  //  H[k]!=null => node still in play\n        var hashik=Math.min(Hmax.i,k)+\"~\"+Math.max(Hmax.i,k);\n        var hashjk=Math.min(Hmax.j,k)+\"~\"+Math.max(Hmax.j,k);\n        var hashNew=k+\"~\"+n;\n        var t1=deltaQ[hashik];\n        var t2=deltaQ[hashjk];\n        //  Javascript thinks zero and null are both false, so some type tricks are needed;\n        //  zero is a valid entry for deltaQ and common for small graphs.\n        if(!isNaN(t1)){\n          hashToZap.push(hashik);\n          if(!isNaN(t2)){\n            hashToZap.push(hashjk);\n            deltaQ[hashNew]=t1+t2;\n          }else{\n            deltaQ[hashNew]=t1-2.0*a[Hmax.j]*a[k];\n          }\n        }else{\n          if(!isNaN(t2)){\n            hashToZap.push(hashjk);\n            deltaQ[hashNew]=t2-2.0*a[Hmax.i]*a[k];\n          }else{\n            deltaQ[hashNew]=null; // Important to zap dQ when t1 & t2 undefined\n          }\n        }\n      }\n    }\n\n    // logTime(\"update dQ\");\n\n    //  Update a[]\n    a[n]=a[Hmax.i]+a[Hmax.j];\n    //   a[Hmax.i]=0;a[Hmax.j]=0;  //   No need to zero-out; these a[] are not used again\n\n    //  Experiments verify that sum a[i] = 1.00 at all stages of agglomeration.\n\n    //  Remove any deltaQ for nodes now absorbed in this join.\n    deltaQ[Hmax.i+\"~\"+Hmax.j]=null;\n    for(var i=0;i<hashToZap.length;i++){\n      deltaQ[hashToZap[i]]=null;\n    }\n    //  Make dQ array smaller by not copying over any dQ set to null above.\n    var dQcopy={};\n    for(var hash in deltaQ){\n      if (deltaQ[hash]) {\n        dQcopy[hash]=deltaQ[hash];\n      }\n    }\n\n    // logTime(\"add a[], prune dQ\");\n    return {\"value\": Hmax.dQ, \"array\": dQcopy};\n  }\n  function buildTreeByCommunities(dataObj,showNotes){\n    //  Implement the fast Newman method, as in Clauset, Newman, Moore, arXiv:cond-mat/0408187v2\n    var n=dataObj.names.length;\n    var k=[];\n    for(var i=0;i<n;i++){\n      k[i]=0;\n    }\n    var m=0;\n    var W=0;\n    if(dataObj.useWeights){\n      for(var hash in dataObj.distances){\n        var keys=hash.split(\"~\");\n        var i=Number(keys[0]);\n        var j=Number(keys[1]);\n        var d=dataObj.distances[hash];\n        k[i]+=d;\n        k[j]+=d;\n        W+=d;\n        m+=1;\n      }\n      if(!W){W=1e-7;}      var inv2m=1/(2*W);\n    }else{\n      for(var hash in dataObj.distances){\n        var keys=hash.split(\"~\");\n        var i=Number(keys[0]);\n        var j=Number(keys[1]);\n        k[i]+=1;\n        k[j]+=1;\n        m+=1;\n      }\n      if(!m){m=1e-7;}      var inv2m=1/(2*m);\n    }\n    //  See Berry et al arXiv:0903.1072v2 eq 16; note the 2x difference between Clauset and Berry.\n    var deltaQ={};\n    for(var hash in dataObj.distances){\n      var keys=hash.split(\"~\");\n      var i=Number(keys[0]);\n      var j=Number(keys[1]);\n      if(dataObj.useWeights){\n        deltaQ[hash]=2.0*inv2m*dataObj.distances[hash] - 2.0*inv2m*inv2m*k[i]*k[j];\n      }else{\n        deltaQ[hash]=2.0*(inv2m-k[i]*k[j]*inv2m*inv2m);  // 2x assures identical Q for unweighted datasets\n      }\n    }\n    var a=[];\n    for(var i=0;i<n;i++){\n      a[i]=inv2m*k[i];\n    }\n    // var s=0;for(var i=0;i<a.length;i++){s+=a[i]};alert(s);  //  always 1.00 but good to check\n\n    //  Initialize the binary tree, used only for later display.\n    var tree=[];\n    for(var i=0;i<n;i++){\n      tree.push({\"parent\": -1, \"leftChild\": -1 ,\"rightChild\": -1, \"weight\": 1, \"linkage\": a[i], \"name\": dataObj.names[i], \"primaryKey\": i});\n    }\n\n    // logTime(\"initialize k,a,dQ\");\n    //  Do the actual agglomerative joining\n    var Q=0.0;\n    var maxQ=-Infinity;\n    var dQobj={\"value\": 0, \"array\": deltaQ};\n    var numCommunities=1;\n\n    while(dQobj && tree.length<(2*n-1)) {\n      dQobj=addClosestPairByCommunity(tree,dQobj.array,a);\n      if(dQobj) {\n        Q+=dQobj.value;\n        if(dQobj.value<0){numCommunities+=1;}        maxQ=Math.max(maxQ,Q);\n      }else{\n        //  We hit a small degenerate subset -- another stop to recursion\n        return null;\n      }\n    }\n    //  showTimes();  //   diagnostic for speed optimization\n\n    //  Assign index = sequence of traverse for coloring\n    var index = 0;\n    var root=tree.length - 1;\n    binaryTreeWalk(root, tree, 0, function (currentNode,tree,depth){\n      tree[currentNode].index=index;\n      index+=1;\n    },null,null);\n\n    if(showNotes){\n      var notes=n+\" nodes, \"+m+\" of \"+(n*(n-1)/2)+\" possible edges (\"+Math.round(200*m/(n*(n-1)))+\"%) \";\n      notes+=\"with data, and \"+numCommunities+\" primary communities identified.\";\n      notes+=\"&nbsp; &nbsp; Q=\"+maxQ.toFixed(3);\n      document.getElementById(\"notes\").innerHTML=notes;\n    }\n    return {\"tree\": tree, \"distances\": dataObj.distances, \"root\": root, \"names\": dataObj.names, \"useWeights\": dataObj.useWeights};\n  }\n  function findSplits(treeObj){\n    //   The treeObj has dQ info from the Newman joining, so we can\n    //   identify communities based on when dQ went negative.\n    var breakNext = true;\n    var breakNodes = [];\n    var g = -1;\n    var group = [];\n    var members = \"\";\n    var tracker = 0;\n    binaryTreeWalk(treeObj.root, treeObj.tree, 0, function (node,tree,depth) {\n       if(breakNext) {\n        g += 1;\n        breakNodes.push(node);\n        breakNext = false;\n       }\n       group[node] = g;\n       members += treeObj.tree[node].name + \",\";\n    },\n    function(node, tree, depth) {\n       var thisNode = tree[node];\n      if(thisNode.dQ < 0){\n        breakNext = true;\n        tracker = 0;\n      }\n      tracker += 1;\n    },\n    function(node, tree, depth) {\n      var thisNode = tree[node];\n      tracker -= 1;\n      if (tracker == 1){\n        breakNext = true;\n        members += \"~\";\n      }\n    });\n\n    // //Search for any nodes that aren\"t in any group and put them in one\n    // var createdGroupForLoners = false, lonersCount = 0;\n\n    // treeObj.names.forEach(function (d, i) {\n    //     if (!group.hasOwnProperty(i)) {\n    //         if (members[members.length-1]!=\"~\" && !createdGroupForLoners) {\n    //             members+=\"~\"\n    //         }\n    //         group[i] = g+1;\n    //         createdGroupForLoners = true;\n    //         members+=d + \",\";\n    //         lonersCount++;\n    //     }\n    // })\n    // //If we created a new group for loners increase the group size\n    // if (createdGroupForLoners) {\n    //     g+=1;\n    //     members+=\"~\";\n    //     console.log(\"netClustering lonersCount=\" + lonersCount);\n    // }\n\n    var numGroups = g + 1;\n    members = members.slice(0, -2);\n    members = members.replace(/,~/g, \"~\");\n    //  members has the names of nodes, comma separated within groups and \"~\" between groups\n    return {\"numGroups\": numGroups, \"group\": group, \"members\": members, \"breakNodes\": breakNodes};\n  }\n  function findSubCommunities(treeObj,depth,prevGroup){\n    if (!treeObj) {return}\n\n    var tree = treeObj.tree;\n    var root = treeObj.root;\n    var names = treeObj.names;\n    //  Identify the communities in the data\n    var splitInfo = findSplits(treeObj);\n    var numGroups = splitInfo.numGroups;\n    var group = splitInfo.group;\n\n    var t = splitInfo.members.split(\"~\");  //  string to array\n    var groups = [];\n    for(var g = 0; g < t.length; g++) {\n      groups.push((t[g]).split(\",\"));\n    }\n    //  groups is now a set of nested arrays of names, what we return\n\n    //  Split the original distance & name tables into separate dataObj for each group\n    //  so we can repeat the analysis recursively.\n    var dataObjList = [];\n    for (var g = 0; g < numGroups; g++){\n       dataObjList.push({\"names\":[],\"distances\":[],\"useWeights\":treeObj.useWeights});\n    }\n    var nameKeys=[];   //  New groups must have new hash codes, thus new index keys\n\n    for(var i=0;i<names.length;i++){\n      var name=names[i];\n      dataObjList[group[i]].names.push(name);  //  Assign names to groups in one pass\n      nameKeys[i]=dataObjList[group[i]].names.length-1;\n    }\n\n    for(var hash in treeObj.distances){\n      var keys=hash.split(\"~\");\n      var i=Number(keys[0]);\n      var j=Number(keys[1]);\n      if(group[i]==group[j]){\n        //   These two are in the same group so keep this distance value\n        var newHash=nameKeys[i]+\"~\"+nameKeys[j];\n        dataObjList[group[i]].distances[newHash]=treeObj.distances[hash];\n      }\n    }\n    //   Now we have separate dataObj\"s for each community.  Do the analysis on each.\n    if(numGroups>1){\n      for(var g=0;g<numGroups;g++){\n        //  This is where CNM is called for the sub-community\n        var innerTreeObj=buildTreeByCommunities(dataObjList[g]);\n        if(innerTreeObj && innerTreeObj.tree){\n          var innerGroups=findSplits(innerTreeObj).numGroups;\n          //   Simplest stopping rule -- communities of one\n          if(innerGroups>1){\n            //  Recursion: find any sub-groups\n            var subgroups=findSubCommunities(innerTreeObj,depth+1,g);\n            //  Replace the current group with its set of subgroups, which builds a tree.\n            groups[g]=subgroups;\n          }\n        }\n      }\n    }\n    return groups;\n  }\n\n\n\n  //Exports\n  netClustering.buildTreeByCommunities = buildTreeByCommunities;\n  netClustering.findSubCommunities = findSubCommunities;\n  //buildTreeByCommunities parameter should be\n  //Object {names: Array[39], distances: Array[0], method: \"newman\", useWeights: true}\n\n\n  //Receives nodes and edges on the d3 format clusters them, and return the clusters\n  // the nodes should be a list of objects that at least contains an attribute id\n  // and the edges should be a list of objects {source:index, target:index, count}\n  netClustering.cluster = function (nodes, edges, clusterAttr, edgesCountAttr) {\n    var dataObj = {},\n      treeObj, groups = [];\n\n    if (clusterAttr === undefined) {\n      clusterAttr=\"cluster\";\n    }\n    if (edgesCountAttr === undefined) {\n      edgesCountAttr=\"value\";\n    }\n\n    var linksForClustering  = [];\n    //Do edges come with pointers to the nodes or just indexes?\n    if (edges.length>0 && typeof(edges[0].source)===\"object\") {\n      linksForClustering = edges.map(function (d) {\n        var sourceId=nodes.indexOf(d.source),\n          targetId=nodes.indexOf(d.target);\n        if (sourceId===-1 || targetId===-1) {\n          return null;\n        } else {\n          return {\n            source: sourceId,\n            target: targetId,\n            count : d[edgesCountAttr]!==undefined ? d[edgesCountAttr] : 1\n          }\n\n        }\n      });\n    } else {\n      //copy the links to ensure they have counts\n\n      edges.forEach(function (d) {\n        linksForClustering.push({\n          source: d.source,\n          target: d.target,\n          count: d[edgesCountAttr]!==undefined ? d[edgesCountAttr] : 1\n        });\n      });\n\n\n    }\n\n    dataObj.method = \"newman\";\n    dataObj.useWeights = true;\n    dataObj.names = nodes.map(function (d, i) { return \"\"+i; });\n\n    // dataObj.names = nodes;\n    dataObj.distances = {};\n    linksForClustering =  linksForClustering.filter(function (d) { return d.source !== d.target; }); //avoid loops\n    linksForClustering.forEach(function (d) {\n      var hash = Math.min(d.source, d.target) + \"~\" + Math.max(d.source, d.target); // hash always has left key < right key})\n      dataObj.distances[hash] = +d.count;\n    });\n\n    dataObj = addDummyMetaNode(dataObj);\n\n    treeObj=buildTreeByCommunities(dataObj, false);\n    groups=findSubCommunities(treeObj,0,0);\n\n    groups=removeDummyMetaNode(groups);\n    groups.forEach(function (d, i) {\n      function assignToCluster(ele, i) {\n        if (ele instanceof Array) {\n          ele.forEach(function (e) {\n            assignToCluster(e, i);\n          });\n        } else {\n          nodes[+ele][clusterAttr] = i.toString();\n        }\n\n      }\n      assignToCluster(d, i);\n    });\n\n    return groups;\n  };\n\n\n\n  function addDummyMetaNode(dataObj) {\n    //Add a dummy node linked to all the nodes to guarantee that the graph is connected\n    dataObj.names.push(\"DUMMY\");\n    dataObj.names.forEach(function (d, i) {\n      if (i===dataObj.names.length-1) {\n        return;\n      }\n      var hash = i+\"~\"+ (dataObj.names.length-1);\n      dataObj.distances[hash] = 0.1;\n    });\n    return dataObj;\n  }\n\n  function removeDummyMetaNode(groups) {\n    var i, ele;\n    for (i = 0; i < groups.length; i++) {\n      ele = groups[i];\n      if (ele instanceof Array) {\n        ele = removeDummyMetaNode(ele);\n        if (ele.length===0) {\n          //DUMMY was on an empty cluster, delete it\n          groups.splice(i, 1);\n        }\n        // groups[i];\n      } else {\n        if (ele === \"DUMMY\" || ele === \"DUMM\") {\n          groups.splice(i, 1);//Remove\n          break;\n        }\n      }\n    }\n    return groups;\n  }\n\n  return netClustering;\n})();\n\nreturn netClustering;\n\n})));\ndiv = d3.select(div.node());\n/* R2D3 Source File:  cluster.js */\nvar graph = {\n    \"nodes\": [{\n        \"name\": \"WesternAustralia\",\n        \"group\": \"Australia\"\n    }, {\n        \"name\": \"NewGuinea\",\n        \"group\": \"Australia\"\n    }, {\n        \"name\": \"EasternAustralia\",\n        \"group\": \"Australia\"\n    }, {\n        \"name\": \"Indonesia\",\n        \"group\": \"Australia\"\n    }, {\n        \"name\": \"Siam\",\n        \"group\": \"TheEast\"\n    }, {\n        \"name\": \"Jakutsk\",\n        \"group\": \"TheEast\"\n    }, {\n        \"name\": \"Kamtchatska\",\n        \"group\": \"TheEast\"\n    }, {\n        \"name\": \"Irkutsk\",\n        \"group\": \"TheEast\"\n    }, {\n        \"name\": \"Siberia\",\n        \"group\": \"TheEast\"\n    }, {\n        \"name\": \"China\",\n        \"group\": \"TheEast\"\n    }, {\n        \"name\": \"Japan\",\n        \"group\": \"TheEast\"\n    }, {\n        \"name\": \"Mongolia\",\n        \"group\": \"TheEast\"\n    }, {\n        \"name\": \"India\",\n        \"group\": \"TheEast\"\n    }, {\n        \"name\": \"Ural\",\n        \"group\": \"TheEast\"\n    }, {\n        \"name\": \"Afganistan\",\n        \"group\": \"TheEast\"\n    }, {\n        \"name\": \"MiddleEast\",\n        \"group\": \"TheEast\"\n    }, {\n        \"name\": \"Greenland\",\n        \"group\": \"NA\"\n    }, {\n        \"name\": \"IceLand\",\n        \"group\": \"EUR\"\n    }, {\n        \"name\": \"NorthwestTerritory\",\n        \"group\": \"NA\"\n    }, {\n        \"name\": \"Ontario\",\n        \"group\": \"NA\"\n    }, {\n        \"name\": \"Alaska\",\n        \"group\": \"NA\"\n    }, {\n        \"name\": \"Alberta\",\n        \"group\": \"NA\"\n    }, {\n        \"name\": \"WesternUSA\",\n        \"group\": \"NA\"\n    }, {\n        \"name\": \"Quebec\",\n        \"group\": \"NA\"\n    }, {\n        \"name\": \"EasternUSA\",\n        \"group\": \"NA\"\n    }, {\n        \"name\": \"mexico\",\n        \"group\": \"NA\"\n    }, {\n        \"name\": \"Ukraine\",\n        \"group\": \"EUR\"\n    }, {\n        \"name\": \"Scandinavia\",\n        \"group\": \"EUR\"\n    }, {\n        \"name\": \"GreatBritain\",\n        \"group\": \"EUR\"\n    }, {\n        \"name\": \"NorthernEurope\",\n        \"group\": \"EUR\"\n    }, {\n        \"name\": \"SouthernEurope\",\n        \"group\": \"EUR\"\n    }, {\n        \"name\": \"WesternEurope\",\n        \"group\": \"EUR\"\n    }, {\n        \"name\": \"East_Afrika\",\n        \"group\": \"Afrika\"\n    }, {\n        \"name\": \"Egypt\",\n        \"group\": \"Afrika\"\n    }, {\n        \"name\": \"Madagasca\",\n        \"group\": \"Afrika\"\n    }, {\n        \"name\": \"Congo\",\n        \"group\": \"Afrika\"\n    }, {\n        \"name\": \"South_Afrika\",\n        \"group\": \"Afrika\"\n    }, {\n        \"name\": \"North_Afrika\",\n        \"group\": \"Afrika\"\n    }, {\n        \"name\": \"brazil\",\n        \"group\": \"SA\"\n    }, {\n        \"name\": \"argentina\",\n        \"group\": \"SA\"\n    }, {\n        \"name\": \"peru\",\n        \"group\": \"SA\"\n    }, {\n        \"name\": \"venezuela\",\n        \"group\": \"SA\"\n    }],\n    \"links\": [{\n        \"source\": 1,\n        \"target\": 0,\n        \"value\": 5\n    }, {\n        \"source\": 2,\n        \"target\": 0,\n        \"value\": 5\n    }, {\n        \"source\": 2,\n        \"target\": 1,\n        \"value\": 5\n    }, {\n        \"source\": 1,\n        \"target\": 3,\n        \"value\": 5\n    }, {\n        \"source\": 0,\n        \"target\": 3,\n        \"value\": 5\n    }, {\n        \"source\": 4,\n        \"target\": 3,\n        \"value\": 5\n    }, {\n        \"source\": 6,\n        \"target\": 5,\n        \"value\": 5\n    }, {\n        \"source\": 7,\n        \"target\": 5,\n        \"value\": 5\n    }, {\n        \"source\": 7,\n        \"target\": 8,\n        \"value\": 5\n    }, {\n        \"source\": 5,\n        \"target\": 8,\n        \"value\": 5\n    }, {\n        \"source\": 9,\n        \"target\": 8,\n        \"value\": 5\n    }, {\n        \"source\": 6,\n        \"target\": 7,\n        \"value\": 5\n    }, {\n        \"source\": 6,\n        \"target\": 10,\n        \"value\": 5\n    }, {\n        \"source\": 6,\n        \"target\": 11,\n        \"value\": 5\n    }, {\n        \"source\": 10,\n        \"target\": 11,\n        \"value\": 5\n    }, {\n        \"source\": 7,\n        \"target\": 11,\n        \"value\": 5\n    }, {\n        \"source\": 9,\n        \"target\": 4,\n        \"value\": 5\n    }, {\n        \"source\": 11,\n        \"target\": 9,\n        \"value\": 5\n    }, {\n        \"source\": 9,\n        \"target\": 12,\n        \"value\": 5\n    }, {\n        \"source\": 4,\n        \"target\": 12,\n        \"value\": 5\n    }, {\n        \"source\": 8,\n        \"target\": 13,\n        \"value\": 5\n    }, {\n        \"source\": 14,\n        \"target\": 13,\n        \"value\": 5\n    }, {\n        \"source\": 12,\n        \"target\": 15,\n        \"value\": 5\n    }, {\n        \"source\": 14,\n        \"target\": 15,\n        \"value\": 5\n    }, {\n        \"source\": 9,\n        \"target\": 14,\n        \"value\": 5\n    }, {\n        \"source\": 17,\n        \"target\": 16,\n        \"value\": 5\n    }, {\n        \"source\": 16,\n        \"target\": 18,\n        \"value\": 5\n    }, {\n        \"source\": 19,\n        \"target\": 18,\n        \"value\": 5\n    }, {\n        \"source\": 6,\n        \"target\": 20,\n        \"value\": 5\n    }, {\n        \"source\": 21,\n        \"target\": 20,\n        \"value\": 5\n    }, {\n        \"source\": 18,\n        \"target\": 20,\n        \"value\": 5\n    }, {\n        \"source\": 18,\n        \"target\": 21,\n        \"value\": 5\n    }, {\n        \"source\": 19,\n        \"target\": 21,\n        \"value\": 5\n    }, {\n        \"source\": 22,\n        \"target\": 21,\n        \"value\": 5\n    }, {\n        \"source\": 16,\n        \"target\": 19,\n        \"value\": 5\n    }, {\n        \"source\": 23,\n        \"target\": 19,\n        \"value\": 5\n    }, {\n        \"source\": 24,\n        \"target\": 19,\n        \"value\": 5\n    }, {\n        \"source\": 16,\n        \"target\": 23,\n        \"value\": 5\n    }, {\n        \"source\": 24,\n        \"target\": 23,\n        \"value\": 5\n    }, {\n        \"source\": 25,\n        \"target\": 24,\n        \"value\": 5\n    }, {\n        \"source\": 19,\n        \"target\": 22,\n        \"value\": 5\n    }, {\n        \"source\": 24,\n        \"target\": 22,\n        \"value\": 5\n    }, {\n        \"source\": 25,\n        \"target\": 22,\n        \"value\": 5\n    }, {\n        \"source\": 13,\n        \"target\": 26,\n        \"value\": 5\n    }, {\n        \"source\": 14,\n        \"target\": 26,\n        \"value\": 5\n    }, {\n        \"source\": 27,\n        \"target\": 17,\n        \"value\": 5\n    }, {\n        \"source\": 28,\n        \"target\": 17,\n        \"value\": 5\n    }, {\n        \"source\": 26,\n        \"target\": 27,\n        \"value\": 5\n    }, {\n        \"source\": 27,\n        \"target\": 29,\n        \"value\": 5\n    }, {\n        \"source\": 27,\n        \"target\": 28,\n        \"value\": 5\n    }, {\n        \"source\": 29,\n        \"target\": 28,\n        \"value\": 5\n    }, {\n        \"source\": 26,\n        \"target\": 30,\n        \"value\": 5\n    }, {\n        \"source\": 29,\n        \"target\": 30,\n        \"value\": 5\n    }, {\n        \"source\": 28,\n        \"target\": 31,\n        \"value\": 5\n    }, {\n        \"source\": 30,\n        \"target\": 31,\n        \"value\": 5\n    }, {\n        \"source\": 29,\n        \"target\": 31,\n        \"value\": 5\n    }, {\n        \"source\": 15,\n        \"target\": 32,\n        \"value\": 5\n    }, {\n        \"source\": 33,\n        \"target\": 32,\n        \"value\": 5\n    }, {\n        \"source\": 15,\n        \"target\": 33,\n        \"value\": 5\n    }, {\n        \"source\": 30,\n        \"target\": 33,\n        \"value\": 5\n    }, {\n        \"source\": 32,\n        \"target\": 34,\n        \"value\": 5\n    }, {\n        \"source\": 32,\n        \"target\": 35,\n        \"value\": 5\n    }, {\n        \"source\": 36,\n        \"target\": 35,\n        \"value\": 5\n    }, {\n        \"source\": 30,\n        \"target\": 37,\n        \"value\": 5\n    }, {\n        \"source\": 31,\n        \"target\": 37,\n        \"value\": 5\n    }, {\n        \"source\": 32,\n        \"target\": 37,\n        \"value\": 5\n    }, {\n        \"source\": 33,\n        \"target\": 37,\n        \"value\": 5\n    }, {\n        \"source\": 35,\n        \"target\": 37,\n        \"value\": 5\n    }, {\n        \"source\": 34,\n        \"target\": 36,\n        \"value\": 5\n    }, {\n        \"source\": 37,\n        \"target\": 38,\n        \"value\": 5\n    }, {\n        \"source\": 39,\n        \"target\": 38,\n        \"value\": 5\n    }, {\n        \"source\": 41,\n        \"target\": 40,\n        \"value\": 5\n    }, {\n        \"source\": 39,\n        \"target\": 40,\n        \"value\": 5\n    }, {\n        \"source\": 25,\n        \"target\": 41,\n        \"value\": 5\n    }, {\n        \"source\": 38,\n        \"target\": 41,\n        \"value\": 5\n    }]\n}\n\nvar width  = 800,\n    height = 400;\n\nnetClustering.cluster(graph.nodes, graph.links);\n\nvar color = d3.scale.category20();\n\nvar force = d3.layout.force()\n    .charge(-150)\n    .linkDistance(30)\n    .size([width, height]);\n\nvar svg = div.append(\"svg\")\n    .attr(\"width\", width)\n    .attr(\"height\", height);\n\nforce\n    .nodes(graph.nodes)\n    .links(graph.links)\n    .start();\n\nvar link = svg.selectAll(\"line.link\")\n    .data(graph.links)\n    .enter().append(\"line\")\n    .attr(\"class\", \"link\")\n    .style(\"stroke-width\", 2)\n    .style(\"stroke\", \"#999\")\n    .style(\"stroke-opacity\", 0.6);\n\nvar node = svg.selectAll(\"circle.node\")\n    .data(graph.nodes)\n    .enter().append(\"circle\")\n    .attr(\"class\", \"node\")\n    .attr(\"r\", 6)\n    .attr(\"stroke\", \"#fff\")\n    .attr(\"stroke-width\", 2)\n    .style(\"fill\", function(d) {  switch (d.group){\n      case \"Australia\":\n        return \"purple\"\n        break;\n      case \"Afrika\":\n        return \"brown\"\n        break; \n      case \"TheEast\":\n        return \"green\"\n        break; \n      case \"EUR\":\n        return \"blue\"\n        break; \n      case \"NA\":\n        return \"yellow\"\n        break; \n      case \"SA\":\n        return \"red\"\n        break; \n      }})\n    .call(force.drag);\n\nnode.append(\"title\")\n    .text(function(d) { return d.name; });\n\nforce.on(\"tick\", function() {\n  link.attr(\"x1\", function(d) { return d.source.x; })\n      .attr(\"y1\", function(d) { return d.source.y; })\n      .attr(\"x2\", function(d) { return d.target.x; })\n      .attr(\"y2\", function(d) { return d.target.y; });\n\n  node.attr(\"cx\", function(d) { return d.x; })\n      .attr(\"cy\", function(d) { return d.y; });\n});\n\nsvg.selectAll(\".node\").transition().duration(2000).style(\"fill\", function(d) { return color(d.cluster); });\n};","style":[],"version":3,"theme":{"default":{"background":"#FFFFFF","foreground":"#000000"},"runtime":null},"useShadow":true},"evals":[],"jsHooks":[]}</script>
+</div>
+<p>I’m using <a href="https://github.com/john-guerra/netClusteringJs">netClustering.js</a> here. It seems like risk clusters nicely.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<!--radix_placeholder_article_footer-->
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom"></div>
+<!--/radix_placeholder_appendices-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<!--radix_placeholder_navigation_after_body--><html><body>
+<div class="distill-site-nav distill-site-footer">
+<style>
+.container{
+  grid-column: page;
+    grid-column-start: page;
+    grid-column-end: page;
+}
+</style>
+<div class="container">
+  <div>
+    Copyright 2012-2022 Vincent D. Warmerdam, <a href="https://plausible.io/koaning.io">Stats are public.</a>
+  </div>
+</div>
+</div>
+<!--/radix_placeholder_navigation_after_body-->
+</body></html>
+
+
+</body>
+
+</html>

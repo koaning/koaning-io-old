@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>koaning.io</title>
+    <link>https://koaning.io</link>
+    <atom:link href="https://koaning.io/til.xml" rel="self" type="application/rss+xml"/>
+    <description>Blog of a Data Scientist and Developer.
+</description>
+    <image>
+      <title>koaning.io</title>
+      <url>https://koaning.io/favicon.png</url>
+      <link>https://koaning.io</link>
+    </image>
+    <generator>Distill</generator>
+    <lastBuildDate>Sat, 08 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>TIL: Duplications</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/2022-10-08-duplicate-data</link>
+      <description>Between Test and Training data!</description>
+      <guid>https://koaning.io/til/2022-10-08-duplicate-data</guid>
+      <pubDate>Sat, 08 Oct 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/2022-10-08-duplicate-data/icon.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: Annotation Datasets</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/2022-10-07-annotation-datasets</link>
+      <description>Let's study annotators</description>
+      <guid>https://koaning.io/til/2022-10-07-annotation-datasets</guid>
+      <pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/2022-10-07-annotation-datasets/icon.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: Punderstanding</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/2022-10-06-punderstanding</link>
+      <description>Computational Pun-derstanding that is.</description>
+      <guid>https://koaning.io/til/2022-10-06-punderstanding</guid>
+      <pubDate>Wed, 05 Oct 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/2022-10-06-punderstanding/puns.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: DALC</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/2022-09-09-dutch-curses</link>
+      <description>A Dutch Abbusive Language Corpus</description>
+      <guid>https://koaning.io/til/2022-09-09-dutch-curses</guid>
+      <pubDate>Fri, 09 Sep 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/2022-09-09-dutch-curses/abusive.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: Generating Receipts</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/2022-07-23-receipts</link>
+      <description>This is a really cool use-case for Blender.</description>
+      <guid>https://koaning.io/til/2022-07-23-receipts</guid>
+      <pubDate>Thu, 21 Jul 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/2022-07-23-receipts/receipt.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: Annotators vs. Tasks</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/2022-07-13-annotator</link>
+      <description>Are We Modeling the Task or the Annotator?</description>
+      <guid>https://koaning.io/til/2022-07-13-annotator</guid>
+      <pubDate>Wed, 13 Jul 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/2022-07-13-annotator/light.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: Won't Predict via Disagreement</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/2022-05-18-wont-predict-annotators</link>
+      <description>Learning from Teachers, more Literally</description>
+      <guid>https://koaning.io/til/2022-05-18-wont-predict-annotators</guid>
+      <pubDate>Tue, 17 May 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/2022-05-18-wont-predict-annotators/convex-hull.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: Active Churning</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/2022-05-01-active-churning</link>
+      <description>Randomly Sampling is a Strong Benchmark</description>
+      <guid>https://koaning.io/til/2022-05-01-active-churning</guid>
+      <pubDate>Mon, 02 May 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/2022-05-01-active-churning/teach.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: Active Churning</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/2022-05-13-ui-confusion-matrix</link>
+      <description>Randomly Sampling is a Strong Benchmark</description>
+      <guid>https://koaning.io/til/2022-05-13-ui-confusion-matrix</guid>
+      <pubDate>Mon, 02 May 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/2022-05-13-ui-confusion-matrix/teach.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: Active Street Signs</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/2022-04-24-active-signs</link>
+      <description>Neat usecase for Active Learning.</description>
+      <guid>https://koaning.io/til/2022-04-24-active-signs</guid>
+      <pubDate>Sat, 23 Apr 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/2022-04-24-active-signs/sign.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: Perfect Fit</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/2022-04-23-perfect-fit</link>
+      <description>Oh boy...</description>
+      <guid>https://koaning.io/til/2022-04-23-perfect-fit</guid>
+      <pubDate>Fri, 22 Apr 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/2022-04-23-perfect-fit/perfect.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: Active, but Visual, Learning</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/2022-04-22-visual-learning</link>
+      <description>Colors and Convex Hulls</description>
+      <guid>https://koaning.io/til/2022-04-22-visual-learning</guid>
+      <pubDate>Thu, 21 Apr 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/2022-04-22-visual-learning/convex-hull.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: The Story Theory</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/2022-01-16-storks</link>
+      <description>Statistics, Storks and Babies</description>
+      <guid>https://koaning.io/til/2022-01-16-storks</guid>
+      <pubDate>Sun, 16 Jan 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/2022-01-16-storks/stork-icon.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: Vulnerable Contributions at Scale</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/2021-12-20-copilot</link>
+      <description>Via Github Copilot!</description>
+      <guid>https://koaning.io/til/2021-12-20-copilot</guid>
+      <pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/2021-12-20-copilot/copilot.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: VADER - rule based sentiment</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/2021-12-04-vader</link>
+      <description>Seems like a sensible baseline.</description>
+      <guid>https://koaning.io/til/2021-12-04-vader</guid>
+      <pubDate>Sun, 05 Dec 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/2021-12-04-vader/sentiment.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: Linkrot is a Huge Problem</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/2021-12-03-linkrot</link>
+      <description>It's frequent and has hidden nasty bits.</description>
+      <guid>https://koaning.io/til/2021-12-03-linkrot</guid>
+      <pubDate>Fri, 03 Dec 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/2021-12-03-linkrot/linkrot.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: Learning to Place</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/2021-10-29-learning-to-place</link>
+      <description>Classification as a Heavy-Tail Regressor</description>
+      <guid>https://koaning.io/til/2021-10-29-learning-to-place</guid>
+      <pubDate>Fri, 29 Oct 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/2021-10-29-learning-to-place/place.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: Pandas Timestamp Limitations</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/2021-10-20-pandas-time</link>
+      <description>Don't predict too far into the future.</description>
+      <guid>https://koaning.io/til/2021-10-20-pandas-time</guid>
+      <pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/2021-10-20-pandas-time/dates.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: Running git from Another Folder</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/2021-10-15-cron-folder</link>
+      <description>And a use-case for it!</description>
+      <guid>https://koaning.io/til/2021-10-15-cron-folder</guid>
+      <pubDate>Fri, 15 Oct 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/2021-10-15-cron-folder/gitcron.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: Big Git Repos</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/2021-10-14-big-git</link>
+      <description>And How to Clone Them.</description>
+      <guid>https://koaning.io/til/2021-10-14-big-git</guid>
+      <pubDate>Thu, 14 Oct 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/2021-10-14-big-git/biggit.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: Optimal Seeds</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/2021-10-13-seeds</link>
+      <description>Manual_seed(3407) is All You Need</description>
+      <guid>https://koaning.io/til/2021-10-13-seeds</guid>
+      <pubDate>Wed, 13 Oct 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/2021-10-13-seeds/seeds.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: 1.4 Million Jupyter Notebooks</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/2021-10-12-many-notebooks</link>
+      <description>And only 24.1% of them actually ran.</description>
+      <guid>https://koaning.io/til/2021-10-12-many-notebooks</guid>
+      <pubDate>Tue, 12 Oct 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/2021-10-12-many-notebooks/notebook.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: Sentiment and Bias</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/2021-09-27-sentiment</link>
+      <description>Exploring Huggingface while I'm at it.</description>
+      <guid>https://koaning.io/til/2021-09-27-sentiment</guid>
+      <pubDate>Mon, 27 Sep 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/2021-09-27-sentiment/sentiment.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: Gorilla Hypotheses</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/2021-09-26-gorilla</link>
+      <description>A hypothesis *can* be a liability.</description>
+      <guid>https://koaning.io/til/2021-09-26-gorilla</guid>
+      <pubDate>Sun, 26 Sep 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/2021-09-26-gorilla/gorilla.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: Scots Wikipedia</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/2021-09-13-scots</link>
+      <description>The Saga continues in Embeddings</description>
+      <guid>https://koaning.io/til/2021-09-13-scots</guid>
+      <pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/2021-09-13-scots/scots.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: Analytics Providers</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/2021-09-01-analytics</link>
+      <description>It's Numbers that Differ!</description>
+      <guid>https://koaning.io/til/2021-09-01-analytics</guid>
+      <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/2021-09-01-analytics/analytics.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: poke2vec</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/2021-08-27-poke2vec</link>
+      <description>As in ... text embeddings!</description>
+      <guid>https://koaning.io/til/2021-08-27-poke2vec</guid>
+      <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/2021-08-27-poke2vec/poke.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: Markdown Ticks</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/2021-08-20-markdown-ticks</link>
+      <description>And how to render them.</description>
+      <guid>https://koaning.io/til/2021-08-20-markdown-ticks</guid>
+      <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/2021-08-20-markdown-ticks/light.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: Pandas Format</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/2021-08-11-pandas-format</link>
+      <description>Pretty table renders.</description>
+      <guid>https://koaning.io/til/2021-08-11-pandas-format</guid>
+      <pubDate>Tue, 10 Aug 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/2021-08-11-pandas-format/light.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: Stopwords</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/2021-08-06-stopwords</link>
+      <description>They're not very consistent.</description>
+      <guid>https://koaning.io/til/2021-08-06-stopwords</guid>
+      <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/2021-08-06-stopwords/bug.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: Dixit Data</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/2021-07-29-dixit</link>
+      <description>How a Great Game became a Grand Challenge</description>
+      <guid>https://koaning.io/til/2021-07-29-dixit</guid>
+      <pubDate>Thu, 29 Jul 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/2021-07-29-dixit/data.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: Label Errors</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/2021-07-22-moar-bad-labels</link>
+      <description>How to find LOTS of them.</description>
+      <guid>https://koaning.io/til/2021-07-22-moar-bad-labels</guid>
+      <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/2021-07-22-moar-bad-labels/oops.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>TIL: Confidence vs. Variability</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/2021-07-21-variability</link>
+      <description>Tracking Metrics over Epochs to Understand Labels Better.</description>
+      <guid>https://koaning.io/til/2021-07-21-variability</guid>
+      <pubDate>Wed, 21 Jul 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/2021-07-21-variability/light.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: DnD Data</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/dnd-data</link>
+      <description>There's a lot of it.</description>
+      <guid>https://koaning.io/til/dnd-data</guid>
+      <pubDate>Sat, 17 Jul 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/dnd-data/data.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: Shaded Screenshots</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/screenshot</link>
+      <description>A "shortcut" with 4 keys.</description>
+      <guid>https://koaning.io/til/screenshot</guid>
+      <pubDate>Sat, 17 Jul 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/screenshot/light.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: Copilot &amp; Pytest</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/copilot-pytest</link>
+      <description>Pytest vs. Parrot</description>
+      <guid>https://koaning.io/til/copilot-pytest</guid>
+      <pubDate>Fri, 16 Jul 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/copilot-pytest/copilot.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: metatags.io</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/metatags</link>
+      <description>It's a great helper</description>
+      <guid>https://koaning.io/til/metatags</guid>
+      <pubDate>Thu, 15 Jul 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/metatags/great.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: Copilot &amp; Submodules</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/copilot-fairlearn</link>
+      <description>Autocomplete Might be Better</description>
+      <guid>https://koaning.io/til/copilot-fairlearn</guid>
+      <pubDate>Thu, 08 Jul 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/copilot-fairlearn/copilot.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: Github Actions as a Number</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/action-costs</link>
+      <description>Is it big or is it small?</description>
+      <guid>https://koaning.io/til/action-costs</guid>
+      <pubDate>Fri, 25 Jun 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/action-costs/dabble.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: Plenty of Bad Labels</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/mislabel</link>
+      <description>Data Quality Strikes Again</description>
+      <guid>https://koaning.io/til/mislabel</guid>
+      <pubDate>Wed, 23 Jun 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/mislabel/oops.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>TIL: Recursive HTML</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/recursive-html</link>
+      <description>I *really* like Svelte.</description>
+      <guid>https://koaning.io/til/recursive-html</guid>
+      <pubDate>Fri, 18 Jun 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/recursive-html/light.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: Clusters of Risk</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/risk</link>
+      <description>Graphs Mostly</description>
+      <guid>https://koaning.io/til/risk</guid>
+      <pubDate>Wed, 16 Jun 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/risk/tech.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>TIL: Urban Dictionary Embeddings</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/urban</link>
+      <description>It's an entertaining idea.</description>
+      <guid>https://koaning.io/til/urban</guid>
+      <pubDate>Sun, 13 Jun 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/urban/light.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: Gensim Koan</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/gensim</link>
+      <description>Ten Year Old Bug?</description>
+      <guid>https://koaning.io/til/gensim</guid>
+      <pubDate>Fri, 11 Jun 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/gensim/bug.png" medium="image" type="image/png" width="600" height="159"/>
+    </item>
+    <item>
+      <title>TIL: Tesla vs. Stoplights</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/tesla</link>
+      <description>Data Quality Strikes Again</description>
+      <guid>https://koaning.io/til/tesla</guid>
+      <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/tesla/oops.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>TIL: Kolektor</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/kolektor</link>
+      <description>My take on Git-Scraping[tm]</description>
+      <guid>https://koaning.io/til/kolektor</guid>
+      <pubDate>Thu, 03 Jun 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/kolektor/tech.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>TIL: Flight Simulatoops</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/til/flightsim</link>
+      <description>Data Quality Strikes Again</description>
+      <guid>https://koaning.io/til/flightsim</guid>
+      <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/til/flightsim/oops.jpg" medium="image" type="image/jpeg"/>
+    </item>
+  </channel>
+</rss>

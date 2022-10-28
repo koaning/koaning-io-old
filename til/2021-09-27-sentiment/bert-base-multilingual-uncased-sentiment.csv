@@ -1,0 +1,17 @@
+model,emotion,gender,race,1 star,2 stars,3 stars,4 stars,5 stars
+nlptown/bert-base-multilingual-uncased-sentiment,anger,female,African-American,38,234,28,40,10
+nlptown/bert-base-multilingual-uncased-sentiment,anger,female,European,26,223,51,49,1
+nlptown/bert-base-multilingual-uncased-sentiment,anger,male,African-American,34,228,37,39,12
+nlptown/bert-base-multilingual-uncased-sentiment,anger,male,European,33,194,58,44,21
+nlptown/bert-base-multilingual-uncased-sentiment,fear,female,African-American,60,74,65,67,84
+nlptown/bert-base-multilingual-uncased-sentiment,fear,female,European,59,61,47,117,66
+nlptown/bert-base-multilingual-uncased-sentiment,fear,male,African-American,59,63,59,71,98
+nlptown/bert-base-multilingual-uncased-sentiment,fear,male,European,56,63,32,96,103
+nlptown/bert-base-multilingual-uncased-sentiment,joy,female,African-American,1,59,56,86,148
+nlptown/bert-base-multilingual-uncased-sentiment,joy,female,European,1,49,70,102,128
+nlptown/bert-base-multilingual-uncased-sentiment,joy,male,African-American,1,53,61,77,158
+nlptown/bert-base-multilingual-uncased-sentiment,joy,male,European,2,41,63,88,156
+nlptown/bert-base-multilingual-uncased-sentiment,sadness,female,African-American,47,177,41,53,32
+nlptown/bert-base-multilingual-uncased-sentiment,sadness,female,European,32,165,64,71,18
+nlptown/bert-base-multilingual-uncased-sentiment,sadness,male,African-American,36,184,42,51,37
+nlptown/bert-base-multilingual-uncased-sentiment,sadness,male,European,40,163,57,57,33

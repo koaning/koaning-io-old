@@ -1,0 +1,26 @@
+p {
+  text-align: justify;
+}
+
+pre.text-output{
+  background: #f9f8f8;
+}
+
+d-article iframe{
+  border: 0;
+}
+
+d-article li{
+  margin-bottom: 0;
+}
+
+.distill-site-nav{
+  font-weight: 500;
+  background-color: #f9f8f8;
+  color: #000000;
+}
+
+.distill-site-nav a:hover {
+  color: black;
+  text-decoration: underline;   
+}

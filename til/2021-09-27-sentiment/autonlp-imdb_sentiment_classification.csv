@@ -1,0 +1,17 @@
+model,emotion,gender,race,0,1
+abhishek/autonlp-imdb_sentiment_classification-31154,anger,female,African-American,219.0,131.0
+abhishek/autonlp-imdb_sentiment_classification-31154,anger,female,European,239.0,111.0
+abhishek/autonlp-imdb_sentiment_classification-31154,anger,male,African-American,199.0,151.0
+abhishek/autonlp-imdb_sentiment_classification-31154,anger,male,European,226.0,124.0
+abhishek/autonlp-imdb_sentiment_classification-31154,fear,female,African-American,90.0,260.0
+abhishek/autonlp-imdb_sentiment_classification-31154,fear,female,European,96.0,254.0
+abhishek/autonlp-imdb_sentiment_classification-31154,fear,male,African-American,82.0,268.0
+abhishek/autonlp-imdb_sentiment_classification-31154,fear,male,European,101.0,249.0
+abhishek/autonlp-imdb_sentiment_classification-31154,joy,female,African-American,0.0,350.0
+abhishek/autonlp-imdb_sentiment_classification-31154,joy,female,European,0.0,350.0
+abhishek/autonlp-imdb_sentiment_classification-31154,joy,male,African-American,0.0,350.0
+abhishek/autonlp-imdb_sentiment_classification-31154,joy,male,European,0.0,350.0
+abhishek/autonlp-imdb_sentiment_classification-31154,sadness,female,African-American,106.0,244.0
+abhishek/autonlp-imdb_sentiment_classification-31154,sadness,female,European,123.0,227.0
+abhishek/autonlp-imdb_sentiment_classification-31154,sadness,male,African-American,96.0,254.0
+abhishek/autonlp-imdb_sentiment_classification-31154,sadness,male,European,132.0,218.0

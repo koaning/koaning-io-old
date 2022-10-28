@@ -1,0 +1,2142 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ad0000; } /* Alert */
+code span.an { color: #5e5e5e; } /* Annotation */
+code span.at { } /* Attribute */
+code span.bn { color: #ad0000; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007ba5; } /* ControlFlow */
+code span.ch { color: #20794d; } /* Char */
+code span.cn { color: #8f5902; } /* Constant */
+code span.co { color: #5e5e5e; } /* Comment */
+code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+code span.dt { color: #ad0000; } /* DataType */
+code span.dv { color: #ad0000; } /* DecVal */
+code span.er { color: #ad0000; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #ad0000; } /* Float */
+code span.fu { color: #4758ab; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #5e5e5e; } /* Information */
+code span.kw { color: #007ba5; } /* Keyword */
+code span.op { color: #5e5e5e; } /* Operator */
+code span.ot { color: #007ba5; } /* Other */
+code span.pp { color: #ad0000; } /* Preprocessor */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
+code span.ss { color: #20794d; } /* SpecialString */
+code span.st { color: #20794d; } /* String */
+code span.va { color: #111111; } /* Variable */
+code span.vs { color: #20794d; } /* VerbatimString */
+code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+</style>
+
+
+  <!--radix_placeholder_meta_tags-->
+<title>koaning.io: Being a Research Advocate.</title>
+
+<meta property="description" itemprop="description" content="What lies in &quot;Research Advocacy&quot;?"/>
+
+<link rel="canonical" href="https://koaning.io/posts/research-advocacy/"/>
+<link rel="icon" type="image/png" href="../../favicon.png"/>
+
+<!--  https://schema.org/Article -->
+<meta property="article:published" itemprop="datePublished" content="2022-07-28"/>
+<meta property="article:created" itemprop="dateCreated" content="2022-07-28"/>
+<meta name="article:author" content="Vincent Warmerdam"/>
+
+<!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+<meta property="og:title" content="koaning.io: Being a Research Advocate."/>
+<meta property="og:type" content="article"/>
+<meta property="og:description" content="What lies in &quot;Research Advocacy&quot;?"/>
+<meta property="og:url" content="https://koaning.io/posts/research-advocacy/"/>
+<meta property="og:image" content="https://koaning.io/posts/research-advocacy/landing.png"/>
+<meta property="og:image:width" content="867"/>
+<meta property="og:image:height" content="303"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="koaning.io"/>
+
+<!--  https://dev.twitter.com/cards/types/summary -->
+<meta property="twitter:card" content="summary_large_image"/>
+<meta property="twitter:title" content="koaning.io: Being a Research Advocate."/>
+<meta property="twitter:description" content="What lies in &quot;Research Advocacy&quot;?"/>
+<meta property="twitter:url" content="https://koaning.io/posts/research-advocacy/"/>
+<meta property="twitter:image" content="https://koaning.io/posts/research-advocacy/landing.png"/>
+<meta property="twitter:image:width" content="867"/>
+<meta property="twitter:image:height" content="303"/>
+
+<!--  https://scholar.google.com/intl/en/scholar/inclusion.html#indexing -->
+<meta name="citation_title" content="koaning.io: Being a Research Advocate."/>
+<meta name="citation_fulltext_html_url" content="https://koaning.io/posts/research-advocacy/"/>
+<meta name="citation_online_date" content="2022/07/28"/>
+<meta name="citation_publication_date" content="2022/07/28"/>
+<meta name="citation_author" content="Vincent Warmerdam"/>
+<!--/radix_placeholder_meta_tags-->
+  <!--radix_placeholder_rmarkdown_metadata-->
+
+<script type="text/json" id="radix-rmarkdown-metadata">
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","preview","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["Being a Research Advocate."]},{"type":"character","attributes":{},"value":["What lies in \"Research Advocacy\"?"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Vincent Warmerdam"]},{"type":"character","attributes":{},"value":["koaning.io"]}]}]},{"type":"character","attributes":{},"value":["07-28-2022"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["landing.png"]},{"type":"character","attributes":{},"value":["https://koaning.io/posts/research-advocacy/"]},{"type":"character","attributes":{},"value":["https://koaning.io/posts/research-advocacy/"]}]}
+</script>
+<!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["analogy.png","bulk.png","cto.png","draw.png","forward.png","intro.png","landing.png","looking-back.png","loop.png","rasa-nlu-examples.png","research-advocacy_files/anchor-4.2.2/anchor.min.js","research-advocacy_files/bowser-1.9.3/bowser.min.js","research-advocacy_files/distill-2.2.21/template.v2.js","research-advocacy_files/header-attrs-2.11/header-attrs.js","research-advocacy_files/header-attrs-2.14/header-attrs.js","research-advocacy_files/header-attrs-2.8/header-attrs.js","research-advocacy_files/jquery-1.11.3/jquery.min.js","research-advocacy_files/jquery-3.6.0/jquery-3.6.0.js","research-advocacy_files/jquery-3.6.0/jquery-3.6.0.min.js","research-advocacy_files/jquery-3.6.0/jquery-3.6.0.min.map","research-advocacy_files/popper-2.6.0/popper.min.js","research-advocacy_files/tippy-6.2.7/tippy-bundle.umd.min.js","research-advocacy_files/tippy-6.2.7/tippy-light-border.css","research-advocacy_files/tippy-6.2.7/tippy.css","research-advocacy_files/tippy-6.2.7/tippy.umd.min.js","research-advocacy_files/webcomponents-2.0.0/webcomponents.js","use-cases.png","venn.png","whatlies.png"]}
+  </script>
+  <!--radix_placeholder_navigation_in_header-->
+<meta name="distill:offset" content="../.."/>
+
+<script type="application/javascript">
+
+  window.headroom_prevent_pin = false;
+
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+
+    // initialize headroom for banner
+    var header = $('header').get(0);
+    var headerHeight = header.offsetHeight;
+    var headroom = new Headroom(header, {
+      tolerance: 5,
+      onPin : function() {
+        if (window.headroom_prevent_pin) {
+          window.headroom_prevent_pin = false;
+          headroom.unpin();
+        }
+      }
+    });
+    headroom.init();
+    if(window.location.hash)
+      headroom.unpin();
+    $(header).addClass('headroom--transition');
+
+    // offset scroll location for banner on hash change
+    // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
+    window.addEventListener("hashchange", function(event) {
+      window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
+    });
+
+    // responsive menu
+    $('.distill-site-header').each(function(i, val) {
+      var topnav = $(this);
+      var toggle = topnav.find('.nav-toggle');
+      toggle.on('click', function() {
+        topnav.toggleClass('responsive');
+      });
+    });
+
+    // nav dropdowns
+    $('.nav-dropbtn').click(function(e) {
+      $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
+      $(this).parent().siblings('.nav-dropdown')
+         .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $("body").click(function(e){
+      $('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $(".nav-dropdown").click(function(e){
+      e.stopPropagation();
+    });
+  });
+</script>
+
+<style type="text/css">
+
+/* Theme (user-documented overrideables for nav appearance) */
+
+.distill-site-nav {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #0F2E3D;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.distill-site-nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.distill-site-nav a:hover {
+  color: white;
+}
+
+@media print {
+  .distill-site-nav {
+    display: none;
+  }
+}
+
+.distill-site-header {
+
+}
+
+.distill-site-footer {
+
+}
+
+
+/* Site Header */
+
+.distill-site-header {
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+.distill-site-header .nav-left {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header .nav-left {
+    margin-left: 0;
+  }
+}
+
+
+.distill-site-header .nav-right {
+  float: right;
+  margin-right: 8px;
+}
+
+.distill-site-header a,
+.distill-site-header .title {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 10px 14px 10px;
+}
+
+.distill-site-header .title {
+  font-size: 18px;
+  min-width: 150px;
+}
+
+.distill-site-header .logo {
+  padding: 0;
+}
+
+.distill-site-header .logo img {
+  display: none;
+  max-height: 20px;
+  width: auto;
+  margin-bottom: -4px;
+}
+
+.distill-site-header .nav-image img {
+  max-height: 18px;
+  width: auto;
+  display: inline-block;
+  margin-bottom: -3px;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+  .distill-site-header .logo img {
+    display: inline-block;
+  }
+  .distill-site-header .nav-left {
+    margin-left: 20px;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 20px;
+  }
+  .distill-site-header .title {
+    padding-left: 12px;
+  }
+}
+
+
+.distill-site-header .nav-toggle {
+  display: none;
+}
+
+.nav-dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-dropdown .nav-dropbtn {
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 16px 10px;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  margin-top: 1px;
+  z-index: 2;
+}
+
+.nav-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  z-index: 1;
+  margin-top: 2px;
+  white-space: nowrap;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.nav-dropdown-content hr {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-dropdown-active {
+  display: block;
+}
+
+.nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
+  color: black;
+  padding: 6px 24px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.nav-dropdown-content .nav-dropdown-header {
+  display: block;
+  padding: 5px 24px;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #999999;
+  white-space: nowrap;
+}
+
+.nav-dropdown:hover .nav-dropbtn {
+  color: white;
+}
+
+.nav-dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav-right .nav-dropdown-content {
+  margin-left: -45%;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
+  .distill-site-header a.nav-toggle {
+    float: right;
+    display: block;
+  }
+  .distill-site-header .title {
+    margin-left: 0;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 0;
+  }
+  .distill-site-header {
+    overflow: hidden;
+  }
+  .nav-right .nav-dropdown-content {
+    margin-left: 0;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .distill-site-header.responsive {position: relative; min-height: 500px; }
+  .distill-site-header.responsive a.nav-toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .distill-site-header.responsive a,
+  .distill-site-header.responsive .nav-dropdown {
+    display: block;
+    text-align: left;
+  }
+  .distill-site-header.responsive .nav-left,
+  .distill-site-header.responsive .nav-right {
+    width: 100%;
+  }
+  .distill-site-header.responsive .nav-dropdown {float: none;}
+  .distill-site-header.responsive .nav-dropdown-content {position: relative;}
+  .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* Site Footer */
+
+.distill-site-footer {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 3;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+/* Headroom */
+
+d-title {
+  padding-top: 6rem;
+}
+
+@media print {
+  d-title {
+    padding-top: 4rem;
+  }
+}
+
+.headroom {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.headroom--transition {
+  transition: all .4s ease-in-out;
+}
+
+.headroom--unpinned {
+  top: -100px;
+}
+
+.headroom--pinned {
+  top: 0;
+}
+
+/* adjust viewport for navbar height */
+/* helps vertically center bootstrap (non-distill) content */
+.min-vh-100 {
+  min-height: calc(100vh - 100px) !important;
+}
+
+</style>
+
+<script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
+<link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
+<script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
+<!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+
+<style type="text/css">
+
+body {
+  background-color: white;
+}
+
+.pandoc-table {
+  width: 100%;
+}
+
+.pandoc-table>caption {
+  margin-bottom: 10px;
+}
+
+.pandoc-table th:not([align]) {
+  text-align: left;
+}
+
+.pagedtable-footer {
+  font-size: 15px;
+}
+
+d-byline .byline {
+  grid-template-columns: 2fr 2fr;
+}
+
+d-byline .byline h3 {
+  margin-block-start: 1.5em;
+}
+
+d-byline .byline .authors-affiliations h3 {
+  margin-block-start: 0.5em;
+}
+
+.authors-affiliations .orcid-id {
+  width: 16px;
+  height:16px;
+  margin-left: 4px;
+  margin-right: 4px;
+  vertical-align: middle;
+  padding-bottom: 2px;
+}
+
+d-title .dt-tags {
+  margin-top: 1em;
+  grid-column: text;
+}
+
+.dt-tags .dt-tag {
+  text-decoration: none;
+  display: inline-block;
+  color: rgba(0,0,0,0.6);
+  padding: 0em 0.4em;
+  margin-right: 0.5em;
+  margin-bottom: 0.4em;
+  font-size: 70%;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+d-article table.gt_table td,
+d-article table.gt_table th {
+  border-bottom: none;
+}
+
+.html-widget {
+  margin-bottom: 2.0em;
+}
+
+.l-screen-inset {
+  padding-right: 16px;
+}
+
+.l-screen .caption {
+  margin-left: 10px;
+}
+
+.shaded {
+  background: rgb(247, 247, 247);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shaded .html-widget {
+  margin-bottom: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shaded .shaded-content {
+  background: white;
+}
+
+.text-output {
+  margin-top: 0;
+  line-height: 1.5em;
+}
+
+.hidden {
+  display: none !important;
+}
+
+d-article {
+  padding-top: 2.5rem;
+  padding-bottom: 30px;
+}
+
+d-appendix {
+  padding-top: 30px;
+}
+
+d-article>p>img {
+  width: 100%;
+}
+
+d-article h2 {
+  margin: 1rem 0 1.5rem 0;
+}
+
+d-article h3 {
+  margin-top: 1.5rem;
+}
+
+d-article iframe {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 2.0em;
+  width: 100%;
+}
+
+/* Tweak code blocks */
+
+d-article div.sourceCode code,
+d-article pre code {
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+d-article pre,
+d-article div.sourceCode,
+d-article div.sourceCode pre {
+  overflow: auto;
+}
+
+d-article div.sourceCode {
+  background-color: white;
+}
+
+d-article div.sourceCode pre {
+  padding-left: 10px;
+  font-size: 12px;
+  border-left: 2px solid rgba(0,0,0,0.1);
+}
+
+d-article pre {
+  font-size: 12px;
+  color: black;
+  background: none;
+  margin-top: 0;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+d-article pre a {
+  border-bottom: none;
+}
+
+d-article pre a:hover {
+  border-bottom: none;
+  text-decoration: underline;
+}
+
+d-article details {
+  grid-column: text;
+  margin-bottom: 0.8em;
+}
+
+@media(min-width: 768px) {
+
+d-article pre,
+d-article div.sourceCode,
+d-article div.sourceCode pre {
+  overflow: visible !important;
+}
+
+d-article div.sourceCode pre {
+  padding-left: 18px;
+  font-size: 14px;
+}
+
+d-article pre {
+  font-size: 14px;
+}
+
+}
+
+figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+/* CSS for d-contents */
+
+.d-contents {
+  grid-column: text;
+  color: rgba(0,0,0,0.8);
+  font-size: 0.9em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+  padding-left: 0.25em;
+  justify-self: start;
+}
+
+@media(min-width: 1000px) {
+  .d-contents.d-contents-float {
+    height: 0;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-self: center;
+    padding-right: 3em;
+    padding-left: 2em;
+  }
+}
+
+.d-contents nav h3 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.d-contents li {
+  list-style-type: none
+}
+
+.d-contents nav > ul {
+  padding-left: 0;
+}
+
+.d-contents ul {
+  padding-left: 1em
+}
+
+.d-contents nav ul li {
+  margin-top: 0.6em;
+  margin-bottom: 0.2em;
+}
+
+.d-contents nav a {
+  font-size: 13px;
+  border-bottom: none;
+  text-decoration: none
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.d-contents nav a:hover {
+  text-decoration: underline solid rgba(0, 0, 0, 0.6)
+}
+
+.d-contents nav > ul > li > a {
+  font-weight: 600;
+}
+
+.d-contents nav > ul > li > ul {
+  font-weight: inherit;
+}
+
+.d-contents nav > ul > li > ul > li {
+  margin-top: 0.2em;
+}
+
+
+.d-contents nav ul {
+  margin-top: 0;
+  margin-bottom: 0.25em;
+}
+
+.d-article-with-toc h2:nth-child(2) {
+  margin-top: 0;
+}
+
+
+/* Figure */
+
+.figure {
+  position: relative;
+  margin-bottom: 2.5em;
+  margin-top: 1.5em;
+}
+
+.figure img {
+  width: 100%;
+}
+
+.figure .caption {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+.figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+.figure .caption a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.figure .caption b,
+.figure .caption strong, {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1.0);
+}
+
+/* Citations */
+
+d-article .citation {
+  color: inherit;
+  cursor: inherit;
+}
+
+div.hanging-indent{
+  margin-left: 1em; text-indent: -1em;
+}
+
+/* Citation hover box */
+
+.tippy-box[data-theme~=light-border] {
+  background-color: rgba(250, 250, 250, 0.95);
+}
+
+.tippy-content > p {
+  margin-bottom: 0;
+  padding: 2px;
+}
+
+
+/* Tweak 1000px media break to show more text */
+
+@media(min-width: 1000px) {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 16px;
+  }
+
+  .grid {
+    grid-column-gap: 16px;
+  }
+
+  d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+  }
+  figure .caption, .figure .caption, figure figcaption {
+    font-size: 13px;
+  }
+}
+
+@media(min-width: 1180px) {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 32px;
+  }
+
+  .grid {
+    grid-column-gap: 32px;
+  }
+}
+
+
+/* Get the citation styles for the appendix (not auto-injected on render since
+   we do our own rendering of the citation appendix) */
+
+d-appendix .citation-appendix,
+.d-appendix .citation-appendix {
+  font-size: 11px;
+  line-height: 15px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 18px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background: rgba(0, 0, 0, 0.02);
+  padding: 10px 18px;
+  border-radius: 3px;
+  color: rgba(150, 150, 150, 1);
+  overflow: hidden;
+  margin-top: -12px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Include appendix styles here so they can be overridden */
+
+d-appendix {
+  contain: layout style;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  margin-top: 60px;
+  margin-bottom: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  color: rgba(0,0,0,0.5);
+  padding-top: 60px;
+  padding-bottom: 48px;
+}
+
+d-appendix h3 {
+  grid-column: page-start / text-start;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 1em;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.65);
+}
+
+d-appendix h3 + * {
+  margin-top: 1em;
+}
+
+d-appendix ol {
+  padding: 0 0 0 15px;
+}
+
+@media (min-width: 768px) {
+  d-appendix ol {
+    padding: 0 0 0 30px;
+    margin-left: -30px;
+  }
+}
+
+d-appendix li {
+  margin-bottom: 1em;
+}
+
+d-appendix a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+d-appendix > * {
+  grid-column: text;
+}
+
+d-appendix > d-footnote-list,
+d-appendix > d-citation-list,
+d-appendix > distill-appendix {
+  grid-column: screen;
+}
+
+/* Include footnote styles here so they can be overridden */
+
+d-footnote-list {
+  contain: layout style;
+}
+
+d-footnote-list > * {
+  grid-column: text;
+}
+
+d-footnote-list a.footnote-backlink {
+  color: rgba(0,0,0,0.3);
+  padding-left: 0.5em;
+}
+
+
+
+/* Anchor.js */
+
+.anchorjs-link {
+  /*transition: all .25s linear; */
+  text-decoration: none;
+  border-bottom: none;
+}
+*:hover > .anchorjs-link {
+  margin-left: -1.125em !important;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+/* Social footer */
+
+.social_footer {
+  margin-top: 30px;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.67);
+}
+
+.disqus-comments {
+  margin-right: 30px;
+}
+
+.disqus-comment-count {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+#disqus_thread {
+  margin-top: 30px;
+}
+
+.article-sharing a {
+  border-bottom: none;
+  margin-right: 8px;
+}
+
+.article-sharing a:hover {
+  border-bottom: none;
+}
+
+.sidebar-section.subscribe {
+  font-size: 12px;
+  line-height: 1.6em;
+}
+
+.subscribe p {
+  margin-bottom: 0.5em;
+}
+
+
+.article-footer .subscribe {
+  font-size: 15px;
+  margin-top: 45px;
+}
+
+
+.sidebar-section.custom {
+  font-size: 12px;
+  line-height: 1.6em;
+}
+
+.custom p {
+  margin-bottom: 0.5em;
+}
+
+/* Styles for listing layout (hide title) */
+.layout-listing d-title, .layout-listing .d-title {
+  display: none;
+}
+
+/* Styles for posts lists (not auto-injected) */
+
+
+.posts-with-sidebar {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.posts-list .description h2,
+.posts-list .description p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.posts-list .description h2 {
+  font-weight: 700;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.posts-list h2.post-tag {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 12px;
+}
+.posts-list {
+  margin-top: 60px;
+  margin-bottom: 24px;
+}
+
+.posts-list .post-preview {
+  text-decoration: none;
+  overflow: hidden;
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 24px 0;
+}
+
+.post-preview-last {
+  border-bottom: none !important;
+}
+
+.posts-list .posts-list-caption {
+  grid-column: screen;
+  font-weight: 400;
+}
+
+.posts-list .post-preview h2 {
+  margin: 0 0 6px 0;
+  line-height: 1.2em;
+  font-style: normal;
+  font-size: 24px;
+}
+
+.posts-list .post-preview p {
+  margin: 0 0 12px 0;
+  line-height: 1.4em;
+  font-size: 16px;
+}
+
+.posts-list .post-preview .thumbnail {
+  box-sizing: border-box;
+  margin-bottom: 24px;
+  position: relative;
+  max-width: 500px;
+}
+.posts-list .post-preview img {
+  width: 100%;
+  display: block;
+}
+
+.posts-list .metadata {
+  font-size: 12px;
+  line-height: 1.4em;
+  margin-bottom: 18px;
+}
+
+.posts-list .metadata > * {
+  display: inline-block;
+}
+
+.posts-list .metadata .publishedDate {
+  margin-right: 2em;
+}
+
+.posts-list .metadata .dt-authors {
+  display: block;
+  margin-top: 0.3em;
+  margin-right: 2em;
+}
+
+.posts-list .dt-tags {
+  display: block;
+  line-height: 1em;
+}
+
+.posts-list .dt-tags .dt-tag {
+  display: inline-block;
+  color: rgba(0,0,0,0.6);
+  padding: 0.3em 0.4em;
+  margin-right: 0.2em;
+  margin-bottom: 0.4em;
+  font-size: 60%;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.posts-list img {
+  opacity: 1;
+}
+
+.posts-list img[data-src] {
+  opacity: 0;
+}
+
+.posts-more {
+  clear: both;
+}
+
+
+.posts-sidebar {
+  font-size: 16px;
+}
+
+.posts-sidebar h3 {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.sidebar-section {
+  margin-bottom: 30px;
+}
+
+.categories ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.categories li {
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 0;
+}
+
+.categories li>a {
+  border-bottom: none;
+}
+
+.categories li>a:hover {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.categories .active {
+  font-weight: 600;
+}
+
+.categories .category-count {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+
+@media(min-width: 768px) {
+  .posts-list .post-preview h2 {
+    font-size: 26px;
+  }
+  .posts-list .post-preview .thumbnail {
+    float: right;
+    width: 30%;
+    margin-bottom: 0;
+  }
+  .posts-list .post-preview .description {
+    float: left;
+    width: 45%;
+  }
+  .posts-list .post-preview .metadata {
+    float: left;
+    width: 20%;
+    margin-top: 8px;
+  }
+  .posts-list .post-preview p {
+    margin: 0 0 12px 0;
+    line-height: 1.5em;
+    font-size: 16px;
+  }
+  .posts-with-sidebar .posts-list {
+    float: left;
+    width: 75%;
+  }
+  .posts-with-sidebar .posts-sidebar {
+    float: right;
+    width: 20%;
+    margin-top: 60px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+
+/* Improve display for browsers without grid (IE/Edge <= 15) */
+
+.downlevel {
+  line-height: 1.6em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+}
+
+.downlevel .d-title {
+  padding-top: 6rem;
+  padding-bottom: 1.5rem;
+}
+
+.downlevel .d-title h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.1em;
+  margin: 0 0 0.5rem;
+}
+
+.downlevel .d-title p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.55em;
+  margin-top: 0;
+}
+
+.downlevel .d-byline {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  font-size: 0.8rem;
+  line-height: 1.8em;
+}
+
+.downlevel .section-separator {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.downlevel .d-article {
+  font-size: 1.06rem;
+  line-height: 1.7em;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+
+.downlevel .d-appendix {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: none;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.5);
+  padding-top: 40px;
+  padding-bottom: 48px;
+}
+
+.downlevel .footnotes ol {
+  padding-left: 13px;
+}
+
+.downlevel .base-grid,
+.downlevel .distill-header,
+.downlevel .d-title,
+.downlevel .d-abstract,
+.downlevel .d-article,
+.downlevel .d-appendix,
+.downlevel .distill-appendix,
+.downlevel .d-byline,
+.downlevel .d-footnote-list,
+.downlevel .d-citation-list,
+.downlevel .distill-footer,
+.downlevel .appendix-bottom,
+.downlevel .posts-container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media(min-width: 768px) {
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+  padding-left: 150px;
+  padding-right: 150px;
+  max-width: 900px;
+}
+}
+
+.downlevel pre code {
+  display: block;
+  border-left: 2px solid rgba(0, 0, 0, .1);
+  padding: 0 0 0 20px;
+  font-size: 14px;
+}
+
+.downlevel code, .downlevel pre {
+  color: black;
+  background: none;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+.downlevel .posts-list .post-preview {
+  color: inherit;
+}
+
+
+
+</style>
+
+<script type="application/javascript">
+
+function is_downlevel_browser() {
+  if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                 window.navigator.userAgent)) {
+    return true;
+  } else {
+    return window.load_distill_framework === undefined;
+  }
+}
+
+// show body when load is complete
+function on_load_complete() {
+
+  // add anchors
+  if (window.anchors) {
+    window.anchors.options.placement = 'left';
+    window.anchors.add('d-article > h2, d-article > h3, d-article > h4, d-article > h5');
+  }
+
+
+  // set body to visible
+  document.body.style.visibility = 'visible';
+
+  // force redraw for leaflet widgets
+  if (window.HTMLWidgets) {
+    var maps = window.HTMLWidgets.findAll(".leaflet");
+    $.each(maps, function(i, el) {
+      var map = this.getMap();
+      map.invalidateSize();
+      map.eachLayer(function(layer) {
+        if (layer instanceof L.TileLayer)
+          layer.redraw();
+      });
+    });
+  }
+
+  // trigger 'shown' so htmlwidgets resize
+  $('d-article').trigger('shown');
+}
+
+function init_distill() {
+
+  init_common();
+
+  // create front matter
+  var front_matter = $('<d-front-matter></d-front-matter>');
+  $('#distill-front-matter').wrap(front_matter);
+
+  // create d-title
+  $('.d-title').changeElementType('d-title');
+
+  // create d-byline
+  var byline = $('<d-byline></d-byline>');
+  $('.d-byline').replaceWith(byline);
+
+  // create d-article
+  var article = $('<d-article></d-article>');
+  $('.d-article').wrap(article).children().unwrap();
+
+  // move posts container into article
+  $('.posts-container').appendTo($('d-article'));
+
+  // create d-appendix
+  $('.d-appendix').changeElementType('d-appendix');
+
+  // flag indicating that we have appendix items
+  var appendix = $('.appendix-bottom').children('h3').length > 0;
+
+  // replace footnotes with <d-footnote>
+  $('.footnote-ref').each(function(i, val) {
+    appendix = true;
+    var href = $(this).attr('href');
+    var id = href.replace('#', '');
+    var fn = $('#' + id);
+    var fn_p = $('#' + id + '>p');
+    fn_p.find('.footnote-back').remove();
+    var text = fn_p.html();
+    var dtfn = $('<d-footnote></d-footnote>');
+    dtfn.html(text);
+    $(this).replaceWith(dtfn);
+  });
+  // remove footnotes
+  $('.footnotes').remove();
+
+  // move refs into #references-listing
+  $('#references-listing').replaceWith($('#refs'));
+
+  $('h1.appendix, h2.appendix').each(function(i, val) {
+    $(this).changeElementType('h3');
+  });
+  $('h3.appendix').each(function(i, val) {
+    var id = $(this).attr('id');
+    $('.d-contents a[href="#' + id + '"]').parent().remove();
+    appendix = true;
+    $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+  });
+
+  // show d-appendix if we have appendix content
+  $("d-appendix").css('display', appendix ? 'grid' : 'none');
+
+  // localize layout chunks to just output
+  $('.layout-chunk').each(function(i, val) {
+
+    // capture layout
+    var layout = $(this).attr('data-layout');
+
+    // apply layout to markdown level block elements
+    var elements = $(this).children().not('details, div.sourceCode, pre, script');
+    elements.each(function(i, el) {
+      var layout_div = $('<div class="' + layout + '"></div>');
+      if (layout_div.hasClass('shaded')) {
+        var shaded_content = $('<div class="shaded-content"></div>');
+        $(this).wrap(shaded_content);
+        $(this).parent().wrap(layout_div);
+      } else {
+        $(this).wrap(layout_div);
+      }
+    });
+
+
+    // unwrap the layout-chunk div
+    $(this).children().unwrap();
+  });
+
+  // remove code block used to force  highlighting css
+  $('.distill-force-highlighting-css').parent().remove();
+
+  // remove empty line numbers inserted by pandoc when using a
+  // custom syntax highlighting theme
+  $('code.sourceCode a:empty').remove();
+
+  // load distill framework
+  load_distill_framework();
+
+  // wait for window.distillRunlevel == 4 to do post processing
+  function distill_post_process() {
+
+    if (!window.distillRunlevel || window.distillRunlevel < 4)
+      return;
+
+    // hide author/affiliations entirely if we have no authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+    if (!have_authors)
+      $('d-byline').addClass('hidden');
+
+    // article with toc class
+    $('.d-contents').parent().addClass('d-article-with-toc');
+
+    // strip links that point to #
+    $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+
+    // add orcid ids
+    $('.authors-affiliations').find('.author').each(function(i, el) {
+      var orcid_id = front_matter.authors[i].orcidID;
+      if (orcid_id) {
+        var a = $('<a></a>');
+        a.attr('href', 'https://orcid.org/' + orcid_id);
+        var img = $('<img></img>');
+        img.addClass('orcid-id');
+        img.attr('alt', 'ORCID ID');
+        img.attr('src','data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==');
+        a.append(img);
+        $(this).append(a);
+      }
+    });
+
+    // hide elements of author/affiliations grid that have no value
+    function hide_byline_column(caption) {
+      $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+    }
+
+    // affiliations
+    var have_affiliations = false;
+    for (var i = 0; i<front_matter.authors.length; ++i) {
+      var author = front_matter.authors[i];
+      if (author.affiliation !== "&nbsp;") {
+        have_affiliations = true;
+        break;
+      }
+    }
+    if (!have_affiliations)
+      $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+
+    // published date
+    if (!front_matter.publishedDate)
+      hide_byline_column("Published");
+
+    // document object identifier
+    var doi = $('d-byline').find('h3:contains("DOI")');
+    var doi_p = doi.next().empty();
+    if (!front_matter.doi) {
+      // if we have a citation and valid citationText then link to that
+      if ($('#citation').length > 0 && front_matter.citationText) {
+        doi.html('Citation');
+        $('<a href="#citation"></a>')
+          .text(front_matter.citationText)
+          .appendTo(doi_p);
+      } else {
+        hide_byline_column("DOI");
+      }
+    } else {
+      $('<a></a>')
+         .attr('href', "https://doi.org/" + front_matter.doi)
+         .html(front_matter.doi)
+         .appendTo(doi_p);
+    }
+
+     // change plural form of authors/affiliations
+    if (front_matter.authors.length === 1) {
+      var grid = $('.authors-affiliations');
+      grid.children('h3:contains("Authors")').text('Author');
+      grid.children('h3:contains("Affiliations")').text('Affiliation');
+    }
+
+    // remove d-appendix and d-footnote-list local styles
+    $('d-appendix > style:first-child').remove();
+    $('d-footnote-list > style:first-child').remove();
+
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+
+    // hoverable references
+    $('span.citation[data-cites]').each(function() {
+      var refs = $(this).attr('data-cites').split(" ");
+      var refHtml = refs.map(function(ref) {
+        return "<p>" + $('#ref-' + ref).html() + "</p>";
+      }).join("\n");
+      window.tippy(this, {
+        allowHTML: true,
+        content: refHtml,
+        maxWidth: 500,
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'light-border',
+        placement: 'bottom-start'
+      });
+    });
+
+    // clear polling timer
+    clearInterval(tid);
+
+    // show body now that everything is ready
+    on_load_complete();
+  }
+
+  var tid = setInterval(distill_post_process, 50);
+  distill_post_process();
+
+}
+
+function init_downlevel() {
+
+  init_common();
+
+   // insert hr after d-title
+  $('.d-title').after($('<hr class="section-separator"/>'));
+
+  // check if we have authors
+  var front_matter = JSON.parse($("#distill-front-matter").html());
+  var have_authors = front_matter.authors && front_matter.authors.length > 0;
+
+  // manage byline/border
+  if (!have_authors)
+    $('.d-byline').remove();
+  $('.d-byline').after($('<hr class="section-separator"/>'));
+  $('.d-byline a').remove();
+
+  // remove toc
+  $('.d-contents').remove();
+
+  // move appendix elements
+  $('h1.appendix, h2.appendix').each(function(i, val) {
+    $(this).changeElementType('h3');
+  });
+  $('h3.appendix').each(function(i, val) {
+    $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+  });
+
+
+  // inject headers into references and footnotes
+  var refs_header = $('<h3></h3>');
+  refs_header.text('References');
+  $('#refs').prepend(refs_header);
+
+  var footnotes_header = $('<h3></h3');
+  footnotes_header.text('Footnotes');
+  $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+
+  // move appendix-bottom entries to the bottom
+  $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+  $('.appendix-bottom').remove();
+
+  // remove appendix if it's empty
+  if ($('.d-appendix').children().length === 0)
+    $('.d-appendix').remove();
+
+  // prepend separator above appendix
+  $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+
+  // trim code
+  $('pre>code').each(function(i, val) {
+    $(this).html($.trim($(this).html()));
+  });
+
+  // move posts-container right before article
+  $('.posts-container').insertBefore($('.d-article'));
+
+  $('body').addClass('downlevel');
+
+  on_load_complete();
+}
+
+
+function init_common() {
+
+  // jquery plugin to change element types
+  (function($) {
+    $.fn.changeElementType = function(newType) {
+      var attrs = {};
+
+      $.each(this[0].attributes, function(idx, attr) {
+        attrs[attr.nodeName] = attr.nodeValue;
+      });
+
+      this.replaceWith(function() {
+        return $("<" + newType + "/>", attrs).append($(this).contents());
+      });
+    };
+  })(jQuery);
+
+  // prevent underline for linked images
+  $('a > img').parent().css({'border-bottom' : 'none'});
+
+  // mark non-body figures created by knitr chunks as 100% width
+  $('.layout-chunk').each(function(i, val) {
+    var figures = $(this).find('img, .html-widget');
+    if ($(this).attr('data-layout') !== "l-body") {
+      figures.css('width', '100%');
+    } else {
+      figures.css('max-width', '100%');
+      figures.filter("[width]").each(function(i, val) {
+        var fig = $(this);
+        fig.css('width', fig.attr('width') + 'px');
+      });
+
+    }
+  });
+
+  // auto-append index.html to post-preview links in file: protocol
+  // and in rstudio ide preview
+  $('.post-preview').each(function(i, val) {
+    if (window.location.protocol === "file:")
+      $(this).attr('href', $(this).attr('href') + "index.html");
+  });
+
+  // get rid of index.html references in header
+  if (window.location.protocol !== "file:") {
+    $('.distill-site-header a[href]').each(function(i,val) {
+      $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+    });
+  }
+
+  // add class to pandoc style tables
+  $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+  $('.kable-table').children('table').addClass('pandoc-table');
+
+  // add figcaption style to table captions
+  $('caption').parent('table').addClass("figcaption");
+
+  // initialize posts list
+  if (window.init_posts_list)
+    window.init_posts_list();
+
+  // implmement disqus comment link
+  $('.disqus-comment-count').click(function() {
+    window.headroom_prevent_pin = true;
+    $('#disqus_thread').toggleClass('hidden');
+    if (!$('#disqus_thread').hasClass('hidden')) {
+      var offset = $(this).offset();
+      $(window).resize();
+      $('html, body').animate({
+        scrollTop: offset.top - 35
+      });
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  if (is_downlevel_browser())
+    init_downlevel();
+  else
+    window.addEventListener('WebComponentsReady', init_distill);
+});
+
+</script>
+
+<!--/radix_placeholder_distill-->
+  <script src="../../site_libs/header-attrs-2.14/header-attrs.js"></script>
+  <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+  <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
+  <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="../../site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="../../site_libs/tippy-6.2.7/tippy.umd.min.js"></script>
+  <script src="../../site_libs/anchor-4.2.2/anchor.min.js"></script>
+  <script src="../../site_libs/bowser-1.9.3/bowser.min.js"></script>
+  <script src="../../site_libs/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="../../site_libs/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+<script async defer data-domain="koaning.io" src="https://plausible.io/js/plausible.js"></script>
+
+<style type="text/css">
+p {
+  text-align: justify;
+}
+
+pre.text-output{
+  background: #f9f8f8;
+}
+
+d-article iframe{
+  border: 0;
+}
+
+d-article li{
+  margin-bottom: 0;
+}
+
+.distill-site-nav{
+  font-weight: 500;
+  background-color: #f9f8f8;
+  color: #000000;
+}
+
+.distill-site-nav a:hover {
+  color: black;
+  text-decoration: underline;   
+}
+</style>
+<!--/radix_placeholder_site_in_header-->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"Being a Research Advocate.","description":"What lies in \"Research Advocacy\"?","authors":[{"author":"Vincent Warmerdam","authorURL":"koaning.io","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2022-07-28T00:00:00.000+02:00","citationText":"Warmerdam, 2022"}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<header class="header header--fixed" role="banner">
+<nav class="distill-site-nav distill-site-header">
+<div class="nav-left">
+<a href="../../index.html" class="title">koaning.io</a>
+</div>
+<div class="nav-right">
+<a href="../../index.html">home</a>
+<a href="../../about.html">whois</a>
+<a href="../../projects.html">projects</a>
+<a href="../../talks.html">talks</a>
+<a href="../../til.html">TIL</a>
+<a href="../../links.html">links</a>
+<a href="../../index.xml">
+<i class="fa fa-rss" aria-hidden="true"></i>
+</a>
+<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
+</div>
+</nav>
+</header>
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>Being a Research Advocate.</h1>
+<!--radix_placeholder_categories-->
+<!--/radix_placeholder_categories-->
+<p><p>What lies in “Research Advocacy”?</p></p>
+</div>
+
+<div class="d-byline">
+  Vincent Warmerdam koaning.io 
+  
+<br/>07-28-2022
+</div>
+
+<div class="d-article">
+<p>In my previous role I worked at <a href="https://rasa.com/">Rasa</a> as a “Research Advocate”. I don’t know of anybody else with the same job title and it was certainly an unconventional job.</p>
+<p>So many people keep asking me the same question:</p>
+<p><img src="landing.png" alt="what does a research advocate even do?" /> In this blogpost I’d like to shed some light on that, while also giving some advice to anyone who wants to be in the world of developer advocacy.</p>
+<p>Before going there though, I need to acknowledge that during my final week at Rasa a very large layoff got announced. It came out of the blue and while it did not affect me (I was changing companies already) it did affect a lot of my former colleagues. The situation is beyond awkward for both those who were let go as well as those who stayed behind. Rasa treated me very well during my time there, but the layoff should’ve been handled better.</p>
+<p>With that said, let’s talk about research advocacy.</p>
+<h2 id="how-it-started">How it started</h2>
+<p><a href="https://rasa.com/">Rasa</a> is a company that makes software that allows you to build virtual assistants. Just like elasticsearch makes software to run your own search engine, Rasa allows you to create your own chatbot.</p>
+<p>Unlike elasticsearch, a significant chunk of the Rasa stack revolves around a machine learning pipeline that needs to be customized. If a user misinterprets an aspect of machine learning, or misconfigures the pipeline, the chatbot will perform poorly.</p>
+<details>
+<summary>
+<b>Extra details.</b>
+</summary>
+<p>The fact that there’s a lot of hype in the field wasn’t helping but it also doesn’t help that Rasa’s algorithmic stack is relatively complex. Just before I joined, Rasa was just about to release their <a href="https://arxiv.org/abs/2004.09936">DIET</a> algorithm for intent classification and entity extraction. They also had another algorithm, called <a href="https://arxiv.org/abs/1910.00486">TED</a>, which could predict the following action in the conversation by using the entire conversation so far.</p>
+<p>Both algorithms had clever ideas in them, achieved good results and even had papers written about them. They used the <a href="https://arxiv.org/abs/1706.03762">transformer architecture</a> under the hood as well as a trick from the <a href="https://arxiv.org/abs/1709.03856">starspace paper</a>. The design for both algorithms was very sensible, but it was <em>a lot</em> to take in.</p>
+</details>
+<p>This posed a challenge for the company. If users don’t appreciate the design choices in these ML algorithms, they may accidentally misinterpret a feature and end up with a poorly performing assistant. The research team wrote papers about their research, but that’s not sufficient for the general audience. There was a consensus in the company that Rasa needed to invest into educational material such these algorithms were better understood. They were building a developer relations team, and they wanted somebody to focus into their algorithms.</p>
+<p>Around the same time, their CTO discovered my <a href="https://calmcode.io/labs/drawdata.html">drawdata experiment</a>, read one of my blog posts and reached out. Coincidentally, when he reached out, I was in Berlin. So I dropped by their office to have a <a href="https://en.wikipedia.org/wiki/Club-Mate">Club Matte</a> to exchange ideas. I remember having an enjoyable conversation about the dangers of hype in machine learning before heading back to the conference I attended.</p>
+<p>There’s a funny side-note to that moment: I was completely unaware that there was even an intent to try to hire me. I recall that the CTO was interested in “collaborating,” but it took me well over a month before I realized that he wasn’t talking about a blog post.</p>
+<aside>
+My wife would later comment that I indeed have a very hard time realizing when somebody is flirting with me.
+</aside>
+<h2 id="the-job">The Job</h2>
+<p>Eventually, I accepted the job offer. But it was clear the role itself was an experiment from the beginning. There was a hole to be filled, but it wasn’t clear “how.”</p>
+<p>Rasa made a job description, but it was so experimental that the CTO wasn’t even sure what job title to give it. We all knew I had to do “something between devrel and research,” which is why they decided on “Research Advocate,” but nobody really knew what that meant. The job description was clear on what kind of person might fit the role, but the actual activities were a bit vague.</p>
+<aside>
+This comment still exists in the original Google doc. <img src="intro.png" width="230px"/>
+</aside>
+<p>This was normal because they invented a new <em>role</em> but it also meant that part of being the research advocate was to figure out what a research advocate does.</p>
+<details>
+<summary>
+<b>A snippet of the job description for the role.</b>
+</summary>
+<h3 id="research-advocate">Research Advocate</h3>
+<p>We don’t draw a hard line between our research and engineering teams, we all work on the same stack and share work, knowledge, and tools. Communicating well about the latest research in our field (both our own work and others’) is extremely valuable for our community. NLP is a fast-moving field, and we are looking for a Research Advocate to help our community understand “what does this new result mean for me?”.</p>
+<p>As a Research Advocate you will report to the head of developer relations, and will work closely with our Developer Relations and Research teams on Rasa’s developer education efforts, focused on research. You will build prototypes, demos, give talks, write blog posts, and create any other content you believe will best serve our worldwide developer community.</p>
+<h3 id="about-you">ABOUT YOU</h3>
+<p>You have a technical background, you love digging into the new research topics, replicating and testing results, and building new things from scratch. Above all, you take pride in helping others to understand difficult concepts and build great things. You are excited about exploring different research areas and communicating the results to wide and diverse developer audiences.</p>
+<p>Required skills:</p>
+<ul>
+<li>Advanced knowledge in Python</li>
+<li>Industry experience in applying machine learning algorithms on various problems</li>
+<li>Experience in public speaking and/or technical writing</li>
+<li>Strong communication skills and ability to explain complex ideas, algorithms, and technologies to diverse audiences</li>
+<li>You are comfortable with mathematics behind machine learning</li>
+</ul>
+<h3 id="things-you-will-do">THINGS YOU WILL DO</h3>
+<p>We’re a startup, so you’ll have to be comfortable rolling up your sleeves and doing whatever is required to support our mission. However, you can definitely expect to:</p>
+<ul>
+<li>Creating technical education content explaining different research topics spanning across the field of conversational AI</li>
+<li>Replicate and test models described in different research papers</li>
+<li>Tinker around and build new projects using the bleeding edge models and technologies</li>
+<li>Work closely with the research and developer relations teams to help us shape the direction of developer education at Rasa</li>
+</ul>
+<h3 id="personal-projects">PERSONAL PROJECTS</h3>
+<p>The ideal candidate for this role will very likely have an established online presence in the data science / machine learning / developer community and will likely want to continue to work on hobby/personal projects. That’s great and we encourage that. For any projects in collaboration with a 3rd party, we would discuss beforehand and agree that there is no conflict of interest.</p>
+</details>
+<h2 id="the-work">The Work</h2>
+<p>I figured as a first step, I should work on educational content. Rasa had some new algorithms in their stack and developers needed to appreciate how they worked. This led me to work on <a href="https://www.youtube.com/watch?v=wWNMST6t1TA&amp;list=PL75e0qA87dlG-za8eLI6t0_Pbxafk-cxb&amp;ab_channel=Rasa">the Algorithm Whiteboard</a> playlist on Youtube. The goal was to eventually release a video per week, but to start making educational content to get users familiar with NLP in chatbotland.</p>
+<p>The content would be planned ahead, reviewed and scheduled but my schedule left about a day per week for me to run benchmarks and experiments.</p>
+<p>I quickly found a good use for this time. While working on the content for word embeddings I noticed that I needed a tool that would help me visualize how different embeddings behave. This tool was missing, but I really had a use-case for it in my series.</p>
+<p>This led me to create a helper library called <a href="https://github.com/koaning/whatlies/">whatlies</a>. It would help you figured out <em>what lies</em> in word embeddings, hence the name.</p>
+<p><img src="whatlies.png" /></p>
+<p>The tool turned out to be very convenient and it made very regular appearances in the Youtube channel. But the library was a two-way street. When the community started asking questions about subword embeddings, it was very easy to add support for them. With support added, it was very easy to make content.</p>
+<p>As the <code>whatlies</code> library started adding support for more and more types of embeddings it also started supporting more and more types of language models. I wanted a quick way to test these tools for classification use-cases so I made these embeddings scikit-learn compatible. The library was already setup in a component structure, so this implementation was super easy to make. The library also had some contributions from outside.</p>
+<aside>
+Shoutout to Masoud for adding the huggingface support!
+</aside>
+<details>
+<summary>
+<b>The scikit-learn API for whatlies.</b>
+</summary>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> whatlies.language <span class="im">import</span> SpacyLanguage</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.pipeline <span class="im">import</span> Pipeline</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LogisticRegression</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>pipe <span class="op">=</span> Pipeline([</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    (<span class="st">&quot;embed&quot;</span>, SpacyLanguage(<span class="st">&quot;en_core_web_md&quot;</span>)),</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    (<span class="st">&quot;model&quot;</span>, LogisticRegression())</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>])</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> [</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;i really like this post&quot;</span>,</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;thanks for that comment&quot;</span>,</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;i enjoy this friendly forum&quot;</span>,</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;this is a bad post&quot;</span>,</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;i dislike this article&quot;</span>,</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;this is not well written&quot;</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> np.array([<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>])</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="co"># This pipeline now uses embeddings from spaCy</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>pipe.fit(X, y)</span></code></pre></div>
+</details>
+<p>This scikit-learn feature made the library much more popular. But it also led me to wonder how hard it could be to add support for these embeddings in Rasa. The goal of Rasa is to be language independant, and by offering these embeddings we could get feedback from the non-English community. This is great because by making it easier for our community to try out the embeddings, we won’t need to ask for datasets to run the benchmarks ourselves.</p>
+<p>The research team was eager to give the community more experimental tools, but they were also a bit worried about adding many embeddings to the Rasa library as core components. By adding it to our main library, we wouldn’t just need to support them long term, we would also need to be able to advise our users on when to use them. But since we don’t speak the <a href="https://bpemb.h-its.org/">275 languages</a> that some of our embeddings support, it felt better to host it as a plugin instead. That way, our community wouldn’t need to implement all the tools, but they could report back and let us know what worked. This is how the <a href="https://github.com/RasaHQ/rasa-nlu-examples">rasa-nlu-examples</a> repository got started.</p>
+<p><img src="rasa-nlu-examples.png" /> There was now a library for my experimental Rasa plugins. That meant that whenever I came up with a new trick to try I’d have a place to share the code. This led to a bunch of extra tokenisers, entity extractors and intent classifiers. The research team was excited by this project because they suddenly had a central place where experimental tools could be shared with the community. By sharing these items as a plugin it was clear that the tools were experimental but because it was only a <code>pip</code> install away we were still able to get a lot of feedback. If the feedback was good, we could consider adding it to the core library.</p>
+<h2 id="the-loop">The loop</h2>
+<p>Eventually I started understanding that there was a pattern to what I was doing.</p>
+<ol type="1">
+<li>Sometimes I noticed the need for a tool as I was working on content.</li>
+<li>Sometimes I was working on a tool, which could immediately be turned into content!</li>
+</ol>
+<p><img src="loop.png" /></p>
+<p>It also started occuring to me that I didn’t need to play by the same rules as some of my colleagues. Since my primary focus was education it didn’t matter what I was working on, so as long as I could produce relevant content on a regular basis.</p>
+<p>This led me to work on even more videos, plugins, tools and Rasa features. Here’s a selection.</p>
+<ul>
+<li>I made <a href="https://github.com/RasaHQ/taipo">taipo</a>, a data augmentation/quality tool for Rasa that supports <a href="https://www.youtube.com/watch?v=HfCd6lXQGWg&amp;list=PL75e0qA87dlG-za8eLI6t0_Pbxafk-cxb&amp;index=48&amp;ab_channel=Rasa">typo generation</a>, <a href="https://www.youtube.com/watch?v=IUMTWstbfuM&amp;list=PL75e0qA87dlG-za8eLI6t0_Pbxafk-cxb&amp;index=50&amp;ab_channel=Rasa">transliteration</a> and <a href="https://www.youtube.com/watch?v=QdAjt33rhtc&amp;list=PL75e0qA87dlG-za8eLI6t0_Pbxafk-cxb&amp;index=49&amp;ab_channel=Rasa">bad label detection</a>. Each topic was explained in more detail on the algorithm whiteboard.</li>
+<li>I added a <a href="https://github.com/RasaHQ/rasa-action-examples">rasa-action-examples</a> repository to highlight how custom Python code could be used from a chatbot. It lists a demo that can generate buttons as a fallback during a conversation or resort to a search engine on behalf of the user.</li>
+<li>I made <a href="https://github.com/RasaHQ/rasalit">rasalit</a> which is a collection of streamlit apps that help users understand their Rasa models better. This tool made an appearance whenever I was running a grid-search for a Rasa model.</li>
+<li>I added <a href="https://github.com/RasaHQ/rasa/pull/7869">spaCy 3.0 support to Rasa</a>. This added support for more languages but also made it easier for folks to re-use their trained spaCy models in a chatbot as well.</li>
+<li>I improved the <code>rasa --version</code> command by giving it more elaborate output that’s relevant for <a href="https://github.com/RasaHQ/rasa/pull/5726">debugging</a>. This made it <em>much</em> easier for us to understand Github issues.</li>
+<li>I also made a popular <a href="https://www.youtube.com/watch?v=YsMoGd7sYMQ&amp;t=631s">bulk labelling demo</a> which combines a trick from my <a href="https://koaning.github.io/human-learn/index.html">human-learn</a> together with whatlies that allows you to assign a name to clusters of text. The demo comes with a <a href="https://www.youtube.com/watch?v=T0dDetqgra4&amp;t=3s&amp;ab_channel=Rasa">user-interface</a> and led to a lot of happy users. It turned out to be a very useful tool when you’re just getting started with a virtual assistant and you’re interested in finding intents to get started with.</li>
+<li>I also wrote <a href="https://calmcode.io/labs/pytest-duration-insights.html">pytest-duration-insights</a>. This was a personal project, but it was inspired by some of the efforts at Rasa to reduce the unit-test times. I later learned that it was used at a bunch of places, including the <a href="https://github.com/koaning/pytest-duration-insights/issues/6">scipy project</a>.</li>
+</ul>
+<h2 id="why-so-productive">Why so productive?</h2>
+<p>All of this code made a fair amount of impact. But I think the reason why I’ve been able to work on this code in the first place is related to the “we don’t know what it means to be a research advocate”-aspect of my role. Because my role mainly required me to make content, nobody complained if I was doing something experimental <em>in order</em> to make content. As long as the content was relevant, it’d be time well spent!</p>
+<p>That also meant, and this is crucial, that I <strong>never had to ask permission</strong> from anyone to work on a tool. I would later hear stories from former colleagues that they were slightly jealous of me in this regard. Most researchers or engineers in the company would need to attend meetings and defend features before they could be implemented. But since all of my tools were a by-product from the content, I was free to keep building plugins. Just as long as the steady stream of content kept coming.</p>
+<p>It’s not like I never had meetings, but I want to make an observation out of this because it might serve as great advice for people who want to enter developer advocacy land. It’s likely that your job will revolve around making interesting content, but that typically gives you more freedom to <strong>get creative with the stack</strong>. Use that freedom!</p>
+<p>I should also admit that Rasa was the first time I was doing both developer relations and NLP. I was familiar enough with machine learning to be able to make progress on my own. But I was unfamiliar enough with NLP that <a href="https://youtu.be/8pTEmbeENF4?t=1724">I didn’t really know what I was doing</a>. This combination allowed me to easily just “try out a bunch of things”. If the approach failed, I could still make relevant content, given that I could explain why it failed. Clearly describing failure scenarios is a great theme for the field that we’re in.</p>
+<aside>
+Hint: if you want to learn about NLP, I now advise folks to also peek at linguistics. Language is more than a bag of words.
+</aside>
+<h2 id="process">Process</h2>
+<p><img src="use-cases.png" /></p>
+<p>As the company started growing, I learned that my by-products got re-used within the company at a bunch of unexpected places.</p>
+<ul>
+<li>The research team started using the algorithm whiteboard as part of their on-boarding procedure. If the videos helped our community members understand our algorithms, they could also help new employees understand the internals quicker.</li>
+<li>The whatlies library was submitted and accepted as a <a href="https://arxiv.org/abs/2009.02113">paper</a> (thanks to the collaboration with Rachael and Thomas) at the NLP Open Source Software workshop at ACL 2020.</li>
+<li>Some of my bulk labelling tools were used by some of my colleagues in the “community success”-team to help clients kickstart their assistants. Turns out: these experiments really work!</li>
+<li>Some of the videos started getting very popular. It seems that my way of explaining <a href="https://www.youtube.com/watch?v=yGTUuEx3GkA&amp;ab_channel=Rasa">attention mechanisms</a> literally caught the <em>attention</em> of folks. So much so that our recruiter told me it’s how some of our applicants learned about Rasa.</li>
+<li>Some of my algorithm whiteboard videos could be moved into smaller playlists. There was a small sequence on transformers and another on bias in word embeddings. This turned out to be beneficial when we were building our own <a href="https://learning.rasa.com/">learning center</a>. By having these smaller video series ready, we were able to re-package them as courses on the landing page. That meant that the learning center was able to launch with multiple courses right away.</li>
+<li>The embeddings in the <code>rasa-nlu-examples</code> library didn’t just get used by our community, it also got the attention from some of our prospects. Turns out, a lot of companies have non-English customers and they need more than “just” English pipelines. Having a plugin around makes it easier to try out some components certainly helps getting started.</li>
+</ul>
+<p>Again, my primary task at Rasa was related to education, but it was also the reason why many of these secondary benefits were possible.</p>
+<p>It prompts an interesting question: what if my primary target was determined solely by quarterly plans? If my role wasn’t so experimental and unconventional, would I still have been bale to make such an impact “by accident?”</p>
+<h2 id="privilege">Privilege</h2>
+<p>I should immediately admit that I’ve been quite privileged both the assigned role as well as the group of folks around me. Without them it’s very unlikely that I would’ve made the same impact. For starters; I had an entire research team at my disposal who were more than happy to review my work or to refer any relevant papers or blog posts if need be. Each researcher would work on a specific part of the Rasa pipeline and would also have a different way of looking at a problem, which certainly worked as a source of inspiration. The <a href="https://rasa.com/blog/exploring-semantic-map-embeddings-1/">semantic map embeddings</a> from Johannes remains one of my favorite experiments of all time.</p>
+<p>Then there’s the developer advocacy team. My boss <a href="https://twitter.com/juste_petr">Juste</a> had been doing developer advocacy well before I was even aware that it was a job title. Because of this, she really had a keen eye for what would, and what wouldn’t work as great content. My direct colleague <a href="https://twitter.com/rctatman">Dr. Rachael Tatman</a> has a Phd in linguistics and was leading developer relations at Kaggle before joining Rasa. In my time at Rasa I contributed a good playlist, but the reason we reached over a million views and 20,000 subscribers was because of the careful planning and content creation that she had been working on. I learned a ton from her, both on the devrel front and the NLP front! We also had a dedicated community manager in the team, <a href="https://rasa.com/blog/hi-im-your-new-community-manager/">Emma</a>, who helped us a great deal by organising events as well as our <a href="https://rasa.com/blog/announcing-the-rasa-contributor-program/">contributor program</a>.</p>
+<p>Managing a community is lot of work, but because we each had our focus we were a very productive team.</p>
+<h2 id="other-things-ive-learned-at-rasa">Other things I’ve learned at Rasa</h2>
+<ol type="1">
+<li>I learned to draw my favorite venn diagram in data science.</li>
+</ol>
+<p><img src="venn.png" /></p>
+<ol start="2" type="1">
+<li>Developer advocacy is <em>much</em> bigger than I anticipated. There are <a href="https://2021.devrel.net/">conferences</a> for it and as well as specific analytics tools for the <a href="https://orbit.love/">field</a>.</li>
+<li>Rasa made a conscious decision to keep the developer relations team and the marketing team separate. Both teams had members who were tasked to make content, and the teams certainly collaborated at times, but it was set up so that both teams could focus on different audiences. Looking back, this seems like a strategically valid choice. You end up with a specialization in both teams that seems very beneficial.</li>
+<li>While much of my content involved algorithms, the solutions to many of the problems were usually more related to data quality. You need more than pretrained language models to make meaningful predictions.</li>
+<li>There’s a rediculous amount of hype in ML. There’s still a lot of folks saying that <code>king - man + woman = queen</code> even though there’s ample evidence that many <a href="https://www.youtube.com/watch?v=u6EmngzBUEU&amp;ab_channel=Rasa">embeddings don’t show this behavior at all</a>.</li>
+</ol>
+<p><img src="analogies.png" /></p>
+<ol start="6" type="1">
+<li>Rasa had a great Slack culture. People took the effort of thinking before writing, messages had proper spelling and people genuinely tried to keep the threads on topic. In a remote work environment it really makes a big difference.</li>
+<li>The WACOM tablet was the best <a href="https://www.youtube.com/watch?v=4JcCZyuq4l8&amp;ab_channel=ManningPublications">investment in communication</a> I’ve ever made. It was of great help in my videos, but it was also <em>amazing</em> when answering questions on the <a href="https://forum.rasa.com/t/dietclassifier-with-sparse-input-features-only/39084/6">Rasa forum</a>.</li>
+</ol>
+<p><img src="draw.png" /></p>
+<ol start="7" type="1">
+<li>Remote work can totally work, but it helps if the work is easily distributable. Doing content work fits perfectly in this because the only bottleneck is the review. But larger changes to the code base need a lot of syncing, which is hard when the workforce is distributed across timezones.</li>
+<li>Language is <a href="https://link.springer.com/book/10.1007/978-3-031-02150-3">more than a bag of words</a>.</li>
+<li>Doing support work is great. It makes you understand the pain points in your software and it’s a great source of <a href="https://forum.rasa.com/t/phonetics-featurizer/42132">inspiration for content</a>. More people should do it.</li>
+<li>Nine times out of ten, the solution to a chat bot problem appears naturally when you just label some data yourself.</li>
+<li>Training universally useful pre-trained language models is friggin’ hard while training a model for a small but well understood use-case is usually much easier.</li>
+</ol>
+<p><img src="specific.png" /></p>
+<ol start="12" type="1">
+<li>Many people like to complain about bad chatbots, but there are some true gems out there. The coolest story I know of involves a large company with an HR department that people didn’t like interacting with. The solution? The HR team would try to automate one HR task a month via the company Slack. The thing that worked very well is that the distance between the chatbot designer and the chatbot user is short, so the feedback was direct. And after a few months, you can imagine the time that was saved internally.</li>
+<li>Many NLP tricks that work for English will totally fail in other languages.</li>
+<li>Like is often the case, a <a href="https://www.youtube.com/watch?v=68ABAU_V8qI&amp;ab_channel=PyData">linear model works very well</a>! After running some benchmarks, I felt compelled to leave with an on-brand <a href="https://github.com/RasaHQ/rasa/issues/10649">final PR</a> that implements LogisticRegression for the Rasa stack.</li>
+</ol>
+<h2 id="looking-back">Looking Back</h2>
+<p><img src="looking-back.png" /></p>
+<p>I don’t really know what it might mean to be a research advocate elsewhere, but at Rasa I’ve seen how the role caused meaningful contributions just by being defined in such an unconventional way. My gut says many other companies might benefit from doing something similar, but it helps to acknowledge that I was in a pretty lucky situation at Rasa.</p>
+<h2 id="looking-forward">Looking Forward</h2>
+<p><img src="forward.png" /></p>
+<p>After two years of this work, part of me was ready for a change of scenery. My interests started moving beyond chatbots and I wanted to put more focus on engineering, ML user-interfaces, and <a href="https://www.youtube.com/watch?v=YsMoGd7sYMQ">bulk labelling</a> <a href="https://www.youtube.com/watch?v=T0dDetqgra4">tricks</a> in <a href="https://youtu.be/ADFeclyd4LY?t=749">general machine learning applications</a>.</p>
+<p>That’s why March 1st I’ve joined <a href="https://explosion.ai">Explosion</a> as a Machine Learning Engineer.</p>
+<p>And guess what I’m doing there? I’ve been making some content and it just so happens like there’s a few by-products! There’s <a href="https://github.com/koaning/spacy-report">spacy-reports</a>, <a href="https://github.com/koaning/cluestar">cluestar</a>, <a href="https://github.com/koaning/embetter">embetter</a> and you can even run install <a href="https://github.com/koaning/bulk">bulk</a> now.</p>
+<p><img src="bulk.png" /></p>
+<p>This gives you a proper, but lightweight, bulk labelling interface locally. I’m super excited to work on this! There’s even a full tutorial for it on the <a href="https://www.youtube.com/watch?v=gDk7_f3ovIk&amp;ab_channel=Explosion">Explosion Youtube</a> that shows you how you can use it together with <a href="https://prodi.gy/">Prodigy</a>.</p>
+<p>So it looks like I might be able to work in a similar fashion, but for the <a href="https://spacy.io/">spaCy</a>, <a href="https://thinc.ai/">thinc</a> and <a href="https://prodi.gy/">Prodigy</a> projects. I’ll still be making content now and again, but a large part of my job will also be spent working on consultancy via their <a href="https://explosion.ai/spacy-tailored-pipelines">tailored pipelines offering</a>. Check it out if you haven’t already!</p>
+<h2 class="appendix" id="appendix-whatlies">Appendix: Whatlies</h2>
+<p>The <code>whatlies</code> project has moved to <a href="https://github.com/koaning/whatlies">my personal account</a> so that I can keep maintaining it. Odds are that I’ll keep whatlies around for the visualisation tools but that I’ll port the embeddings to a new library called <a href="https://github.com/koaning/embetter">embetter</a>.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<!--radix_placeholder_article_footer-->
+<div class="article-footer">
+  <p class="social_footer">
+    <span class="article-sharing">
+      Share: &nbsp;
+      <a href="https://twitter.com/share?text=Being%20a%20Research%20Advocate.&amp;url=https%3A%2F%2Fkoaning.io%2Fposts%2Fresearch-advocacy%2F">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fkoaning.io%2Fposts%2Fresearch-advocacy%2F&amp;title=Being%20a%20Research%20Advocate.">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </span>
+  </p>
+</div>
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom">
+  <h3 id="citation">Citation</h3>
+  <p>For attribution, please cite this work as</p>
+  <pre class="citation-appendix short">Warmerdam (2022, July 28). koaning.io: Being a Research Advocate.. Retrieved from https://koaning.io/posts/research-advocacy/</pre>
+  <p>BibTeX citation</p>
+  <pre class="citation-appendix long">@misc{warmerdam2022being,
+  author = {Warmerdam, Vincent},
+  title = {koaning.io: Being a Research Advocate.},
+  url = {https://koaning.io/posts/research-advocacy/},
+  year = {2022}
+}</pre>
+</div>
+<!--/radix_placeholder_appendices-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<!--radix_placeholder_navigation_after_body--><html><body>
+<div class="distill-site-nav distill-site-footer">
+<style>
+.container{
+  grid-column: page;
+    grid-column-start: page;
+    grid-column-end: page;
+}
+</style>
+<div class="container">
+  <div>
+    Copyright 2012-2022 Vincent D. Warmerdam, <a href="https://plausible.io/koaning.io">Stats are public.</a>
+  </div>
+</div>
+</div>
+<!--/radix_placeholder_navigation_after_body-->
+</body></html>
+
+
+</body>
+
+</html>

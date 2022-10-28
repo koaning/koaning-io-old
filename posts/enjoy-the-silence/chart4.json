@@ -1,0 +1,3661 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json",
+  "config": {
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 400
+    }
+  },
+  "data": {
+    "name": "data-8c3473d550918059df1c81e2f5193263"
+  },
+  "datasets": {
+    "data-8c3473d550918059df1c81e2f5193263": [
+      {
+        "classifier": "logreg",
+        "noise": 0.0,
+        "performance": 0.868,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.0,
+        "performance": 0.86,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.0,
+        "performance": 0.904,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.050505050505050504,
+        "performance": 0.9,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.050505050505050504,
+        "performance": 0.92,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.050505050505050504,
+        "performance": 0.928,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.10101010101010101,
+        "performance": 0.84,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.10101010101010101,
+        "performance": 0.82,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.10101010101010101,
+        "performance": 0.876,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.15151515151515152,
+        "performance": 0.852,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.15151515151515152,
+        "performance": 0.864,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.15151515151515152,
+        "performance": 0.912,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.20202020202020202,
+        "performance": 0.892,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.20202020202020202,
+        "performance": 0.868,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.20202020202020202,
+        "performance": 0.936,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.25252525252525254,
+        "performance": 0.856,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.25252525252525254,
+        "performance": 0.86,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.25252525252525254,
+        "performance": 0.864,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.30303030303030304,
+        "performance": 0.836,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.30303030303030304,
+        "performance": 0.856,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.30303030303030304,
+        "performance": 0.876,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.35353535353535354,
+        "performance": 0.876,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.35353535353535354,
+        "performance": 0.84,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.35353535353535354,
+        "performance": 0.9,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.40404040404040403,
+        "performance": 0.876,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.40404040404040403,
+        "performance": 0.864,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.40404040404040403,
+        "performance": 0.888,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.45454545454545453,
+        "performance": 0.872,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.45454545454545453,
+        "performance": 0.836,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.45454545454545453,
+        "performance": 0.864,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.5050505050505051,
+        "performance": 0.908,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.5050505050505051,
+        "performance": 0.864,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.5050505050505051,
+        "performance": 0.896,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.5555555555555556,
+        "performance": 0.884,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.5555555555555556,
+        "performance": 0.872,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.5555555555555556,
+        "performance": 0.892,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.6060606060606061,
+        "performance": 0.864,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.6060606060606061,
+        "performance": 0.852,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.6060606060606061,
+        "performance": 0.848,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.6565656565656566,
+        "performance": 0.864,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.6565656565656566,
+        "performance": 0.768,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.6565656565656566,
+        "performance": 0.84,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.7070707070707071,
+        "performance": 0.844,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.7070707070707071,
+        "performance": 0.792,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.7070707070707071,
+        "performance": 0.836,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.7575757575757576,
+        "performance": 0.864,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.7575757575757576,
+        "performance": 0.788,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.7575757575757576,
+        "performance": 0.848,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.8080808080808081,
+        "performance": 0.884,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.8080808080808081,
+        "performance": 0.764,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.8080808080808081,
+        "performance": 0.82,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.8585858585858586,
+        "performance": 0.84,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.8585858585858586,
+        "performance": 0.656,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.8585858585858586,
+        "performance": 0.8,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.9090909090909091,
+        "performance": 0.884,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.9090909090909091,
+        "performance": 0.772,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.9090909090909091,
+        "performance": 0.856,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.9595959595959596,
+        "performance": 0.884,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.9595959595959596,
+        "performance": 0.772,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.9595959595959596,
+        "performance": 0.844,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.0101010101010102,
+        "performance": 0.844,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.0101010101010102,
+        "performance": 0.732,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.0101010101010102,
+        "performance": 0.852,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.0606060606060606,
+        "performance": 0.876,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.0606060606060606,
+        "performance": 0.768,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.0606060606060606,
+        "performance": 0.86,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.1111111111111112,
+        "performance": 0.872,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.1111111111111112,
+        "performance": 0.684,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.1111111111111112,
+        "performance": 0.856,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.1616161616161615,
+        "performance": 0.848,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.1616161616161615,
+        "performance": 0.764,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.1616161616161615,
+        "performance": 0.84,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.2121212121212122,
+        "performance": 0.844,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.2121212121212122,
+        "performance": 0.704,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.2121212121212122,
+        "performance": 0.812,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.2626262626262625,
+        "performance": 0.848,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.2626262626262625,
+        "performance": 0.708,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.2626262626262625,
+        "performance": 0.776,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.3131313131313131,
+        "performance": 0.876,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.3131313131313131,
+        "performance": 0.768,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.3131313131313131,
+        "performance": 0.844,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.3636363636363635,
+        "performance": 0.864,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.3636363636363635,
+        "performance": 0.696,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.3636363636363635,
+        "performance": 0.832,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.4141414141414141,
+        "performance": 0.848,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.4141414141414141,
+        "performance": 0.58,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.4141414141414141,
+        "performance": 0.752,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.4646464646464645,
+        "performance": 0.844,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.4646464646464645,
+        "performance": 0.812,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.4646464646464645,
+        "performance": 0.808,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.5151515151515151,
+        "performance": 0.848,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.5151515151515151,
+        "performance": 0.636,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.5151515151515151,
+        "performance": 0.824,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.5656565656565655,
+        "performance": 0.868,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.5656565656565655,
+        "performance": 0.652,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.5656565656565655,
+        "performance": 0.82,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.6161616161616161,
+        "performance": 0.84,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.6161616161616161,
+        "performance": 0.636,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.6161616161616161,
+        "performance": 0.792,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.6666666666666667,
+        "performance": 0.856,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.6666666666666667,
+        "performance": 0.692,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.6666666666666667,
+        "performance": 0.796,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.7171717171717171,
+        "performance": 0.848,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.7171717171717171,
+        "performance": 0.636,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.7171717171717171,
+        "performance": 0.812,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.7676767676767677,
+        "performance": 0.844,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.7676767676767677,
+        "performance": 0.688,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.7676767676767677,
+        "performance": 0.772,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.8181818181818181,
+        "performance": 0.884,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.8181818181818181,
+        "performance": 0.632,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.8181818181818181,
+        "performance": 0.772,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.8686868686868687,
+        "performance": 0.844,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.8686868686868687,
+        "performance": 0.604,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.8686868686868687,
+        "performance": 0.84,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.9191919191919191,
+        "performance": 0.824,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.9191919191919191,
+        "performance": 0.636,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.9191919191919191,
+        "performance": 0.82,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.9696969696969697,
+        "performance": 0.864,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.9696969696969697,
+        "performance": 0.564,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.9696969696969697,
+        "performance": 0.732,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.0202020202020203,
+        "performance": 0.804,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.0202020202020203,
+        "performance": 0.616,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.0202020202020203,
+        "performance": 0.784,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.0707070707070705,
+        "performance": 0.876,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.0707070707070705,
+        "performance": 0.692,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.0707070707070705,
+        "performance": 0.78,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.121212121212121,
+        "performance": 0.856,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.121212121212121,
+        "performance": 0.556,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.121212121212121,
+        "performance": 0.736,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.1717171717171717,
+        "performance": 0.872,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.1717171717171717,
+        "performance": 0.62,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.1717171717171717,
+        "performance": 0.836,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.2222222222222223,
+        "performance": 0.86,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.2222222222222223,
+        "performance": 0.612,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.2222222222222223,
+        "performance": 0.684,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.2727272727272725,
+        "performance": 0.88,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.2727272727272725,
+        "performance": 0.508,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.2727272727272725,
+        "performance": 0.736,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.323232323232323,
+        "performance": 0.856,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.323232323232323,
+        "performance": 0.584,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.323232323232323,
+        "performance": 0.844,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.3737373737373737,
+        "performance": 0.836,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.3737373737373737,
+        "performance": 0.672,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.3737373737373737,
+        "performance": 0.796,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.4242424242424243,
+        "performance": 0.844,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.4242424242424243,
+        "performance": 0.656,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.4242424242424243,
+        "performance": 0.744,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.474747474747475,
+        "performance": 0.852,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.474747474747475,
+        "performance": 0.528,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.474747474747475,
+        "performance": 0.712,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.525252525252525,
+        "performance": 0.868,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.525252525252525,
+        "performance": 0.516,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.525252525252525,
+        "performance": 0.768,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.5757575757575757,
+        "performance": 0.86,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.5757575757575757,
+        "performance": 0.72,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.5757575757575757,
+        "performance": 0.816,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.6262626262626263,
+        "performance": 0.856,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.6262626262626263,
+        "performance": 0.528,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.6262626262626263,
+        "performance": 0.712,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.676767676767677,
+        "performance": 0.88,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.676767676767677,
+        "performance": 0.596,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.676767676767677,
+        "performance": 0.576,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.727272727272727,
+        "performance": 0.832,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.727272727272727,
+        "performance": 0.516,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.727272727272727,
+        "performance": 0.632,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.7777777777777777,
+        "performance": 0.856,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.7777777777777777,
+        "performance": 0.612,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.7777777777777777,
+        "performance": 0.552,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.8282828282828283,
+        "performance": 0.86,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.8282828282828283,
+        "performance": 0.632,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.8282828282828283,
+        "performance": 0.716,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.878787878787879,
+        "performance": 0.856,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.878787878787879,
+        "performance": 0.564,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.878787878787879,
+        "performance": 0.692,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.929292929292929,
+        "performance": 0.864,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.929292929292929,
+        "performance": 0.46,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.929292929292929,
+        "performance": 0.668,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.9797979797979797,
+        "performance": 0.844,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.9797979797979797,
+        "performance": 0.632,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.9797979797979797,
+        "performance": 0.748,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.0303030303030303,
+        "performance": 0.844,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.0303030303030303,
+        "performance": 0.512,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.0303030303030303,
+        "performance": 0.592,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.080808080808081,
+        "performance": 0.864,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.080808080808081,
+        "performance": 0.66,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.080808080808081,
+        "performance": 0.724,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.131313131313131,
+        "performance": 0.824,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.131313131313131,
+        "performance": 0.516,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.131313131313131,
+        "performance": 0.548,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.1818181818181817,
+        "performance": 0.844,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.1818181818181817,
+        "performance": 0.604,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.1818181818181817,
+        "performance": 0.668,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.2323232323232323,
+        "performance": 0.84,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.2323232323232323,
+        "performance": 0.564,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.2323232323232323,
+        "performance": 0.584,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.282828282828283,
+        "performance": 0.808,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.282828282828283,
+        "performance": 0.412,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.282828282828283,
+        "performance": 0.548,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.3333333333333335,
+        "performance": 0.828,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.3333333333333335,
+        "performance": 0.48,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.3333333333333335,
+        "performance": 0.544,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.3838383838383836,
+        "performance": 0.852,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.3838383838383836,
+        "performance": 0.412,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.3838383838383836,
+        "performance": 0.436,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.4343434343434343,
+        "performance": 0.852,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.4343434343434343,
+        "performance": 0.476,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.4343434343434343,
+        "performance": 0.388,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.484848484848485,
+        "performance": 0.836,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.484848484848485,
+        "performance": 0.484,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.484848484848485,
+        "performance": 0.644,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.5353535353535355,
+        "performance": 0.776,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.5353535353535355,
+        "performance": 0.7,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.5353535353535355,
+        "performance": 0.72,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.5858585858585856,
+        "performance": 0.844,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.5858585858585856,
+        "performance": 0.576,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.5858585858585856,
+        "performance": 0.68,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.6363636363636362,
+        "performance": 0.832,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.6363636363636362,
+        "performance": 0.52,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.6363636363636362,
+        "performance": 0.672,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.686868686868687,
+        "performance": 0.876,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.686868686868687,
+        "performance": 0.536,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.686868686868687,
+        "performance": 0.5,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.7373737373737375,
+        "performance": 0.864,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.7373737373737375,
+        "performance": 0.6,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.7373737373737375,
+        "performance": 0.684,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.7878787878787876,
+        "performance": 0.844,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.7878787878787876,
+        "performance": 0.604,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.7878787878787876,
+        "performance": 0.692,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.8383838383838382,
+        "performance": 0.86,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.8383838383838382,
+        "performance": 0.504,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.8383838383838382,
+        "performance": 0.62,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.888888888888889,
+        "performance": 0.9,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.888888888888889,
+        "performance": 0.632,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.888888888888889,
+        "performance": 0.78,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.9393939393939394,
+        "performance": 0.836,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.9393939393939394,
+        "performance": 0.444,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.9393939393939394,
+        "performance": 0.424,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.9898989898989896,
+        "performance": 0.824,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.9898989898989896,
+        "performance": 0.436,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.9898989898989896,
+        "performance": 0.528,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.040404040404041,
+        "performance": 0.812,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.040404040404041,
+        "performance": 0.736,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.040404040404041,
+        "performance": 0.792,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.090909090909091,
+        "performance": 0.872,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.090909090909091,
+        "performance": 0.64,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.090909090909091,
+        "performance": 0.572,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.141414141414141,
+        "performance": 0.828,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.141414141414141,
+        "performance": 0.532,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.141414141414141,
+        "performance": 0.556,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.191919191919192,
+        "performance": 0.804,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.191919191919192,
+        "performance": 0.52,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.191919191919192,
+        "performance": 0.692,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.242424242424242,
+        "performance": 0.848,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.242424242424242,
+        "performance": 0.584,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.242424242424242,
+        "performance": 0.816,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.292929292929293,
+        "performance": 0.848,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.292929292929293,
+        "performance": 0.552,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.292929292929293,
+        "performance": 0.684,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.343434343434343,
+        "performance": 0.848,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.343434343434343,
+        "performance": 0.524,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.343434343434343,
+        "performance": 0.632,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.393939393939394,
+        "performance": 0.844,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.393939393939394,
+        "performance": 0.516,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.393939393939394,
+        "performance": 0.564,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.444444444444445,
+        "performance": 0.856,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.444444444444445,
+        "performance": 0.564,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.444444444444445,
+        "performance": 0.636,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.494949494949495,
+        "performance": 0.86,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.494949494949495,
+        "performance": 0.72,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.494949494949495,
+        "performance": 0.696,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.545454545454545,
+        "performance": 0.744,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.545454545454545,
+        "performance": 0.6,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.545454545454545,
+        "performance": 0.568,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.595959595959596,
+        "performance": 0.804,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.595959595959596,
+        "performance": 0.588,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.595959595959596,
+        "performance": 0.596,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.646464646464646,
+        "performance": 0.816,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.646464646464646,
+        "performance": 0.684,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.646464646464646,
+        "performance": 0.74,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.696969696969697,
+        "performance": 0.8,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.696969696969697,
+        "performance": 0.424,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.696969696969697,
+        "performance": 0.704,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.747474747474747,
+        "performance": 0.792,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.747474747474747,
+        "performance": 0.74,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.747474747474747,
+        "performance": 0.82,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.797979797979798,
+        "performance": 0.864,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.797979797979798,
+        "performance": 0.748,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.797979797979798,
+        "performance": 0.46,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.848484848484849,
+        "performance": 0.844,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.848484848484849,
+        "performance": 0.484,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.848484848484849,
+        "performance": 0.552,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.898989898989899,
+        "performance": 0.82,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.898989898989899,
+        "performance": 0.536,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.898989898989899,
+        "performance": 0.668,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.94949494949495,
+        "performance": 0.832,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.94949494949495,
+        "performance": 0.26,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.94949494949495,
+        "performance": 0.456,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 5.0,
+        "performance": 0.856,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "tree",
+        "noise": 5.0,
+        "performance": 0.444,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "forest",
+        "noise": 5.0,
+        "performance": 0.748,
+        "situation": "noise-on-train"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.0,
+        "performance": 0.872,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.0,
+        "performance": 0.884,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.0,
+        "performance": 0.904,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.050505050505050504,
+        "performance": 0.9,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.050505050505050504,
+        "performance": 0.888,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.050505050505050504,
+        "performance": 0.928,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.10101010101010101,
+        "performance": 0.84,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.10101010101010101,
+        "performance": 0.852,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.10101010101010101,
+        "performance": 0.872,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.15151515151515152,
+        "performance": 0.848,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.15151515151515152,
+        "performance": 0.84,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.15151515151515152,
+        "performance": 0.872,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.20202020202020202,
+        "performance": 0.896,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.20202020202020202,
+        "performance": 0.872,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.20202020202020202,
+        "performance": 0.912,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.25252525252525254,
+        "performance": 0.864,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.25252525252525254,
+        "performance": 0.872,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.25252525252525254,
+        "performance": 0.884,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.30303030303030304,
+        "performance": 0.844,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.30303030303030304,
+        "performance": 0.808,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.30303030303030304,
+        "performance": 0.868,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.35353535353535354,
+        "performance": 0.864,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.35353535353535354,
+        "performance": 0.812,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.35353535353535354,
+        "performance": 0.872,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.40404040404040403,
+        "performance": 0.828,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.40404040404040403,
+        "performance": 0.816,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.40404040404040403,
+        "performance": 0.852,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.45454545454545453,
+        "performance": 0.86,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.45454545454545453,
+        "performance": 0.836,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.45454545454545453,
+        "performance": 0.88,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.5050505050505051,
+        "performance": 0.868,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.5050505050505051,
+        "performance": 0.8,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.5050505050505051,
+        "performance": 0.868,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.5555555555555556,
+        "performance": 0.872,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.5555555555555556,
+        "performance": 0.756,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.5555555555555556,
+        "performance": 0.84,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.6060606060606061,
+        "performance": 0.86,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.6060606060606061,
+        "performance": 0.768,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.6060606060606061,
+        "performance": 0.864,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.6565656565656566,
+        "performance": 0.876,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.6565656565656566,
+        "performance": 0.732,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.6565656565656566,
+        "performance": 0.876,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.7070707070707071,
+        "performance": 0.852,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.7070707070707071,
+        "performance": 0.768,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.7070707070707071,
+        "performance": 0.876,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.7575757575757576,
+        "performance": 0.864,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.7575757575757576,
+        "performance": 0.808,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.7575757575757576,
+        "performance": 0.884,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.8080808080808081,
+        "performance": 0.844,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.8080808080808081,
+        "performance": 0.72,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.8080808080808081,
+        "performance": 0.832,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.8585858585858586,
+        "performance": 0.864,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.8585858585858586,
+        "performance": 0.708,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.8585858585858586,
+        "performance": 0.84,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.9090909090909091,
+        "performance": 0.848,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.9090909090909091,
+        "performance": 0.72,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.9090909090909091,
+        "performance": 0.796,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 0.9595959595959596,
+        "performance": 0.86,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 0.9595959595959596,
+        "performance": 0.776,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 0.9595959595959596,
+        "performance": 0.884,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.0101010101010102,
+        "performance": 0.856,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.0101010101010102,
+        "performance": 0.692,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.0101010101010102,
+        "performance": 0.852,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.0606060606060606,
+        "performance": 0.824,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.0606060606060606,
+        "performance": 0.776,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.0606060606060606,
+        "performance": 0.82,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.1111111111111112,
+        "performance": 0.844,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.1111111111111112,
+        "performance": 0.728,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.1111111111111112,
+        "performance": 0.824,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.1616161616161615,
+        "performance": 0.872,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.1616161616161615,
+        "performance": 0.76,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.1616161616161615,
+        "performance": 0.864,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.2121212121212122,
+        "performance": 0.88,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.2121212121212122,
+        "performance": 0.752,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.2121212121212122,
+        "performance": 0.856,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.2626262626262625,
+        "performance": 0.848,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.2626262626262625,
+        "performance": 0.6,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.2626262626262625,
+        "performance": 0.784,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.3131313131313131,
+        "performance": 0.84,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.3131313131313131,
+        "performance": 0.676,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.3131313131313131,
+        "performance": 0.848,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.3636363636363635,
+        "performance": 0.884,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.3636363636363635,
+        "performance": 0.744,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.3636363636363635,
+        "performance": 0.816,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.4141414141414141,
+        "performance": 0.872,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.4141414141414141,
+        "performance": 0.656,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.4141414141414141,
+        "performance": 0.728,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.4646464646464645,
+        "performance": 0.856,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.4646464646464645,
+        "performance": 0.664,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.4646464646464645,
+        "performance": 0.844,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.5151515151515151,
+        "performance": 0.852,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.5151515151515151,
+        "performance": 0.676,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.5151515151515151,
+        "performance": 0.8,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.5656565656565655,
+        "performance": 0.904,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.5656565656565655,
+        "performance": 0.64,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.5656565656565655,
+        "performance": 0.86,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.6161616161616161,
+        "performance": 0.828,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.6161616161616161,
+        "performance": 0.628,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.6161616161616161,
+        "performance": 0.82,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.6666666666666667,
+        "performance": 0.868,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.6666666666666667,
+        "performance": 0.716,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.6666666666666667,
+        "performance": 0.832,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.7171717171717171,
+        "performance": 0.836,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.7171717171717171,
+        "performance": 0.556,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.7171717171717171,
+        "performance": 0.676,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.7676767676767677,
+        "performance": 0.868,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.7676767676767677,
+        "performance": 0.68,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.7676767676767677,
+        "performance": 0.844,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.8181818181818181,
+        "performance": 0.844,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.8181818181818181,
+        "performance": 0.62,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.8181818181818181,
+        "performance": 0.74,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.8686868686868687,
+        "performance": 0.852,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.8686868686868687,
+        "performance": 0.632,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.8686868686868687,
+        "performance": 0.748,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.9191919191919191,
+        "performance": 0.888,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.9191919191919191,
+        "performance": 0.676,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.9191919191919191,
+        "performance": 0.844,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 1.9696969696969697,
+        "performance": 0.812,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 1.9696969696969697,
+        "performance": 0.604,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 1.9696969696969697,
+        "performance": 0.6,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.0202020202020203,
+        "performance": 0.864,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.0202020202020203,
+        "performance": 0.72,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.0202020202020203,
+        "performance": 0.732,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.0707070707070705,
+        "performance": 0.86,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.0707070707070705,
+        "performance": 0.568,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.0707070707070705,
+        "performance": 0.744,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.121212121212121,
+        "performance": 0.864,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.121212121212121,
+        "performance": 0.568,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.121212121212121,
+        "performance": 0.62,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.1717171717171717,
+        "performance": 0.836,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.1717171717171717,
+        "performance": 0.616,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.1717171717171717,
+        "performance": 0.696,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.2222222222222223,
+        "performance": 0.816,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.2222222222222223,
+        "performance": 0.584,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.2222222222222223,
+        "performance": 0.692,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.2727272727272725,
+        "performance": 0.892,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.2727272727272725,
+        "performance": 0.656,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.2727272727272725,
+        "performance": 0.788,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.323232323232323,
+        "performance": 0.812,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.323232323232323,
+        "performance": 0.616,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.323232323232323,
+        "performance": 0.832,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.3737373737373737,
+        "performance": 0.824,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.3737373737373737,
+        "performance": 0.652,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.3737373737373737,
+        "performance": 0.704,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.4242424242424243,
+        "performance": 0.876,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.4242424242424243,
+        "performance": 0.5,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.4242424242424243,
+        "performance": 0.636,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.474747474747475,
+        "performance": 0.832,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.474747474747475,
+        "performance": 0.46,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.474747474747475,
+        "performance": 0.648,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.525252525252525,
+        "performance": 0.848,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.525252525252525,
+        "performance": 0.628,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.525252525252525,
+        "performance": 0.756,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.5757575757575757,
+        "performance": 0.872,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.5757575757575757,
+        "performance": 0.508,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.5757575757575757,
+        "performance": 0.656,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.6262626262626263,
+        "performance": 0.828,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.6262626262626263,
+        "performance": 0.516,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.6262626262626263,
+        "performance": 0.712,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.676767676767677,
+        "performance": 0.864,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.676767676767677,
+        "performance": 0.616,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.676767676767677,
+        "performance": 0.796,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.727272727272727,
+        "performance": 0.844,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.727272727272727,
+        "performance": 0.448,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.727272727272727,
+        "performance": 0.592,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.7777777777777777,
+        "performance": 0.864,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.7777777777777777,
+        "performance": 0.412,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.7777777777777777,
+        "performance": 0.568,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.8282828282828283,
+        "performance": 0.844,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.8282828282828283,
+        "performance": 0.372,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.8282828282828283,
+        "performance": 0.416,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.878787878787879,
+        "performance": 0.868,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.878787878787879,
+        "performance": 0.584,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.878787878787879,
+        "performance": 0.808,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.929292929292929,
+        "performance": 0.868,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.929292929292929,
+        "performance": 0.604,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.929292929292929,
+        "performance": 0.772,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 2.9797979797979797,
+        "performance": 0.876,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 2.9797979797979797,
+        "performance": 0.704,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 2.9797979797979797,
+        "performance": 0.816,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.0303030303030303,
+        "performance": 0.844,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.0303030303030303,
+        "performance": 0.776,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.0303030303030303,
+        "performance": 0.864,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.080808080808081,
+        "performance": 0.872,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.080808080808081,
+        "performance": 0.724,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.080808080808081,
+        "performance": 0.788,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.131313131313131,
+        "performance": 0.856,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.131313131313131,
+        "performance": 0.664,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.131313131313131,
+        "performance": 0.828,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.1818181818181817,
+        "performance": 0.868,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.1818181818181817,
+        "performance": 0.568,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.1818181818181817,
+        "performance": 0.644,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.2323232323232323,
+        "performance": 0.836,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.2323232323232323,
+        "performance": 0.608,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.2323232323232323,
+        "performance": 0.704,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.282828282828283,
+        "performance": 0.836,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.282828282828283,
+        "performance": 0.536,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.282828282828283,
+        "performance": 0.724,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.3333333333333335,
+        "performance": 0.836,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.3333333333333335,
+        "performance": 0.636,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.3333333333333335,
+        "performance": 0.78,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.3838383838383836,
+        "performance": 0.784,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.3838383838383836,
+        "performance": 0.64,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.3838383838383836,
+        "performance": 0.624,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.4343434343434343,
+        "performance": 0.868,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.4343434343434343,
+        "performance": 0.56,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.4343434343434343,
+        "performance": 0.632,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.484848484848485,
+        "performance": 0.832,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.484848484848485,
+        "performance": 0.548,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.484848484848485,
+        "performance": 0.748,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.5353535353535355,
+        "performance": 0.832,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.5353535353535355,
+        "performance": 0.588,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.5353535353535355,
+        "performance": 0.784,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.5858585858585856,
+        "performance": 0.852,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.5858585858585856,
+        "performance": 0.636,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.5858585858585856,
+        "performance": 0.708,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.6363636363636362,
+        "performance": 0.844,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.6363636363636362,
+        "performance": 0.564,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.6363636363636362,
+        "performance": 0.688,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.686868686868687,
+        "performance": 0.848,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.686868686868687,
+        "performance": 0.58,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.686868686868687,
+        "performance": 0.596,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.7373737373737375,
+        "performance": 0.832,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.7373737373737375,
+        "performance": 0.512,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.7373737373737375,
+        "performance": 0.604,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.7878787878787876,
+        "performance": 0.824,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.7878787878787876,
+        "performance": 0.396,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.7878787878787876,
+        "performance": 0.496,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.8383838383838382,
+        "performance": 0.844,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.8383838383838382,
+        "performance": 0.7,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.8383838383838382,
+        "performance": 0.676,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.888888888888889,
+        "performance": 0.876,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.888888888888889,
+        "performance": 0.308,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.888888888888889,
+        "performance": 0.584,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.9393939393939394,
+        "performance": 0.892,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.9393939393939394,
+        "performance": 0.596,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.9393939393939394,
+        "performance": 0.692,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 3.9898989898989896,
+        "performance": 0.828,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 3.9898989898989896,
+        "performance": 0.592,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 3.9898989898989896,
+        "performance": 0.524,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.040404040404041,
+        "performance": 0.824,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.040404040404041,
+        "performance": 0.52,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.040404040404041,
+        "performance": 0.696,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.090909090909091,
+        "performance": 0.804,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.090909090909091,
+        "performance": 0.42,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.090909090909091,
+        "performance": 0.524,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.141414141414141,
+        "performance": 0.888,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.141414141414141,
+        "performance": 0.524,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.141414141414141,
+        "performance": 0.4,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.191919191919192,
+        "performance": 0.86,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.191919191919192,
+        "performance": 0.496,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.191919191919192,
+        "performance": 0.676,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.242424242424242,
+        "performance": 0.86,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.242424242424242,
+        "performance": 0.668,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.242424242424242,
+        "performance": 0.832,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.292929292929293,
+        "performance": 0.9,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.292929292929293,
+        "performance": 0.676,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.292929292929293,
+        "performance": 0.496,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.343434343434343,
+        "performance": 0.868,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.343434343434343,
+        "performance": 0.66,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.343434343434343,
+        "performance": 0.652,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.393939393939394,
+        "performance": 0.84,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.393939393939394,
+        "performance": 0.456,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.393939393939394,
+        "performance": 0.552,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.444444444444445,
+        "performance": 0.852,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.444444444444445,
+        "performance": 0.348,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.444444444444445,
+        "performance": 0.36,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.494949494949495,
+        "performance": 0.884,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.494949494949495,
+        "performance": 0.416,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.494949494949495,
+        "performance": 0.624,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.545454545454545,
+        "performance": 0.86,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.545454545454545,
+        "performance": 0.596,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.545454545454545,
+        "performance": 0.596,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.595959595959596,
+        "performance": 0.832,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.595959595959596,
+        "performance": 0.484,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.595959595959596,
+        "performance": 0.412,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.646464646464646,
+        "performance": 0.82,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.646464646464646,
+        "performance": 0.504,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.646464646464646,
+        "performance": 0.608,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.696969696969697,
+        "performance": 0.788,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.696969696969697,
+        "performance": 0.724,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.696969696969697,
+        "performance": 0.584,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.747474747474747,
+        "performance": 0.852,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.747474747474747,
+        "performance": 0.62,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.747474747474747,
+        "performance": 0.628,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.797979797979798,
+        "performance": 0.792,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.797979797979798,
+        "performance": 0.672,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.797979797979798,
+        "performance": 0.568,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.848484848484849,
+        "performance": 0.796,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.848484848484849,
+        "performance": 0.416,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.848484848484849,
+        "performance": 0.688,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.898989898989899,
+        "performance": 0.824,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.898989898989899,
+        "performance": 0.608,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.898989898989899,
+        "performance": 0.488,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 4.94949494949495,
+        "performance": 0.668,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 4.94949494949495,
+        "performance": 0.588,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 4.94949494949495,
+        "performance": 0.508,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "logreg",
+        "noise": 5.0,
+        "performance": 0.824,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "tree",
+        "noise": 5.0,
+        "performance": 0.468,
+        "situation": "noise-and-gridsearch"
+      },
+      {
+        "classifier": "forest",
+        "noise": 5.0,
+        "performance": 0.504,
+        "situation": "noise-and-gridsearch"
+      }
+    ]
+  },
+  "encoding": {
+    "color": {
+      "field": "classifier",
+      "type": "nominal"
+    },
+    "strokeDash": {
+      "field": "situation",
+      "type": "nominal"
+    },
+    "x": {
+      "field": "noise",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "performance",
+      "type": "quantitative"
+    }
+  },
+  "mark": {
+    "size": 4,
+    "type": "line"
+  },
+  "selection": {
+    "selector004": {
+      "bind": "scales",
+      "encodings": [
+        "x",
+        "y"
+      ],
+      "type": "interval"
+    }
+  },
+  "title": "does grid-search help us here?",
+  "transform": [
+    {
+      "bandwidth": 0.5,
+      "groupby": [
+        "classifier",
+        "situation"
+      ],
+      "loess": "performance",
+      "on": "noise"
+    }
+  ],
+  "width": "container"
+}

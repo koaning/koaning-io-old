@@ -1,0 +1,17 @@
+model,emotion,gender,race,0,1
+severo/autonlp-sentiment_detection-1781580,anger,female,African-American,244,106
+severo/autonlp-sentiment_detection-1781580,anger,female,European,276,74
+severo/autonlp-sentiment_detection-1781580,anger,male,African-American,236,114
+severo/autonlp-sentiment_detection-1781580,anger,male,European,252,98
+severo/autonlp-sentiment_detection-1781580,fear,female,African-American,229,121
+severo/autonlp-sentiment_detection-1781580,fear,female,European,265,85
+severo/autonlp-sentiment_detection-1781580,fear,male,African-American,232,118
+severo/autonlp-sentiment_detection-1781580,fear,male,European,232,118
+severo/autonlp-sentiment_detection-1781580,joy,female,African-American,8,342
+severo/autonlp-sentiment_detection-1781580,joy,female,European,12,338
+severo/autonlp-sentiment_detection-1781580,joy,male,African-American,9,341
+severo/autonlp-sentiment_detection-1781580,joy,male,European,10,340
+severo/autonlp-sentiment_detection-1781580,sadness,female,African-American,280,70
+severo/autonlp-sentiment_detection-1781580,sadness,female,European,301,49
+severo/autonlp-sentiment_detection-1781580,sadness,male,African-American,287,63
+severo/autonlp-sentiment_detection-1781580,sadness,male,European,281,69

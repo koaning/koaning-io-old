@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>koaning.io</title>
+    <link>https://koaning.io</link>
+    <atom:link href="https://koaning.io/index.xml" rel="self" type="application/rss+xml"/>
+    <description>Blog of a Data Scientist and Developer.
+</description>
+    <image>
+      <title>koaning.io</title>
+      <url>https://koaning.io/favicon.png</url>
+      <link>https://koaning.io</link>
+    </image>
+    <generator>Distill</generator>
+    <lastBuildDate>Thu, 28 Jul 2022 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Being a Research Advocate.</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/posts/research-advocacy</link>
+      <description>What lies in "Research Advocacy"?</description>
+      <guid>https://koaning.io/posts/research-advocacy</guid>
+      <pubDate>Thu, 28 Jul 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/posts/research-advocacy/landing.png" medium="image" type="image/png" width="867" height="303"/>
+    </item>
+    <item>
+      <title>Enjoy the Silence</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/posts/enjoy-the-silence</link>
+      <description>GridSearch is Not Enough: Part 7</description>
+      <guid>https://koaning.io/posts/enjoy-the-silence</guid>
+      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/posts/enjoy-the-silence/enjoy-the-silence.png" medium="image" type="image/png" width="1076" height="346"/>
+    </item>
+    <item>
+      <title>Beyond Broken</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/posts/beyond-broken</link>
+      <description>Horrible Remedies for Broken Recommenders</description>
+      <guid>https://koaning.io/posts/beyond-broken</guid>
+      <pubDate>Thu, 21 Oct 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/posts/beyond-broken/minne.png" medium="image" type="image/png" width="927" height="205"/>
+    </item>
+    <item>
+      <title>Bad Labels</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/posts/labels</link>
+      <description>GridSearch is Not Enough: Part Six</description>
+      <guid>https://koaning.io/posts/labels</guid>
+      <pubDate>Thu, 02 Sep 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/posts/labels/land.png" medium="image" type="image/png" width="1076" height="346"/>
+    </item>
+    <item>
+      <title>My New Home Setup</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/posts/mac-nuc-ssh</link>
+      <description>Better Patterns for Development Work.</description>
+      <guid>https://koaning.io/posts/mac-nuc-ssh</guid>
+      <pubDate>Sun, 15 Aug 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/posts/mac-nuc-ssh/setup.png" medium="image" type="image/png" width="972" height="352"/>
+    </item>
+    <item>
+      <title>Predicting Limits</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/posts/predict-limits</link>
+      <description>Multiple Outputs Make Sense.</description>
+      <guid>https://koaning.io/posts/predict-limits</guid>
+      <pubDate>Mon, 28 Jun 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/posts/predict-limits/mod.png" medium="image" type="image/png" width="1442" height="524"/>
+    </item>
+    <item>
+      <title>Naive Bias[tm] and Fairness Tooling</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/posts/just-another-dangerous-situation</link>
+      <description>Just Another Dangerous Situation</description>
+      <guid>https://koaning.io/posts/just-another-dangerous-situation</guid>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/posts/just-another-dangerous-situation/naive-bias.png" medium="image" type="image/png" width="1922" height="558"/>
+    </item>
+    <item>
+      <title>A Loop to Stop Writing.</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/posts/for-loop-memo</link>
+      <description>Let's make life a whole log simpler.</description>
+      <guid>https://koaning.io/posts/for-loop-memo</guid>
+      <pubDate>Wed, 03 Mar 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/posts/for-loop-memo/logo.png" medium="image" type="image/png" width="1239" height="393"/>
+    </item>
+    <item>
+      <title>Maths as a Compiler</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/posts/maths-as-a-compiler</link>
+      <description>Once again, rephrasing is a friend.</description>
+      <guid>https://koaning.io/posts/maths-as-a-compiler</guid>
+      <pubDate>Sat, 26 Dec 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/posts/maths-as-a-compiler/intro.png" medium="image" type="image/png" width="1239" height="393"/>
+    </item>
+    <item>
+      <title>Oops and Optimality</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/posts/oops-and-optimality</link>
+      <description>GridSearch is Not Enough: Part Five</description>
+      <guid>https://koaning.io/posts/oops-and-optimality</guid>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/posts/oops-and-optimality/assumptions.png" medium="image" type="image/png" width="1239" height="393"/>
+    </item>
+    <item>
+      <title>Uncommon Contributions</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/posts/cool-commits</link>
+      <description>Making impact without touching the core of a library.</description>
+      <guid>https://koaning.io/posts/cool-commits</guid>
+      <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/posts/cool-commits/cron.png" medium="image" type="image/png" width="904" height="436"/>
+    </item>
+    <item>
+      <title>Mean Squared Terror</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/posts/mean-squared-terror</link>
+      <description>GridSearch is Not Enough: Part Four</description>
+      <guid>https://koaning.io/posts/mean-squared-terror</guid>
+      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/posts/mean-squared-terror/ivory.png" medium="image" type="image/png" width="1392" height="847"/>
+    </item>
+    <item>
+      <title>Sharing is Caring</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/posts/caring-means-sharing</link>
+      <description>Put Cookie-Monster on a Diet.</description>
+      <guid>https://koaning.io/posts/caring-means-sharing</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/posts/caring-means-sharing/preview.png" medium="image" type="image/png" width="583" height="224"/>
+    </item>
+    <item>
+      <title>More Descent, Less Gradient</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/posts/more-descent-less-gradient</link>
+      <description>Your regression may only need one gradient step. Really.</description>
+      <guid>https://koaning.io/posts/more-descent-less-gradient</guid>
+      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/posts/more-descent-less-gradient/idea-1.png" medium="image" type="image/png" width="909" height="365"/>
+    </item>
+    <item>
+      <title>Priors of Great Potential</title>
+      <dc:creator>Matthijs Brouns</dc:creator>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/posts/priors-of-great-potential</link>
+      <description>Common Sense reduced to Priors</description>
+      <guid>https://koaning.io/posts/priors-of-great-potential</guid>
+      <pubDate>Sat, 22 Feb 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/posts/priors-of-great-potential/drawing7.png" medium="image" type="image/png" width="781" height="378"/>
+    </item>
+    <item>
+      <title>Introduction to Inference</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/posts/introduction-to-inference</link>
+      <description>Reduce Common Sense to Calculus.</description>
+      <guid>https://koaning.io/posts/introduction-to-inference</guid>
+      <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/posts/introduction-to-inference/landing.png" medium="image" type="image/png" width="1287" height="427"/>
+    </item>
+    <item>
+      <title>Theoretical Dependence</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/posts/theoretical-dependence</link>
+      <description>Some assumptions are just plain weird.</description>
+      <guid>https://koaning.io/posts/theoretical-dependence</guid>
+      <pubDate>Thu, 16 Jan 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/posts/theoretical-dependence/logo.png" medium="image" type="image/png" width="803" height="406"/>
+    </item>
+    <item>
+      <title>The Cost of Success</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/posts/cost-of-success</link>
+      <description>VeryHighAccuracy[tm] as a Problem.</description>
+      <guid>https://koaning.io/posts/cost-of-success</guid>
+      <pubDate>Mon, 06 Jan 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/posts/cost-of-success/examples.png" medium="image" type="image/png" width="848" height="368"/>
+    </item>
+    <item>
+      <title>The Elephants not in the Room</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/posts/elephants</link>
+      <description>The unknowns might be more interesting.</description>
+      <guid>https://koaning.io/posts/elephants</guid>
+      <pubDate>Mon, 06 Jan 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/posts/elephants/img1.png" medium="image" type="image/png" width="1722" height="514"/>
+    </item>
+    <item>
+      <title>Roman Reasoning</title>
+      <dc:creator>Vincent Warmerdam</dc:creator>
+      <link>https://koaning.io/posts/roman-reasoning</link>
+      <description>We should evolve beyond it.</description>
+      <guid>https://koaning.io/posts/roman-reasoning</guid>
+      <pubDate>Sat, 07 Dec 2019 00:00:00 +0000</pubDate>
+      <media:content url="https://koaning.io/posts/roman-reasoning/roman4.png" medium="image" type="image/png" width="777" height="196"/>
+    </item>
+  </channel>
+</rss>

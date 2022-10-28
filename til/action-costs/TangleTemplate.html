@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Tangle document</title>
+
+    <!-- Tangle -->
+    <script type="text/javascript" src="Tangle.js"></script>
+
+    <!-- TangleKit (optional) -->
+    <link rel="stylesheet" href="TangleKit/TangleKit.css" type="text/css">
+    <script type="text/javascript" src="TangleKit/mootools.js"></script>
+    <script type="text/javascript" src="TangleKit/sprintf.js"></script>
+    <script type="text/javascript" src="TangleKit/BVTouchable.js"></script>
+    <script type="text/javascript" src="TangleKit/TangleKit.js"></script>
+
+    <!-- example -->
+    <script type="text/javascript">
+
+        function setUpTangle () {
+
+            var element = document.getElementById("example");
+
+            var tangle = new Tangle(element, {
+                initialize: function () {
+                    this.grid = 4;
+                    this.minutes = 30;
+                    this.commits = 5;
+                    this.prs = 10;
+                },
+                update: function () {
+                    this.calories = this.cookies * this.caloriesPerCookie;
+                    this.commit_time = this.minutes * this.grid;
+                    this.pr_time = this.prs * this.commit_time * this.commits;
+                    this.per_day = parseInt(this.pr_time * 0.008);
+                    this.per_month = parseInt(this.pr_time * 0.008 * 20);
+                    this.per_year = parseInt(this.pr_time * 0.008 * 20 * 12);
+                }
+            });
+        }
+
+    </script>
+</head>
+
+<body onload="setUpTangle();">
+
+<p>Let's calculate something!</p>
+
+<p id="example">
+    Let's consider a large project that is running GitHub Actions for unit tests.
+    <br><br>
+    A single job of unit tests take about <span data-var="minutes" class="TKAdjustableNumber" data-min="1" data-max="100"> minutes</span>. 
+    <br>
+    This job runs in a paralle grid of size <span data-var="grid" class="TKAdjustableNumber" data-min="1" data-max="100"></span>. 
+    <br><br>
+    That means that each commit can trigger a job that takes <span data-var="commit_time"></span> minutes.
+    <br><br>
+    This is just a single commit though. <br>
+    Let's also consider that on average
+    each PR contains <span data-var="commits" class="TKAdjustableNumber" data-min="1" data-max="50"> commits</span>. <br>
+    If we now assume that our project has <span data-var="prs" class="TKAdjustableNumber" data-min="1" data-max="50"> pull requests</span> per day.<br><br>
+    Then our GitHub Actions bill will be <br>
+    $<span data-var="per_day"></span> per day<br>
+    $<span data-var="per_month"></span> per month (assuming 20 work days)<br>
+    $<span data-var="per_year"></span> per year (assuming 50 work weeks)<br>
+</p>
+
+</body>
+</html>

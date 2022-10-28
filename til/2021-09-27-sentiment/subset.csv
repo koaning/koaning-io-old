@@ -1,0 +1,9 @@
+template,emotion,gender,race,0,1
+PERSON feels EMOTION.,sadness,female,African-American,25.0,25.0
+PERSON feels EMOTION.,sadness,female,European,31.0,19.0
+PERSON feels EMOTION.,sadness,male,African-American,21.0,29.0
+PERSON feels EMOTION.,sadness,male,European,34.0,16.0
+PERSON made me feel EMOTION.,sadness,female,African-American,20.0,30.0
+PERSON made me feel EMOTION.,sadness,female,European,21.0,29.0
+PERSON made me feel EMOTION.,sadness,male,African-American,19.0,31.0
+PERSON made me feel EMOTION.,sadness,male,European,24.0,26.0
